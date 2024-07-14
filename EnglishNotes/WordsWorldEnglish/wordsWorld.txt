@@ -1,0 +1,260 @@
+Preposition
+----------------
+1. in - உள்ள
+on - மேல்
+at - அல்லது
+by - இடம்
+with - உடையவர்கள்
+from - இருந்து
+to - க்கு
+into - அடுத்து
+through - மூலம்
+between - இடையில்
+among - பலர்களிடம்
+under - கீழே
+above - மேல்
+below - கீழே
+behind - பின்
+in front of - முன்னே
+beside - பக்கத்தில்
+near - அருகில்
+away from - இருந்து விலகிய
+with - உடைய
+for - மற்றும்
+during - போது
+while - இருப்பினும்
+against - எதிர்
+among - பலர்களிடம்
+inside - உள்ள
+outside - வெளியில்
+beyond - பின்பு
+throughout - அமைதியாக
+within - உள்ள
+above - மேல்
+below - கீழே
+across - மூலம்
+towards - பக்கத்தில்
+upon - மேல்
+until - வரை
+onto - மேல்
+against - எதிர்
+before - முன்
+after - பின்
+
+
+
+connecting words
+-------------------
+
+and - மற்றும் (Maṟṟum)
+but - ஆனால் (Āṉāl)
+or - அல்லது (Allatu)
+because - எனவே (Eṉavē)
+so - அதனால் (Adanāl)
+if - எனினும் (Eṉiṉum)
+when - பேராது (Pērātu)
+while - இருந்தபோது (Iruntapōtu)
+although - எனினும் (Eṉiṉum)
+however - எனினும் (Eṉiṉum)
+therefore - அதாவது (Adāvatu)
+moreover - மேலும் (Mēlum)
+nevertheless - எனவோ (Eṉavō)
+thus - அதனால் (Adanāl)
+hence - அதனால் (Adanāl)
+yet - இன்னும் (Iṉṉum)
+besides - பின்னால் (Piṉṉāl)
+furthermore - இனிமேல் (Iṉimēl)
+instead - அதற்காக (Atarkāka)
+otherwise - இல்லையானால் (Illaiyāṉāl)
+
+
+DOSASCOMP
+----------------------------------------
+
+
+Determiner (e.g., a, an, the)
+--------------------------------
+the - அந்த
+a (or an) - ஒரு
+this - இது
+that - அது
+these - இவை
+those - அவை
+my - என்
+your - உங்கள்
+his - அவன்
+her - அவள்
+its - அதன்
+our - எங்கள்
+their - அவர்கள்
+some - சில
+any - எதுவும்
+enough - போதும்
+several - பல
+few - குறைவாக
+many - பல
+another - மற்றொரு
+both - இருவரும்
+either - இருவரிலும் ஒருவர்
+neither - இருவரிலும் ஒருவரும் அல்ல
+all - அனைத்து
+every - ஒவ்வொரு
+much - பல
+more - மேலும்
+most - அதிகமாக
+several - பல
+fewer - குறைவுக்குரிய
+less - குறைவான
+little - குறைவான
+much - அதிகமான
+more - மேலும்
+most - அதிகமான
+none - யாரும் இல்லை
+some - சில
+any - எதையும்
+enough - போதும்
+
+Observation/Opinion (e.g., beautiful, interesting).
+-----------------------------------------------------------
+beautiful - அழகிய
+interesting - கவனத்துடன் பார்க்கப்படும்
+fascinating - கவனம் சிதைத்துக் கொண்டு வருகிற
+captivating - ஆக்கமுள்ள
+charming - மனதை மிகுத்துறையில் பிரித்துக் கொள்கிற
+lovely - அன்பான
+wonderful - அற்புதமான
+amazing - அதிசயமான
+impressive - அச்சமயமான
+attractive - மனம் மயங்கும்
+stunning - அதிர்ச்சியடைந்த
+appealing - மனம் மிகுத்துறையில் பிரித்துக் கொள்ளப்படுகிற
+delightful - மகிழ்ச்சியடைந்த
+enjoyable - சுவாசமாக
+pleasing - மகிழ்ச்சியடைந்த
+exciting - மகிழ்ச்சியடைந்த
+exquisite - மிகவும் பிரமாண்டமான
+gorgeous - அழகிய
+inspiring - கொண்டாட்டப்படுத்தும்
+பார்வையில் காணப்படும் - visually appealing
+awesome - அற்புதமான
+fantastic - அற்புதமான
+splendid - அற்புதமான
+marvelous - அற்புதமான
+superb - அற்புதமான
+brilliant - அற்புதமான
+excellent - மிகவும் நல்ல
+terrific - மிகவும் பெரும்
+outstanding - மிகவும் நல்ல
+remarkable - மிகவும் முக்கியமான
+wondrous - அற்புதமான
+mesmerizing - மயக்கப்படுத்தும்
+ravishing - அற்புதமான
+stupendous - அற்புதமான
+awe-inspiring - அற்புதமான
+mind-blowing - அற்புதமான
+jaw-dropping - அற்புதமான
+captivating - அற்புதமான
+enchanting - மயக்கமான
+spellbinding - மயக்கமான
+
+
+Size (e.g., small, large) 
+--------------------------------------
+small - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+tiny - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+little - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+big - பெரிய (periya) / பெரிய (periya)
+large - பெரிய (periya) / பெரிய (periya)
+huge - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+gigantic - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+smaller - சிறியது (ciṟiyatu) / சிறியது (ciṟiyatu)
+larger - பெரியது (periya) / பெரியது (periya)
+medium - நடுத்தர (naṭuttara) / நடுத்தர (naṭuttara)
+tiny - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+miniature - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+smallish - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+petite - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+average - சாதாரணமான (cātāraṇamāṉa) / சாதாரணமான (cātāraṇamāṉa)
+biggish - பெரிய (periya) / பெரிய (periya)
+considerable - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+enormous - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+massive - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+tiny - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+compact - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+massive - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+tiny - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+slim - நெடும் (neṭum) / நெடும் (neṭum)
+large - பெரிய (periya) / பெரிய (periya)
+gigantic - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+mini - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+humongous - மிகப்பெரிய (mikapperiya) / மிகப்பெரிய (mikapperiya)
+small - சிறிய (ciṟiya) / சிறிய (ciṟiya)
+grand - பெரிய (periya) / பெரிய (periya)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
