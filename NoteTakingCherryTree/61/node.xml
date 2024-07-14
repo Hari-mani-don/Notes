@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="61" master_id="0" name="Spring Ashok It" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720215527" ts_lastsave="1720263752">
+    <rich_text>Spring framework introductin
+===================
+
+
+Programming Language
+
+Core Java (Language Syntaxes, fundamentals)
+
+-&gt; Using this core java we will build GUI/CUI based application
+
+&gt; Graphical User Interface
+
+&gt; Commandline User Interface (CLI)
+
+-&gt; Adv Java
+
+	JDBC : Database Connectivity -&gt; APi
+
+	Servlets: Web applications developement -&gt; web techonology
+
+	JSP: Web pages development  -&gt; web techonology
+
+→ Frameworks
+
+	Struts -&gt; controller layer only we build
+
+	Hibernate -&gt; persitence only DB
+
+	Spring Framework -&gt; application framework end to end app.
+	
+-&gt; Framework is a semi 	 software which provides some common logics which are required for applications development
+
+	load jdbc driver
+	get connection
+	create stmt
+	execute query
+	close connection
+	
+	application to database
+
+
+-&gt; Frameworks are divided into 2 types	
+
+	1) ORM Framework
+
+	2) Web Framework
+
+-&gt; ORM (Object Relational Mapping) frameworks are used to develop Persistence Layer in applications.
+
+	Ex: Hibernate
+	
+-&gt; Web frameworks are used to develop Web applications
+
+	Ex: Struts	
+	</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+	
+-&gt; Spring is an application development framework.
+-› Spring is Non Invasive framework. Spring it will not force the programmer to extend/implement any framework related classes and interfaces.
+-&gt; By Using Spring framework we can develop End to End application.
+</rich_text>
+    <rich_text scale="small">-&gt; Spring is versatile framework. Spring can be integrated with any other framework which is available in the market.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="small">-&gt; Spring is loosely coupled framework. It is developed in modular fashion.</rich_text>
+    <rich_text>
+-&gt; Spring is not a single framework. It is collection of frameworks.
+
+-&gt; Spring framework is developed in Modular Fashion.
+
+		-&gt; Spring Core
+		-&gt; Spring Context
+		-&gt; Spring AOP
+		-&gt; Spring DAO
+		-&gt; Spring Web MVC
+		-&gt; Spring ORM
+		
+-&gt; Spring Core is Base Module for Spring Framework. This module providing fundamental concepts of Spring they are IOC and DI.&#13;
+			IOC: Inversion of Control&#13;
+			DI: Dependency Injection
+			&#13;
+-&gt; Spring Context module will take care of Configurations required in our applications.
+&#13;
+-&gt; Spring AOP module is used to seperate business logic and secondary logic in our application.
+
+	Aspect Oriented Programming
+	&#13;
+-&gt; Spring DAO/Spring JDBC module is used to develop Persistence Layer. Spring JDBC module is developed on top of JDBC api.
+&#13;
+-&gt; Spring Web MVC module is used to web applications.
+&#13;
+Spring ORM module is used to develop Persistence Layer.&#13;
+	ORM&gt; Object Relational Mapping
+	&#13;
+It is used to represent data in the form of objects
+</rich_text>
+    <encoded_png char_offset="1054" justification="left" link="" sha256sum="bc0ccdfca31c4737f5132739e1d8eb25770247873a2d89d1e663858f65c93965"/>
+  </node>
+</cherrytree>

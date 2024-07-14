@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="87" master_id="0" name="Configuration" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720462302" ts_lastsave="1720535326">
+    <rich_text scale="h3">How to Implement?</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Add Log4j to Your Project</rich_text>
+    <rich_text>:
+• Use a build tool like Maven or Gradle to include Log4j.
+
+• </rich_text>
+    <rich_text weight="heavy">Configure Log4j</rich_text>
+    <rich_text>:
+  Create a configuration file (like </rich_text>
+    <rich_text family="monospace">log4j.properties</rich_text>
+    <rich_text> or </rich_text>
+    <rich_text family="monospace">log4j.xml</rich_text>
+    <rich_text>).
+  Define your loggers, appenders, and layouts in this file.
+	
+	log4j.rootLogger=  DEBUG, console, file, database
+
+</rich_text>
+    <rich_text weight="heavy">//console</rich_text>
+    <rich_text>
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+log4j.appender.console.layout.ConversionPattern=%d [%t] %-5p %c - %m%n
+
+</rich_text>
+    <rich_text weight="heavy">//file</rich_text>
+    <rich_text>
+log4j.appender.file=org.apache.log4j.FileAppender
+log4j.appender.file.File=logfile.log
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%d [%t] %-5p %c - %m%n
+
+</rich_text>
+    <rich_text weight="heavy">//jdbc</rich_text>
+    <rich_text>
+log4j.appender.database=org.apache.log4j.jdbc.JDBCAppender
+log4j.appender.database.URL=jdbc:mysql://localhost:3306/logs
+log4j.appender.database.driver=com.mysql.jdbc.Driver
+log4j.appender.database.user=root
+log4j.appender.database.password=password
+log4j.appender.database.sql=INSERT INTO logs (date, thread, level, category, message) VALUES('%d', '%t', '%p', '%c', '%m')
+log4j.appender.database.layout=org.apache.log4j.PatternLayout
+log4j.appender.database.layout.ConversionPattern=%d [%t] %-5p %c - %m%n
+
+
+</rich_text>
+    <rich_text weight="heavy">Use Log4j in Your Code</rich_text>
+    <rich_text>:
+• Import Log4j classes and create a logger instance.
+• Use the logger to record messages.
+
+</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text> </rich_text>
+    <rich_text family="monospace">log4j.properties</rich_text>
+    <rich_text>:
+
+	import org.apache.log4j.Logger;
+
+	public class MyApp {
+		private static final Logger logger = Logger.getLogger(MyApp.class);
+
+		public static void main(String[] args) {
+		    logger.info("Application started");
+		    // Your code here
+		    logger.error("An error occurred");
+		}
+	}
+
+</rich_text>
+    <rich_text weight="heavy">Note:</rich_text>
+    <rich_text>
+====
+• Sends logs to the console (org.apache.log4j.ConsoleAppender).
+• Uses PatternLayout to format logs with date, thread ID, log level, logger category, and log message (</rich_text>
+    <rich_text foreground="#c64600">%d [%t] %-5p %c - %m%n</rich_text>
+    <rich_text>).
+
+
+
+</rich_text>
+  </node>
+</cherrytree>

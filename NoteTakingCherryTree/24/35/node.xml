@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="35" master_id="0" name="java9 and 10" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717601779" ts_lastsave="1717606981">
+    <rich_text>
+java 9
+=====
+
+Module System (Project Jigsaw): project structure maintain panna module concept eduthutu vanthanga
+
+JShell (REPL): code snippet check panna use pannikalam.
+
+java 10
+=====
+var - &gt; it is a veriable datatype.
+
+
+</rich_text>
+  </node>
+</cherrytree>

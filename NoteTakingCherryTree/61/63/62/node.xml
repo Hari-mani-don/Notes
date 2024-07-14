@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="62" master_id="0" name="Spring framework Architecture" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720222105" ts_lastsave="1720378422">
+    <rich_text>-&gt; Spring DAO / Spring JDBC&#13;
+-&gt; Spring Web MVC&#13;
+-&gt; Spring ORM&#13;
+-&gt; Spring Core is the base module for spring framework.&#13;
+-&gt; Spring Context module deals with Configurations in application&#13;
+-&gt; Spring AOP module is used to seperate business logic and cross-cutting logics&#13;
+-&gt; Spring DAO module is used to develop Persistence Layer.&#13;
+-&gt; Spring Web MVC module is used to web applications &amp; distributed applications
+
+
+-&gt; Spring Core is the base module for spring framework.&#13;
+-&gt; Spring Context module deals with Configurations in application.&#13;
+-&gt; Spring AOP module is used to seperate business logic and cross-cutting logics.&#13;
+-&gt; Spring DAO module is used to develop Persistence Layer.&#13;
+-&gt; Spring Web MVC module is used to web applications &amp; distributed applications.&#13;
+-&gt; Spring ORM module is used to develop persistence layer using ORM principles
+
+
+s</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>   
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>   
+
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>   
+
+-&gt; In Spring 1.x version we have 7 modules&#13;
+-&gt; In Spring 2.x version we have 6 modules&#13;
+-&gt; In Spring 3.x version we have 18+ modules&#13;
+-&gt; In Spring 4.x version Messaging concept got added&#13;
+-&gt; In Spring 5.x version Reactive Programming added</rich_text>
+    <encoded_png char_offset="843" justification="left" link="" sha256sum="0acb6383b051bad685120dceee44b812b0dfb59c1235ff73b33d97f212c750f4"/>
+    <encoded_png char_offset="849" justification="left" link="" sha256sum="9179da809b27fd399730978d310ddf3e56d9346305973a9995519504c0e4c3f3"/>
+    <encoded_png char_offset="856" justification="left" link="" sha256sum="356e00461b54c88d0fde360a0436d21012a81dcfbad89b6427684e6c0d96d807"/>
+  </node>
+</cherrytree>

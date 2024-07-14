@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="88" master_id="0" name="Loger" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720462894" ts_lastsave="1720463283">
+    <rich_text scale="h4">Logger Hierarchy</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Definition</rich_text>
+    <rich_text>: Loggers in Log4j are organized in a hierarchical structure, where each logger inherits </rich_text>
+    <rich_text foreground="#c64600">settings and behaviors</rich_text>
+    <rich_text> from its </rich_text>
+    <rich_text foreground="#c64600">parent logger</rich_text>
+    <rich_text>.
+• </rich_text>
+    <rich_text weight="heavy">Why It's Important</rich_text>
+    <rich_text>: Helps manage </rich_text>
+    <rich_text foreground="#c64600">logging settings more efficiently</rich_text>
+    <rich_text> across different parts of an application.
+
+</rich_text>
+    <rich_text scale="h4">Logger Levels</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Levels</rich_text>
+    <rich_text>: Trace, DEBUG, INFO, WARN, ERROR, FATAL, and OFF.
+• </rich_text>
+    <rich_text weight="heavy">Function</rich_text>
+    <rich_text>: Each level corresponds to the severity of the message being logged, allowing developers to </rich_text>
+    <rich_text foreground="#c64600">filter and prioritize logs based on importance</rich_text>
+    <rich_text>.
+
+</rich_text>
+    <rich_text scale="h4">Logger Methods</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Logging Methods</rich_text>
+    <rich_text>: logger.debug(), logger.info(), logger.warn(), logger.error(), logger.fatal().
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Each method logs a message at a specific level, helping developers capture different types of events and errors.
+
+</rich_text>
+    <rich_text scale="h3">How to Implement</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Add Log4j to Your Project</rich_text>
+    <rich_text>: Include Log4j dependencies using </rich_text>
+    <rich_text foreground="#c64600">Maven</rich_text>
+    <rich_text> or Gradle.
+2. </rich_text>
+    <rich_text weight="heavy">Configure Loggers</rich_text>
+    <rich_text>: Define logger hierarchy and levels in a configuration file (</rich_text>
+    <rich_text foreground="#c64600">log4j.properties</rich_text>
+    <rich_text> or log4j.xml).
+3. </rich_text>
+    <rich_text weight="heavy">Create Loggers</rich_text>
+    <rich_text>: In your Java code, create loggers using </rich_text>
+    <rich_text foreground="#c64600">Logger.getLogger("LoggerName")</rich_text>
+    <rich_text>.
+4. </rich_text>
+    <rich_text weight="heavy">Use Logger Methods</rich_text>
+    <rich_text>: Use logger methods (logger.debug(), logger.info(), etc.) to log messages at appropriate levels.
+
+</rich_text>
+    <rich_text scale="h3">How Does It Work</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Hierarchy</rich_text>
+    <rich_text>: Loggers inherit settings from their parent loggers, allowing for centralized configuration.
+• </rich_text>
+    <rich_text weight="heavy">Levels</rich_text>
+    <rich_text>: Messages are filtered based on their </rich_text>
+    <rich_text foreground="#c64600">severity (level</rich_text>
+    <rich_text>), ensuring only relevant logs are captured.
+• </rich_text>
+    <rich_text weight="heavy">Methods</rich_text>
+    <rich_text>: Logging methods send messages to </rich_text>
+    <rich_text foreground="#c64600">configured appenders </rich_text>
+    <rich_text>(e.g., console, file) based on their level.
+
+
+
+
+
+
+
+
+</rich_text>
+  </node>
+</cherrytree>

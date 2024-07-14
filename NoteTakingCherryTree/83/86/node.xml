@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="86" master_id="0" name="Core concept" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720459025" ts_lastsave="1720462321">
+    <rich_text>1. FATAL
+2. ERROR
+3. WARN
+4. INFO
+5. DEBUG
+6. TRACE (if supported)
+
+</rich_text>
+    <rich_text weight="heavy">//Levels</rich_text>
+    <rich_text>
+•  DEBUG</rich_text>
+    <rich_text weight="heavy"> level</rich_text>
+    <rich_text>: Captures   DEBUG, INFO, WARN, ERROR, and FATAL messages.
+• INFO</rich_text>
+    <rich_text weight="heavy"> level</rich_text>
+    <rich_text>: Captures INFO, WARN, ERROR, and FATAL messages.
+• WARN</rich_text>
+    <rich_text weight="heavy"> level</rich_text>
+    <rich_text>: Captures WARN, ERROR, and FATAL messages.
+• ERROR</rich_text>
+    <rich_text weight="heavy"> level</rich_text>
+    <rich_text>: Captures ERROR and FATAL messages.
+• FATAL</rich_text>
+    <rich_text weight="heavy"> level</rich_text>
+    <rich_text>: Captures only FATAL messages.
+
+
+</rich_text>
+    <rich_text scale="h3">Core Concepts of Log4j</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Loggers</rich_text>
+    <rich_text>: Parts of the application that collect log messages.
+2. </rich_text>
+    <rich_text weight="heavy">Appenders</rich_text>
+    <rich_text>: Parts that decide where the log messages go (e.g., console, files).
+3. </rich_text>
+    <rich_text weight="heavy">Layouts</rich_text>
+    <rich_text>: Parts that determine how the log messages look.
+
+How does it work?
+• </rich_text>
+    <rich_text weight="heavy">Loggers</rich_text>
+    <rich_text> capture messages from the application.
+• </rich_text>
+    <rich_text weight="heavy">Appenders</rich_text>
+    <rich_text> decide where to send these messages (e.g., to a file or the console).
+• </rich_text>
+    <rich_text weight="heavy">Layouts</rich_text>
+    <rich_text> format these messages to make them readable.
+
+</rich_text>
+  </node>
+</cherrytree>

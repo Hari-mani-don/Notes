@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="63" master_id="0" name="Spring Core Modules" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720222124" ts_lastsave="1720378419">
+    <rich_text>-&gt; Spring core is base module in Spring Framework&#13;
+-&gt; All the modules in the Spring are developed on top of Spring Core Module&#13;
+-&gt; Spring core module is providing fundamental concepts of Spring framework they are IOC &amp; DI.&#13;
+		IOC: Inversion Of Control&#13;
+		DI: Dependency Injection
+
+-&gt; When we develop our application using layered architecture our classes will become dependent.
+&#13;
+-&gt; One java class should talk to another java class to process the request.&#13;
+How one java class can talk to another java class?&#13;
+One java class can talk to another java class in 2 ways&#13;
+		1) Inheritence&#13;
+		2) Composition
+		
+-&gt; If we use Inheritence one java class extend the properties from another java class then we can call super class methods in sub class directley.
+
+
+Note: Here Inheritence option already utilized for HttpServlet so we can't extend&#13;
+the properties from any other class (Gate is closed).
+
+
+-&gt;By using composition one java class can call the methods of another java class.
+&#13;
+public class UserRegServlet extends HttpServlet{&#13;
+		public void doPost(Req, Res) {&#13;
+		PasswordUtils pwd= new PasswordUtils(); UserDao dao new UserDao(); 	EmailUtils email = new EmailUtils(); //call methods here&#13;
+		}&#13;
+		}
+		
+-&gt; In the above approach we are directley creating objects for PasswordUtils, UserDao and EmailUtils in our servlet class.&#13;
+-&gt; If we create objects for other classes directley then our classes will be tightly coupled then Maintenence of the project will become difficult.
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>   
+-&gt; To avoid this tighlty coupling problem Spring Provided Core Module.
+
+-&gt; Spring Core Module is all about managing dependencies among the classes in the application and making our classes as loosely coupled.
+
+-&gt; Spring Core Module provided IOC container and DI to manage dependencies among the classes in the application.
+
+-&gt; If we give any two classes for IOC to manage it can't manage with loosely coupling.
+
+-&gt; IF we want IOC to manage our classes with Loosely coupling then we need to develop our classes by following strategy design pattern.
+
+Strategy Design Pattern</rich_text>
+    <encoded_png char_offset="1473" justification="left" link="" sha256sum="1f1bcdc3fe73a98427c14fd27aa73c4c99386213a26ee333f5949f218ab0aa28"/>
+  </node>
+</cherrytree>
