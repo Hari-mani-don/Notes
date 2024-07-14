@@ -1,0 +1,123 @@
+        container:
+display:flex; /  inline-flex;
+flex-direction: row  / row-reverse / column /column-reverse ->width decrese
+flex-wrap: nowrap / wrap / wrap-reverse -> height decrese
+flex-flow: row wrap; ->flex-direction and flex-wrap combining flex-flow
+column-gap:20px;   / row-gap:20px; gap:20px 30px-> row, coloumn; gap:20px; -> all side
+justify-content:center;/flex-start,end /space-between,arround,evenly -> row ->x axis: column -> y axix
+align-item:center;/flex-start,end / row -> direction row -> y axix: column ->x axis
+align-content:center;/ when use wrap and align-content it will space different
+
+flex items
+order:1;/ default order 0; box 1 to chang box 5 it will use order -> navigation order chang
+flex-grow:1;// amazon website search bar -> dive space only using flex grow element: size increse
+flex-shrink:1;//default 1 when you increase flex-shring it will be size decrese ->first width set
+flex-basis:100px//default auto;set width 100px -> it is only change this size , it is default content size take it
+flex:0 1 auto; // flex-grow, flex-shrink, flex-basis ; / 0 1 200x;
+align-self:center,start,end;/default auto align-items->all content same time change,align self oposite only one element particlular it will be change
+
+
+        Grid-Container
+display:grid, inline-grid;  /it is also working for flex 
+grid-template-columns:300px 300px 100px; ->how much column and size declare / in this line use 3 column and 300px  columns sizes
+grid-template-columns:reapeat(2,100px) 300px; -> this is provide 2-> colums, 100px -> size, 300px extra add 3rd column
+grid-template-columns:1fr 2fr 1fr; /overflow it will stop and automatic size increase and decres with default width
+grid-template-columns:reapeat(2,minmax(200px, 1fr) 1fr;/ minmax function using to set default pixel and overflow control
+grid-template-rows:1fr; / it will same grid-template-columns 
+grid-template:20px 20px or 1fr 1fr / repeat(2fr, minmax(10px, 1fr) ; this using grid-template-rows and columns
+row-gap:10px; / it will provid 10px space in row
+column-gap:50px; /it will provid 50px space in coumns
+gap:30px; / row and colums also same space provide
+justify-items:center, start, end; 
+align-items:center, start ,end; box inside all works
+place-items:center start; align-items and justify-items combine to create this -> 1.first align-items , 2.second justify-item
+*********items-> each and every item should be working / div child all
+*********content-> div hole content should be working / right left 
+align-content:center,end, start  ->y axis
+justify-content:center,start,end, space-betwee -> x axis
+place-content:center start; if you use align-content and justify-content combininin using place-content
+grid-auto-flow:row, coloumn-> it will provide direction
+grid-auto-row:100px -> this row size
+grid-auto-column:100px -> this is column size
+grid-template-areas:'head head head';create before layout and then it will easy to create web pages
+
+         Grid items
+ grid-column-start:1;  span colums or merge column
+ grid-column-end:4;  we use number or span end ku example : -> grid-column-end:span 3; ->it will 3 box merge 
+ grid-column:1 / span 3; or 1 / 4 ; we can use grid-column-start and end use at the same time
+ grid-row-start, grid-row-end, grid-row:1 / span 2 ; we can use which purpose it is used to span the rows
+ justify-self:center, start,end ; x axis which means -> horizonter it will be work
+ align-self:center, start, end; y axis which means -> verical it will be work
+ place-self:center start; /1.align-self 2.justify-self combine two properties
+ grid-area:head;  -> once create layout then after quickly it will access and create web pages
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+words learn
+     more information get quikly 
+     root words verry important
+     biograph    graph->write   bio->self    cosmo->universe.
+    chron -> time ist-> profession tell this   cle->small  a->without   tro->nutrotion  bell-> war
+    
+    1.axford university dictionary -> 1,70000
+    2.1000  ->75% spoken english
+    3.pareto principle 80/20 
+    
+    why verbs?
+    
+       knemonic 
+       most used words
+       verbs
+       root words
+       10,000 to 15,000 words
+       
+       words -> nouns -> verbs
+       1.sentence initiators  _  i enjoy, i always use, -> i spend time, walking, in the park
+       2.quesion initiators  _ is there , do you -> do you work near by?, how do you -> how do you find the library? 
+       what is your-> what is your favorites food?
+       
+       5 to 7 root words learn per day -> vor, fer, chron, graph,
+       example connector words 6
+       
+       fluency root words
+       
+       20% hear
+       30% eye
+       70% speak
+       90% do
+       
+       thinkfic.com
+       fluencyjet.com
+sentence learn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

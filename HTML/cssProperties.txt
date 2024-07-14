@@ -1,0 +1,86 @@
+
+Layout and Box Model:
+display
+width / height
+margin / padding
+border / border-radius
+box-sizing
+float
+clear
+position
+top / right / bottom / left
+z-index
+Typography:
+font-family
+font-size
+font-weight
+font-style
+line-height
+letter-spacing
+text-align
+color
+text-decoration
+Colors and Backgrounds:
+background-color
+background-image
+color
+opacity
+box-shadow
+border-color
+Flexbox and Grid:
+flex
+flex-direction
+justify-content
+align-items
+grid-template-columns
+grid-template-rows
+grid-gap
+Transforms and Animations:
+transform
+transition
+animation  / animation-duration /animation-timing-function / animation-name
+Responsive Design:
+media queries
+@media
+Lists and Tables:
+list-style-type
+list-style-image
+table-layout
+border-collapse
+Forms:
+input styling (e.g., font-size, padding, border)
+button styling (e.g., background-color, color, border, padding)
+Miscellaneous:
+cursor
+pointer-events
+user-select
+overflow
+outline
+content
+
+
+
+
+
+
+
+
+
+
+
+
+css ->tips
+--------
+img get website -> https://source.unsplash.com/220x220/?perfume?1  /-> https://source.unsplash.com/random/220x220/?perfume?1
+google fonts  ->https://fonts.google.com/
+host website ->necessities.com
+color -> colors pick finder app
+shadow -> https://getcssscan.com/css-box-shadow-examples
+
+
+
+
+
+
+
+

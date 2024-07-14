@@ -1,0 +1,64 @@
+         Bootstrap
+break points:576px / 768px / 992px / 1200px / 1400px
+container : container -> center the container bacsically width center small 576<width 100%
+container-fluid -> basically full width take this
+Grid systems: 
+row ->row row-cols-2,row row-cols-md-2 ->specific breakpoints set rows coloum, row-cols-auto, row-cols-md-auto
+col -> col-3, col-md-2,col-auto, col-md-auto
+vertically alignment in coloum: row align-items-sm-start,end,center / row align-items-sm-start align-items-md-end (top/bottom)
+vertically alignment in coloum self:col align-self-start,end,center,baseline,strech / col align-self-lg-start align-self-md-end / ->strech also provide full colum using in vertically like start to end
+Horizontal         (left and right)
+col justify-content-start,center,end,between,around,evenly / col justify-content-md-start,end,between,around
+order -> col order-1 /col order-md-2 /col order-md-2 order-3 (0-5values)
+ Margin
+1.m:4side(0-5)
+2.mt,mb,ms,me
+3.mx,my
+4.m-md-4  1rem =16px 0.2rem=4px
+5.p:4side(0-5)
+6.pt,pb,ps,pe,px,py.
+7.pt-md-3
+8.borde:col-2 p-3 m-2 text-center display-3-> display also working same in h1,h2
+9.border :(4side of border default 1px(1-5 values))
+10.border-2
+11.border(border in show 4side of )border-3(size in border) border-top-0(border none in top)
+12.border ,border-start, end,top,bottom,
+13.border-start-2(2mean px)
+14.border-primary,secondary,light,green,success,danger,info,dark,warning.
+15.border-opacity-75(75 original 10 least)
+16.border radius: rounded,rounded-top,bottom,start,end, /rounded-circle, rounded-pill(pill means tube mari width also increases )
+17.rounded-2(0-5border radius increase or decrease we also suggest using your own)
+              
+ text colors:text-primary,secondary,success,warning,danger,info,light,white,muted,  opacity ->text-opacity-75,25,50,10   -> opocite color using : text-bg-primary bg-primary(same bg color same text bg color)      
+ Background color  ->bg-primary,secondary,warning,info,dark,light,white,danger,success,body,transparent  /  -> bg-primary bg-gradient   / bg-opacity-75,50,25,10
+ bootstrap heading -> class="h1",h2,h3,h4,h5,h6(it is same functionality working in normal h1 to h6.
+ display-1(it is h1 to h6) display-1 is 5rem,display-4.5rem(it is basicaly .5rem decreasing)        
+ inline-text-element:  -> class="mark" it is same for html "highlights text"
+ Abbrevation :    ->   class="initialism" it is same for html "abbrevation" but it is slitly different like text size and dotted
+ Lead & text alignment   ->   class="lead" we are using lead in paragraph it font size and font-style change || text-start,end,center it is for text alignment   || text-sm-start, text-md-center responsively create 
+ List  : -> class = "list-unstyled" it is remove for bullet symbole  // we have using class="list-inline-item" it is for menu bar like flex behavior working
+ text Decoration & font weight  : -> text-decoration-underline, text-decoration-line-through, text-decoration-none -> href link underline remove  / fw-bold  -> font weight bold
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         

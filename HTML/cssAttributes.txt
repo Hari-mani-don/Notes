@@ -1,0 +1,60 @@
+1.lang
+2.charset
+3.title
+4.name
+5.rel
+6.type,-> color, month,week,search,file,text,time,radio,range,number,checkbox,password,date,date-time 
+ for,  hecked, required, title, pattern, min, max, disabled, autofocus
+7.href
+8.target
+9.content
+10.initial-scale
+11.class
+12.id
+13.download
+14.alt, controls, behavior, scrollamount, scrolldelay, loop, muted, autoplay, 
+15.width
+16.height
+17.loading
+18.usemap
+19.shape
+20.coords
+21.orderlist: reversed, start, type
+22.table -> border, cellpadding, cellspacing, rowspan
+23.forms -> action, method, enctype, autocomplete, novalidate
+24.aria-labelledby, aria-describedby, aria-hidden, aria-live
+25.pattern, minlength, maxlength, max, min
+26.aria-haspopup, aria-owns, aria-controls, aria-pressed, aria-selected
+27.aria-disabled
+28.button -> submit,reset,button
+29.
+30.
+java script attributes
+
+1.onclick
+2.onload
+3.onmouseover
+4.onunload
+5.onerror
+6.onresize
+7.onafterprint
+8.onhashchange
+9.onmouseout
+10.onchange
+11.onsubmit
+12.onkeydown, onkeyup, onkeypress
+13.onfocus, onblur
+14.onscroll
+15.oncontextmenu
+16.onmouseenter, onmouseleave
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+
