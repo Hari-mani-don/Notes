@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="73" master_id="0" name="Other Event" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720271383" ts_lastsave="1720271403">
+    <rich_text>1.error
+2.contextmenu
+3.focusin
+4.focusout</rich_text>
+  </node>
+</cherrytree>

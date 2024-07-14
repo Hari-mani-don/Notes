@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="51" master_id="0" name="Database Table" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718751443" ts_lastsave="1718751632">
+    <rich_text>DataBase Table
+==========
+
+			• </rich_text>
+    <rich_text weight="heavy">Users</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Roles</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Products</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Inventory</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Orders</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">OrderItems</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Shipments</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">ShipmentTracking</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Invoices</rich_text>
+    <rich_text>
+			• </rich_text>
+    <rich_text weight="heavy">Payments</rich_text>
+    <rich_text>
+
+
+
+</rich_text>
+    <rich_text scale="h3">Users</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">user_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">username</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+3. </rich_text>
+    <rich_text family="monospace">password</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+4. </rich_text>
+    <rich_text family="monospace">email</rich_text>
+    <rich_text> - VARCHAR(100), Not Null
+5. </rich_text>
+    <rich_text family="monospace">role_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Roles(role_id)</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">Roles</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">role_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">role_name</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+
+</rich_text>
+    <rich_text scale="h3">Products</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">product_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">name</rich_text>
+    <rich_text> - VARCHAR(100), Not Null
+3. </rich_text>
+    <rich_text family="monospace">description</rich_text>
+    <rich_text> - TEXT
+4. </rich_text>
+    <rich_text family="monospace">price</rich_text>
+    <rich_text> - DECIMAL(10, 2), Not Null
+5. </rich_text>
+    <rich_text family="monospace">sku</rich_text>
+    <rich_text> - VARCHAR(50), Unique, Not Null
+
+</rich_text>
+    <rich_text scale="h3">Inventory</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">inventory_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">product_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Products(product_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">quantity</rich_text>
+    <rich_text> - INT, Not Null
+4. </rich_text>
+    <rich_text family="monospace">location</rich_text>
+    <rich_text> - VARCHAR(100), Not Null
+5. </rich_text>
+    <rich_text family="monospace">last_updated</rich_text>
+    <rich_text> - DATETIME, Not Null
+
+</rich_text>
+    <rich_text scale="h3">Orders</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">order_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">user_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Users(user_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">order_date</rich_text>
+    <rich_text> - DATETIME, Not Null
+4. </rich_text>
+    <rich_text family="monospace">status</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+5. </rich_text>
+    <rich_text family="monospace">total_amount</rich_text>
+    <rich_text> - DECIMAL(10, 2), Not Null
+
+</rich_text>
+    <rich_text scale="h3">OrderItems</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">order_item_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">order_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Orders(order_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">product_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Products(product_id)</rich_text>
+    <rich_text>
+4. </rich_text>
+    <rich_text family="monospace">quantity</rich_text>
+    <rich_text> - INT, Not Null
+5. </rich_text>
+    <rich_text family="monospace">price</rich_text>
+    <rich_text> - DECIMAL(10, 2), Not Null
+
+</rich_text>
+    <rich_text scale="h3">Shipments</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">shipment_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">order_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Orders(order_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">shipment_date</rich_text>
+    <rich_text> - DATETIME
+4. </rich_text>
+    <rich_text family="monospace">delivery_date</rich_text>
+    <rich_text> - DATETIME
+5. </rich_text>
+    <rich_text family="monospace">status</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+6. </rich_text>
+    <rich_text family="monospace">carrier</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+7. </rich_text>
+    <rich_text family="monospace">tracking_number</rich_text>
+    <rich_text> - VARCHAR(50), Unique, Not Null
+
+</rich_text>
+    <rich_text scale="h3">ShipmentTracking</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">tracking_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">shipment_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Shipments(shipment_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">location</rich_text>
+    <rich_text> - VARCHAR(100), Not Null
+4. </rich_text>
+    <rich_text family="monospace">status</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+5. </rich_text>
+    <rich_text family="monospace">timestamp</rich_text>
+    <rich_text> - DATETIME, Not Null
+
+</rich_text>
+    <rich_text scale="h3">Invoices</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">invoice_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">order_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Orders(order_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">amount</rich_text>
+    <rich_text> - DECIMAL(10, 2), Not Null
+4. </rich_text>
+    <rich_text family="monospace">due_date</rich_text>
+    <rich_text> - DATETIME, Not Null
+5. </rich_text>
+    <rich_text family="monospace">status</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+6. </rich_text>
+    <rich_text family="monospace">issued_date</rich_text>
+    <rich_text> - DATETIME, Not Null
+
+</rich_text>
+    <rich_text scale="h3">Payments</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Columns:</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text family="monospace">payment_id</rich_text>
+    <rich_text> - INT, Primary Key
+2. </rich_text>
+    <rich_text family="monospace">invoice_id</rich_text>
+    <rich_text> - INT, Foreign Key referencing </rich_text>
+    <rich_text family="monospace">Invoices(invoice_id)</rich_text>
+    <rich_text>
+3. </rich_text>
+    <rich_text family="monospace">amount</rich_text>
+    <rich_text> - DECIMAL(10, 2), Not Null
+4. </rich_text>
+    <rich_text family="monospace">payment_date</rich_text>
+    <rich_text> - DATETIME, Not Null
+5. </rich_text>
+    <rich_text family="monospace">payment_method</rich_text>
+    <rich_text> - VARCHAR(50), Not Null
+6. </rich_text>
+    <rich_text family="monospace">confirmation_number</rich_text>
+    <rich_text> - VARCHAR(50), Unique, Not Null
+
+
+
+
+
+
+
+
+
+CREATE TABLE Users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    role_id INT,
+    FOREIGN KEY (role_id) REFERENCES Roles(role_id)
+);
+
+CREATE TABLE Roles (
+    role_id INT PRIMARY KEY,
+    role_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Products (
+    product_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL,
+    sku VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE Inventory (
+    inventory_id INT PRIMARY KEY,
+    product_id INT,
+    quantity INT NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    last_updated DATETIME NOT NULL,
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    user_id INT,
+    order_date DATETIME NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    total_amount DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+CREATE TABLE OrderItems (
+    order_item_id INT PRIMARY KEY,
+    order_id INT,
+    product_id INT,
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+CREATE TABLE Shipments (
+    shipment_id INT PRIMARY KEY,
+    order_id INT,
+    shipment_date DATETIME,
+    delivery_date DATETIME,
+    status VARCHAR(50) NOT NULL,
+    carrier VARCHAR(50) NOT NULL,
+    tracking_number VARCHAR(50) UNIQUE NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+);
+
+CREATE TABLE ShipmentTracking (
+    tracking_id INT PRIMARY KEY,
+    shipment_id INT,
+    location VARCHAR(100) NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    timestamp DATETIME NOT NULL,
+    FOREIGN KEY (shipment_id) REFERENCES Shipments(shipment_id)
+);
+
+CREATE TABLE Invoices (
+    invoice_id INT PRIMARY KEY,
+    order_id INT,
+    amount DECIMAL(10, 2) NOT NULL,
+    due_date DATETIME NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    issued_date DATETIME NOT NULL,
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+);
+
+CREATE TABLE Payments (
+    payment_id INT PRIMARY KEY,
+    invoice_id INT,
+    amount DECIMAL(10, 2) NOT NULL,
+    payment_date DATETIME NOT NULL,
+    payment_method VARCHAR(50) NOT NULL,
+    confirmation_number VARCHAR(50) UNIQUE NOT NULL,
+    FOREIGN KEY (invoice_id) REFERENCES Invoices(invoice_id)
+);
+</rich_text>
+  </node>
+</cherrytree>

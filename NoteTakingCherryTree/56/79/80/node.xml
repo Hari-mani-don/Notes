@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="80" master_id="0" name="Cross-cutting concerns" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720399164" ts_lastsave="1720430730">
+    <rich_text>1. </rich_text>
+    <rich_text weight="heavy">Cross-Cutting Concerns</rich_text>
+    <rich_text>
+		These are functionalities that affect multiple parts of an application. Examples include logging, security, and transaction management.
+		</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text>: Imagine you want to log every method call in your application. Without AOP, you’d need to add logging code to every method, leading to scattered and duplicated logging code.
+		
+</rich_text>
+    <rich_text weight="heavy">2.Aspect</rich_text>
+    <rich_text>
+	An aspect is a module that encapsulates a cross-cutting concern. It contains the code (advice) that should be applied at certain points in the program.
+	</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text>: A logging aspect would encapsulate the logging logic, keeping it separate from the core business logic.
+	
+	</rich_text>
+    <rich_text weight="heavy">@Aspect</rich_text>
+    <rich_text>
+	public class LoggingAspect {
+		</rich_text>
+    <rich_text foreground="#ff0000">@Before("execution(* com.example.service.*.*(..))")</rich_text>
+    <rich_text>
+		public void logBefore() {
+		    System.out.println("Logging before method execution");
+		}
+	}		
+		
+3.</rich_text>
+    <rich_text weight="heavy">Join Point</rich_text>
+    <rich_text>
+  The primary purpose of using </rich_text>
+    <rich_text family="monospace">JoinPoint</rich_text>
+    <rich_text> in Aspect-Oriented Programming (AOP) is to access information about the method or execution point where the advice is being applied. Here are the main purposes of using </rich_text>
+    <rich_text family="monospace">JoinPoint</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text foreground="#ff0000">Log Information, perform security check,
+  monitoring and audioting.</rich_text>
+    <rich_text>
+	 whe we use Aspect in choose like method, field, constructor etc..
+	</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text>: A join point could be any method execution within a particular package.
+	
+	@Aspect
+	public class LoggingAspect {
+
+		@Before("execution(* com.example.service.*.*(..))")
+		public void logBefore(JoinPoint joinPoint) {
+		    System.out.println("Executing method: " +</rich_text>
+    <rich_text foreground="#ff0000"> joinPoint.getSignature().getName()</rich_text>
+    <rich_text>);
+		    System.out.println("Arguments: " + Arrays.toString(joinPoint.getArgs()));
+		    System.out.println("Target class: " + joinPoint.getTarget().getClass().getName());
+		}
+	}
+
+	
+</rich_text>
+    <rich_text weight="heavy">4.Advice</rich_text>
+    <rich_text>
+	Code that is executed at a join point. There are several types of advice: before, after, and around.
+	</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text>: An advice can log a message </rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">before</rich_text>
+    <rich_text> a method execution or </rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">after</rich_text>
+    <rich_text> a method.
+	
+	@Before("execution(* com.example.service.*.*(..))")
+	public void logBefore() {
+		System.out.println("Logging before method execution");
+	}
+	
+</rich_text>
+    <rich_text weight="heavy">5.Pointcut</rich_text>
+    <rich_text>
+	A pointcut is an </rich_text>
+    <rich_text weight="heavy">expression</rich_text>
+    <rich_text> that matches join points. It defines where (in which methods or classes) the </rich_text>
+    <rich_text weight="heavy">advice should be applied</rich_text>
+    <rich_text>. it will apply join points wher we use in that place it will applied advice.
+	</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text>: A pointcut could match all method executions in a certain package.
+		
+		@Before("execution(* com.example.service.*.*(..))")
+	public void logBefore() {
+		System.out.println("Logging before method execution");
+	}
+
+</rich_text>
+    <rich_text weight="heavy">6.Weaving</rich_text>
+    <rich_text>
+	The process of applying aspects to the target objects to create advised objects. Weaving can occur at compile-time, load-time, or runtime.
+	</rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text>: The logging aspect is woven into the specified methods, </rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">so the logging code runs automatically before these methods</rich_text>
+    <rich_text>. execute the above 5 
+		
+		public class ExampleService {
+		public void performTask() {
+		    System.out.println("Performing task");
+		}
+	}</rich_text>
+  </node>
+</cherrytree>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="10" master_id="0" name="ServiceClass" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="#613583" ts_creation="1717247355" ts_lastsave="1717247447">
+    <rich_text justification="center" scale="h2">Service
+=============</rich_text>
+    <rich_text scale="h2">
+	SOLID principle
+	========================
+	
+	S - single responsiblitiy that is class have only one functionality.
+	O - Open / Closed principle that is existing modules add new functioality that is add new class and existing module without affect 
+		any functionality. 
+	L - liskov priciple that is superclass method implement class compolsory override and also override method use otherwise method not 
+		using it define another interface.
+	I - Interface segregation that is every interface have single method or multiple that functionality related group of method.  
+	D - dependency injection which means loose coupling
+</rich_text>
+  </node>
+</cherrytree>

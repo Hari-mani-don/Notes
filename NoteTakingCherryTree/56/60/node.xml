@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="60" master_id="0" name="Spring Core Container" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="220" is_bold="0" foreground="" ts_creation="1720204381" ts_lastsave="1720790473">
+    <rich_text>Core Container:
+------------------------
+	</rich_text>
+    <rich_text weight="heavy">Core</rich_text>
+    <rich_text>: It is a basic building blocks for the spring container. it's fundamental to how spring framework works.
+	</rich_text>
+    <rich_text weight="heavy">Container</rich_text>
+    <rich_text>: It is holds and manage beans and their dependencies. it is like a container to hold and organize the items.
+	
+	1.</rich_text>
+    <rich_text weight="heavy">IOC container:</rich_text>
+    <rich_text> The IOC container is a central part of the spring framework.
+	It manages lifecycle and configuration of application Objects(bean) like creation, configuration, and management of java object(bean).
+	we don't have to manually manage the </rich_text>
+    <rich_text weight="heavy">lifecycle and dependencies</rich_text>
+    <rich_text> of objects and also it is used </rich_text>
+    <rich_text weight="heavy">dependecy injection</rich_text>
+    <rich_text> design pattern.
+	
+	ApplicationContext 
+	 context = new AnnotationConfigApplicationContext(AppConfig.class);
+	</rich_text>
+    <rich_text weight="heavy">AnnotationConfigApplicationContext</rich_text>
+    <rich_text> it is create IOC container and manage the object.
+	</rich_text>
+    <rich_text weight="heavy">AppConfig.class</rich_text>
+    <rich_text> it is scanning the class and create the Object @component &amp; @Bean
+	
+	2.</rich_text>
+    <rich_text weight="heavy">Dependency Injection(DI):</rich_text>
+    <rich_text> Dependency injection is a design pattern it is used by IOC container to inject object dependecy at runtime by using @Autowired annotaion. DI makes easier to manage dependencies, and also promote loose coupling and enhance testability.
+	
+	Life cycle of bean
+	-------------------------
+									</rich_text>
+    <rich_text weight="heavy">  Start
+									|
+						 Load Bean Definitions
+						 /         |         \
+						From proerties file(xml) From Java  From Annotations
+									|
+						   Instantiate Beans
+									|
+						  Inject Dependencies
+									|
+						Invoke Aware Interfaces -&gt; bean access from ioc container
+									|
+						 BeanPostProcessor Pre-Initialization
+									|
+							 Initialization -&gt; init() to overrid and provide custom logic 
+									|
+						 BeanPostProcessor Post-Initialization
+									|
+							  Use Bean in Application
+									|
+							   Destruction
+									|
+								  End</rich_text>
+    <rich_text>
+</rich_text>
+  </node>
+</cherrytree>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="65" master_id="0" name="Event Handling" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720271255" ts_lastsave="1720277722">
+    <rich_text weight="heavy">what</rich_text>
+    <rich_text> is event handling?
+	Event handling in javascript the process of actions that occur in browser such as user click a button, move to mouse, press key . theese actions are called event handling.
+</rich_text>
+    <rich_text weight="heavy">why</rich_text>
+    <rich_text> should we go?
+	   To intractive user and show content dynamically.
+	
+</rich_text>
+    <rich_text weight="heavy">How</rich_text>
+    <rich_text> to implemt?
+	&lt;button id="myButton"&gt;Click Me!&lt;/button&gt;
+	
+	document.getElementById("myButton").addEventListener("click", function() {
+		alert("Button was clicked!");
+	});
+
+</rich_text>
+    <rich_text weight="heavy">Advantage</rich_text>
+    <rich_text>
+	intractivity
+	dynamic content
+	user experience
+	customization and personalization
+	
+</rich_text>
+    <rich_text weight="heavy">DisAdvantage</rich_text>
+    <rich_text>
+		Overhead adding many eventlistener
+		complexity of code 
+		perform decrease
+		
+</rich_text>
+    <rich_text weight="heavy">Problme Resolution</rich_text>
+    <rich_text>
+		user intraction
+		real-time updates
+		asynchronization fetch data from database
+		control and cusomization
+	
+1.</rich_text>
+    <rich_text link="node 66" weight="heavy">Mouse Event</rich_text>
+    <rich_text>
+2.Keyboard Events
+3.Form Events
+4.window Events
+5.Drag Events
+6.Touch Events
+7.Media Events
+8.Other Events
+</rich_text>
+  </node>
+</cherrytree>

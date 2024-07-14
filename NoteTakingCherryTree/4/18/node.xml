@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="18" master_id="0" name="Java8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717276078" ts_lastsave="1720379255">
+    <rich_text justification="center" scale="h2">Java8</rich_text>
+    <rich_text>
+																										------------
+
+
+						Why Use These Return Types?
+						  </rich_text>
+    <rich_text weight="heavy">Entity</rich_text>
+    <rich_text>: Directly interact with the entity in the database. Suitable for straightforward CRUD operations.
+						  </rich_text>
+    <rich_text weight="heavy">Optional&lt;Entity&gt;</rich_text>
+    <rich_text>: Handle potential absence of data gracefully.
+						  </rich_text>
+    <rich_text weight="heavy">List&lt;Entity&gt;</rich_text>
+    <rich_text>: Retrieve multiple entities when you expect more than one result.
+						  </rich_text>
+    <rich_text weight="heavy">Page&lt;Entity&gt;</rich_text>
+    <rich_text>: Efficiently manage large datasets by breaking them into pages. Ideal for pagination.
+						  </rich_text>
+    <rich_text weight="heavy">Slice&lt;Entity&gt;</rich_text>
+    <rich_text>: Fetch portions of data without needing the total count. Good for scenarios like infinite scrolling.
+						  </rich_text>
+    <rich_text weight="heavy">Stream&lt;Entity&gt;</rich_text>
+    <rich_text>: Process large datasets in a memory-efficient way.
+						  </rich_text>
+    <rich_text weight="heavy">Collection&lt;Entity&gt;</rich_text>
+    <rich_text>: More generic than </rich_text>
+    <rich_text family="monospace">List</rich_text>
+    <rich_text>, but serves a similar purpose.
+						  </rich_text>
+    <rich_text weight="heavy">Set&lt;Entity&gt;</rich_text>
+    <rich_text>: Ensure uniqueness of results.
+						  </rich_text>
+    <rich_text weight="heavy">Entity Projection</rich_text>
+    <rich_text>: Optimize performance by retrieving only the necessary fields.
+</rich_text>
+    <rich_text scale="h2" weight="heavy">Entity</rich_text>
+    <rich_text scale="h2">
+=====		
+		-&gt; to handle on object for straighforward.					
+		
+</rich_text>
+    <rich_text scale="h2" weight="heavy">Optional&lt;Entity&gt;</rich_text>
+    <rich_text scale="h2">
+============
+		-&gt; to handle only one object that is object null or not . if it is null to avoid nullPointerException.	
+		
+		
+</rich_text>
+    <rich_text scale="h2" weight="heavy">Entity Projection</rich_text>
+    <rich_text scale="h2">: 
+============
+		-&gt; which table colum do you want that only we can get.
+		-&gt; Optimize performance by retrieving only the necessary fields.														</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h1">List</rich_text>
+    <rich_text>
+======
+</rich_text>
+    <rich_text scale="h2">		-&gt; To small datas search or read operation list is best.</rich_text>
+    <rich_text>
+		 
+</rich_text>
+    <rich_text scale="h2">Stream</rich_text>
+    <rich_text>
+=======
+</rich_text>
+    <rich_text scale="h3"> 	-&gt; To handle large datas searching or reading operation Stream is best.
+ 	-&gt; b'z stream  parllel processing to handle data that is simaultaenously (threads) processing multi-core process.</rich_text>
+    <rich_text>
+ 
+</rich_text>
+    <rich_text scale="h3" weight="heavy">Page&lt;Entity&gt;</rich_text>
+    <rich_text scale="h3">
+==========
+	-&gt; page interface provide no of product or vide show in page, size  ecommerce product show like amazon.
+	-&gt; it is develop by using hasNext(), hasPrevious() method to develop an interface.
+	-&gt; page 0 and size 10 that is 10 products load only in that particular page.
+	-&gt; total product and pages count it is handle and store . when you want you go for this.
+	
+</rich_text>
+    <rich_text scale="h3" weight="heavy">Slice&lt;Entity&gt;</rich_text>
+    <rich_text scale="h3">
+=========
+	-&gt; slice Interface provide infinite of datas loading .like instagram</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">	-&gt; it is also to develop by using hasNext() , hasPrevious .
+	-&gt; without need no of page and show no of datas that we use only for infinit of scrolling.
+
+</rich_text>
+    <rich_text scale="h3" weight="heavy">Entity Projection</rich_text>
+    <rich_text scale="h3">
+===========
+	-&gt; To retrive datas necessary fieds only. when ever you want we should use entity projection.
+			</rich_text>
+    <rich_text>
+	
+	
+	</rich_text>
+  </node>
+</cherrytree>

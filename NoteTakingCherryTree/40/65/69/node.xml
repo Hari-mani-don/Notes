@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="69" master_id="0" name="Window Event" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720271357" ts_lastsave="1720271583">
+    <rich_text>1.load
+2.unload
+3.resize
+4.scroll
+</rich_text>
+  </node>
+</cherrytree>

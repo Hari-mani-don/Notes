@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="40" master_id="0" name="JavaScript" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718484584" ts_lastsave="1720309516">
+    <rich_text>Introduction
+========
+  1. why javascript created
+   ==============
+   			-&gt;html , css only style purpose no intraction so that reason create javascript , first name live script after change js.
+   			-&gt;without js any website doesn't create . eventhough facebook, google
+   
+   2. javascript supports?
+                  ⇒ 	websites, webapp ,mobile apps, games, AI &amp; machine learning also.
+                 
+   3.  why js learn?
+     			-&gt; any front end compalsory js need;
+     
+    4.how javascript work?
+     -&gt; browser la mattum tha javascript execute engine available.
+     -&gt; laterly browser la irrunthu eduthu node la set pananga c++ la after that js demand anathu.
+     
+     5. browser console js work why?
+     	-&gt; by default js browser la only working.
+     	-&gt; console.log means , web la console la show 
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</rich_text>
+  </node>
+</cherrytree>

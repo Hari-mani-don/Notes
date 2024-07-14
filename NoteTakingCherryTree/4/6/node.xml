@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="6" master_id="0" name="AOP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="1" nosearch_ch="1" custom_icon_id="1" is_bold="1" foreground="#2ec27e" ts_creation="1716677382" ts_lastsave="1716678025">
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h2">programming paradigm means ?</rich_text>
+    <rich_text>
+  						
+  						</rich_text>
+    <rich_text scale="h3">Yes, that's right! A programming paradigm refers to the overall structure or approach to writing code. It includes the principles, concepts, and patterns that govern how you organize and design your programs. Each paradigm has its own set of rules and conventions for expressing the logic and structure of a program.</rich_text>
+    <rich_text>
+  
+  Example :
+  1. </rich_text>
+    <rich_text weight="heavy">Imperative Programming</rich_text>
+    <rich_text>: Focuses on describing a sequence of steps to be executed by the computer. It emphasizes changing program state through assignment statements.
+
+2. </rich_text>
+    <rich_text weight="heavy">Declarative Programming</rich_text>
+    <rich_text>: Focuses on describing what should be accomplished rather than how to accomplish it. Examples include functional programming and logic programming.
+
+3. </rich_text>
+    <rich_text weight="heavy">Functional Programming</rich_text>
+    <rich_text>: Focuses on treating computation as the evaluation of mathematical functions and avoids changing state and mutable data.
+
+4. </rich_text>
+    <rich_text weight="heavy">Object-Oriented Programming (OOP)</rich_text>
+    <rich_text>: Focuses on modeling real-world entities as objects that have attributes (fields) and behaviors (methods), and emphasizes encapsulation, inheritance, and polymorphism.
+
+5. </rich_text>
+    <rich_text weight="heavy">Procedural Programming</rich_text>
+    <rich_text>: Similar to imperative programming but emphasizes procedures or routines to be called rather than the sequence of steps.
+
+6. </rich_text>
+    <rich_text weight="heavy">Aspect-Oriented Programming (AOP)</rich_text>
+    <rich_text>: Focuses on modularizing cross-cutting concerns that cut across multiple parts of the application, such as logging, security, and transaction management.
+
+</rich_text>
+  </node>
+</cherrytree>

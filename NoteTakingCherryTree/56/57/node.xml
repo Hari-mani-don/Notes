@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="57" master_id="0" name="webapp &amp; webservice" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720193284" ts_lastsave="1720199601">
+    <rich_text weight="heavy">Web Application:
+-----------------------</rich_text>
+    <rich_text>
+	1.web application is a software application and it is runs on a web server and also it is  accessd  through a web browser over a network.
+	2.components:
+			frontend:user interface, usually developed using html,css,javascript
+			backend:the server-side logic is responsible for processing request, intracting with databse, and generating dynamic content.
+	3.Architecture:
+		web application follow client-side architecture. client is typically browser and server is nothing but powerfull computer that stores web application files, database and also logic.
+		request send -&gt; server process the request -&gt; return the response, from the server sends the request data like(images, html, json).
+		large scale web appls contains presentaion layer, business layer, databse layer.
+	4.Technologies
+		framework like spring boot for java , django for python help to develop web appliation quickly by providing  pre-build tool and structures.
+		Database intergration for web application like mysql, postsql
+		
+</rich_text>
+    <rich_text weight="heavy">Web Service:
+--------------------</rich_text>
+    <rich_text>
+	1.A web service is a type of software. and it is used to communicate machine-to-machine over a network. and also it provide </rich_text>
+    <rich_text link="webs https://chatgpt.com/c/4c783710-8031-4a68-abed-a826c727d727" background="#3584e4" foreground="#ffffff" weight="heavy">functonality</rich_text>
+    <rich_text> to other applications via standard web protocols.
+	2.</rich_text>
+    <rich_text weight="heavy">SOAP</rich_text>
+    <rich_text>(simple object Access protocol) : it produce data xml format and also HTTP &amp; SMTP for message transmission. 
+	3.</rich_text>
+    <rich_text weight="heavy">REST</rich_text>
+    <rich_text>(Representational state Transfer): Uses standard HTTP methods (GET,POST,PUT,DELETE) and data exchange for JSON/XML and also it is widely used.
+	4.two types : producer, consumer
+		</rich_text>
+    <rich_text weight="heavy">Producer</rich_text>
+    <rich_text> : this is like a shop that puts its a services on display. To publish our services web service and make its available for others use.
+		</rich_text>
+    <rich_text weight="heavy">Consumer:</rich_text>
+    <rich_text>this is like a customer shoping at the store. It uses the web service by sending requests and get response back.
+	5.</rich_text>
+    <rich_text weight="heavy">Advantages</rich_text>
+    <rich_text>: we can access service in diffrent platforms(windows,linux) and programming languages.they understand each others message. The services can manage many request without slowing down or crashing . they can handle lot of work efficiently.Service Can change and grow independently.If one service changes they won't affect any other service.	
+	6.</rich_text>
+    <rich_text weight="heavy">Development</rich_text>
+    <rich_text>: 
+		Implementation: Using framework like spring for SOAP or RESTful services using JAX-RS(Java Api for RESTfull web Services).
+		Documentation: swagger provides for clear documentaion for API end points and usage.
+		Security: implementing authentication and authorization security for our web services endpoints. (OAuth)
+		</rich_text>
+    <rich_text weight="heavy">Examples:</rich_text>
+    <rich_text> SOAP is used in enterprise system for complex transaction(banking).
+		REST is widely used in mobile application and modern web development.</rich_text>
+  </node>
+</cherrytree>

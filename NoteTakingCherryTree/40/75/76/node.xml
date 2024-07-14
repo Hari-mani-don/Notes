@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="76" master_id="0" name="window" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720311239" ts_lastsave="1720313017">
+    <rich_text>window inside dom and Bom available
+
+window.document instead of we can specify document.title
+Bom -&gt; browser object model
+
+nodejs full and full window based not document based
+
+dom and Bom parent window
+
+window.open("http"//google.com");
+window.close();
+window.moveT0(500,700);
+window.resizeTo(100,300);
+window.alert("hello");
+window.prompt("what is your name");
+window.print("it is print the window");
+console.log(console) ;</rich_text>
+  </node>
+</cherrytree>

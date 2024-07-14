@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="23" master_id="0" name="HttpStatusCode" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717368018" ts_lastsave="1717368638">
+    <rich_text justification="center">HttpStatus Code
+==========</rich_text>
+    <rich_text>
+
+
+
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+
+1xx Informational
+=============
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+2xx Success
+=========
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">3xx Redirection</rich_text>
+    <rich_text>
+===========
+
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+4xx Client Error
+=========
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+5xx Server Error
+==========
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <rich_text>
+
+example
+=====
+</rich_text>
+    <rich_text justification="center"></rich_text>
+    <encoded_png char_offset="30" justification="center" link="" sha256sum="a80e53b7950ea357c82df5d946d77b1c9b9a040163349df5f14b8b69779d5bde"/>
+    <encoded_png char_offset="65" justification="center" link="" sha256sum="a80e53b7950ea357c82df5d946d77b1c9b9a040163349df5f14b8b69779d5bde"/>
+    <encoded_png char_offset="89" justification="center" link="" sha256sum="e4e5c50a2260dd1e7bb38d236963b5c4f9dd07d0193178841cb087a9c85cbbc2"/>
+    <encoded_png char_offset="121" justification="center" link="" sha256sum="9d2bf4b95add865f0e638850e41f82aee6cbd26456fca2b42292af3e4af6c453"/>
+    <encoded_png char_offset="150" justification="center" link="" sha256sum="a1ed4c5e5b1257f75afd665da13fb19135eb85bb74d6f6a2a2ebb22e01d6e383"/>
+    <encoded_png char_offset="152" justification="center" link="" sha256sum="a11db90f781d938ba50fede7bbfa8e017cab0ba4ac8f1ba65c44026eba2df621"/>
+    <encoded_png char_offset="182" justification="center" link="" sha256sum="03a1d106a84b61f16b80ec4005e467c48ad5296f57c8fae0b8b6bd5167095006"/>
+    <encoded_png char_offset="184" justification="center" link="" sha256sum="6c7d4c0707f5e0c0c3813ad99a5acabbca1f11c9586b804299112f79f4a03eba"/>
+    <encoded_png char_offset="201" justification="center" link="" sha256sum="dedb3e4eb2068c3d92f0c702eedfda527d1ac1800312cc05b9661e5687f2ef63"/>
+  </node>
+</cherrytree>

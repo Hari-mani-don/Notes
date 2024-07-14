@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="78" master_id="0" name="document" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720313017" ts_lastsave="1720314477">
+    <rich_text>document.cookie
+document.URL
+document.all -&gt; all html tag used in that web page
+document.forms
+document.links -&gt; how many linkes used in that web page
+document.body
+document.images
+dir() -&gt; directory find
+document.write()
+document.writeln()
+
+developer.mozilla.org // Dom documentaion
+</rich_text>
+  </node>
+</cherrytree>

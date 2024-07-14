@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="58" master_id="0" name="web Application vs Enterprise application" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="28" is_bold="0" foreground="" ts_creation="1720202803" ts_lastsave="1720203184">
+    <rich_text>
+Web application is used for any one like ecommerce.
+Enterprice application is used for only within organization people and also it is mainly used for bussiness management. </rich_text>
+  </node>
+</cherrytree>

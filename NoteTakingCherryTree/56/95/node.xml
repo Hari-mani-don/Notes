@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="95" master_id="0" name="Spring Boot" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="220" is_bold="0" foreground="" ts_creation="1720726262" ts_lastsave="1720870605">
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">What is Spring Boot?</rich_text>
+    <rich_text>
+  Spring Boot is a framework built on top of the Spring Framework. It simplifies the development of stand-alone, production-grade Spring-based applications by providing default configurations and a variety of tools to streamline the process.
+
+</rich_text>
+    <rich_text scale="h3">Why is it Important?</rich_text>
+    <rich_text>
+Spring Boot is important because it simplifies the setup and development of new Spring applications. It reduces the amount of boilerplate code, configuration, and setup needed to start a new project, making it quicker and easier to get applications up and running.
+
+</rich_text>
+    <rich_text scale="h3">How Does it Work?</rich_text>
+    <rich_text>
+Spring Boot works by providing:
+• </rich_text>
+    <rich_text weight="heavy">Auto-Configuration:</rich_text>
+    <rich_text> Automatically configures your Spring application based on the dependencies you have added. For example, if you include the spring-boot-starter-web dependency, it will automatically set up a web server.
+• </rich_text>
+    <rich_text weight="heavy">Embedded Servers:</rich_text>
+    <rich_text> Includes embedded servers like Tomcat or Jetty, so you can run your applications directly without needing a separate server setup.
+• </rich_text>
+    <rich_text weight="heavy">Spring Boot Starters:</rich_text>
+    <rich_text> Pre-configured sets of dependencies for different use cases (e.g., web, data access) that simplify the addition of required libraries.
+• </rich_text>
+    <rich_text weight="heavy">Spring Boot Actuator:</rich_text>
+    <rich_text> Adds monitoring and management capabilities to your application.
+• </rich_text>
+    <rich_text weight="heavy">Spring Boot CLI:</rich_text>
+    <rich_text> Command-line tool to quickly bootstrap new Spring applications.
+
+
+</rich_text>
+    <rich_text scale="h3">Advantages</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Quick Setup:</rich_text>
+    <rich_text> Reduces setup and configuration time.
+• </rich_text>
+    <rich_text weight="heavy">Embedded Servers:</rich_text>
+    <rich_text> No need for external servers.
+• </rich_text>
+    <rich_text weight="heavy">Simplified Dependency Management:</rich_text>
+    <rich_text> Spring Boot Starters make it easy to add dependencies.
+• </rich_text>
+    <rich_text weight="heavy">Production-Ready Features:</rich_text>
+    <rich_text> Actuator provides metrics, health checks, and more.
+• </rich_text>
+    <rich_text weight="heavy">Scalability:</rich_text>
+    <rich_text> Built on top of the robust Spring Framework.
+
+
+</rich_text>
+    <rich_text scale="h3">Disadvantages</rich_text>
+    <rich_text>
+ </rich_text>
+    <rich_text weight="heavy">Complexity for Simple Projects:</rich_text>
+    <rich_text> Might be overkill for very simple applications.
+ </rich_text>
+    <rich_text weight="heavy">Hidden Magic:</rich_text>
+    <rich_text> Auto-configuration might sometimes make it harder to understand what's going on under the hood.
+
+
+</rich_text>
+    <rich_text scale="h3">Problems and Resolutions</rich_text>
+    <rich_text>
+ </rich_text>
+    <rich_text weight="heavy">Over-Auto-Configuration:</rich_text>
+    <rich_text> If auto-configuration does not fit your needs, you can exclude certain configurations manually.javaCopy code
+
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+
+
+
+ </rich_text>
+    <rich_text weight="heavy">Performance Issues:</rich_text>
+    <rich_text> Can be mitigated by careful profiling and tuning.
+ </rich_text>
+    <rich_text weight="heavy">Learning Curve:</rich_text>
+    <rich_text> The initial learning curve can be steep, but comprehensive documentation and community support can help.
+
+</rich_text>
+  </node>
+</cherrytree>

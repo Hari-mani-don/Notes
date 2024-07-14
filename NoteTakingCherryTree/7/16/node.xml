@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="16" master_id="0" name="Java Doc" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="#613583" ts_creation="1717248669" ts_lastsave="1717253061">
+    <rich_text justification="center" scale="h2">java doc
+=========</rich_text>
+    <rich_text scale="h2">
+	class:
+	========
+	write class name same as functionality name may need not write doc. 
+	
+	methods
+	==========
+	write method name same as action name however write complex logic place may write doc.</rich_text>
+    <rich_text>
+	
+	
+	
+</rich_text>
+    <rich_text justification="center">	      </rich_text>
+    <rich_text>
+	
+	
+</rich_text>
+    <rich_text scale="h1">	Common Comments</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h1">	-------------------------------</rich_text>
+    <rich_text>
+																	
+																	
+									      </rich_text>
+    <encoded_png char_offset="225" justification="center" link="" sha256sum="e75c343b2dfa28a5e777f813f022aa84cf5e3b3e3afee1dcb60488a8a11eabfd"/>
+    <encoded_png char_offset="332" justification="left" link="" sha256sum="d79767f881b35250b8a9d794342ea8a5ef3fd81dbf9a419e986db2fba0944bc3"/>
+  </node>
+</cherrytree>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="39" master_id="0" name="SelfIntro" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717795430" ts_lastsave="1720715069">
+    <rich_text>  				Self Intro
+  				----------
+  		
+  		I am selvamani. I have completed my bachelor of computer application from shanmuga college. I am having around 2 years of experience in this IT field.
+  	
+  		Currently I am working in sprire systems as a java developer. I am working in the project titled “Logistic Management Systems”  	the project is based on goods Management , Purchase management, sales Management, Invoice and payment management etc...
+  
+  My role is to develop the application based on user requirement as well as I involve in Bugs fixing also.
+  	
+  Technologies used in this project are  Java,Java  8,Spring framework,Spring Boot, spring Data  JPA, Spring MVC, MySQL, Git, Github, RESTful  Web  services,  Maven,  and I used IDEs named “eclipse”, “sts".
+  
+  My Over all skills sets are Java, java 8, spring framework, spring boot,spring AOP, spring MVC, Spring Data jpa, spring security, JDBC,Mysql , Html ,css, javascript, servlet , jsp.
+  
+  Thank you that's from my side .</rich_text>
+  </node>
+</cherrytree>

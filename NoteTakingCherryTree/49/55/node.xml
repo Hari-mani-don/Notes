@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="55" master_id="0" name="Database Table" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718753332" ts_lastsave="1719282824">
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+</rich_text>
+    <encoded_png char_offset="0" justification="left" link="" sha256sum="1f3e6f66ed05c3584791858bb8e63024aa6c999d58cfde679245d98f6c627a1b"/>
+    <encoded_png char_offset="2" justification="left" link="" sha256sum="6c72ef1b5598c3b31d14cfb7322bb0b2839463eca0c50720cad70b74af187932"/>
+    <encoded_png char_offset="4" justification="left" link="" sha256sum="db53418dc7101c3a4737526c88699ef2eabd63d8969424b6ec9dc616814adfd8"/>
+    <encoded_png char_offset="6" justification="left" link="" sha256sum="645aab4d1ded81c47bb39739a4aedcbf617e483135f524b740ef85428469e142"/>
+    <encoded_png char_offset="8" justification="left" link="" sha256sum="d7ae115dcefce420744ec249b4c8fe886e882b7468221a9968fb07e415ce28d2"/>
+    <encoded_png char_offset="10" justification="left" link="" sha256sum="d7ae115dcefce420744ec249b4c8fe886e882b7468221a9968fb07e415ce28d2"/>
+    <encoded_png char_offset="12" justification="left" link="" sha256sum="4d55eae618f02ff1f4088041f3393215ce0edb167c635794a01250ced1efdc3e"/>
+  </node>
+</cherrytree>

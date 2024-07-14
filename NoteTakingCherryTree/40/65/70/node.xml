@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="70" master_id="0" name="Drag Event" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720271363" ts_lastsave="1720271593">
+    <rich_text>1.dragstart
+2.drag
+3.dragover
+4.drop
+5.dragend</rich_text>
+  </node>
+</cherrytree>

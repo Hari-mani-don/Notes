@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="52" master_id="0" name="Class &amp; methods" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718752242" ts_lastsave="1720555345">
+    <rich_text>
+  User Side
+
+1.  User Management 
+     - UserController
+     - createUser
+     - authenticateUser
+     - logout
+
+2.  Order Management 
+     - OrderController
+     - createOrder
+     - addOrderItem
+     - getOrder
+
+3.  Shipment Management 
+     - ShipmentController
+     - getShipment
+     - getTrackingInfo
+
+  Admin Side
+
+1.  User Management 
+   - UserController
+     - assignRole
+
+2.  Inventory Management 
+   - InventoryController
+     - addProduct
+     - updateInventory
+     - getProduct
+
+3.  Shipment Management 
+   - ShipmentController
+     - createShipment
+     - updateShipmentStatus
+
+4.  Tracking and Monitoring 
+   - TrackingController
+     - logTrackingInfo
+
+5.  Billing and Invoicing 
+   - BillingController
+     - createInvoice
+     - processPayment
+     - getInvoice
+
+
+
+
+
+
+
+
+
+
+  User-Side Modules (3 modules)
+
+1.  User Management 
+   - Handles user authentication, creation, and basic profile management.
+
+2.  Order Management 
+   - Allows users to create orders, add items to orders, and view their order history.
+
+3.  Shipment Management 
+   - Provides basic tracking information for shipments related to the user's orders.
+
+  Admin-Side Modules (5 modules)
+
+1.  User Management 
+   - Admins can manage users, assign roles, and potentially deactivate or delete user accounts.
+
+2.  Inventory Management 
+   - Admins can add, update, and manage products in the inventory.
+
+3.  Order Management 
+   - Admins have additional capabilities to view and manage orders, such as editing or canceling orders.
+
+4.  Shipment Management 
+   - Admins can create shipments, update shipment statuses, and view detailed tracking information.
+
+5.  Billing and Invoicing 
+   - Admins can generate invoices, process payments, and manage billing-related tasks.
+
+  Considerations for Production-Level Readiness
+
+1.  Scalability : Ensure that the architecture and design can scale as the volume of users, orders, and transactions increases.
+
+2.  Security : Implement robust security measures to protect user data, transactions, and system integrity.
+
+3.  Performance : Optimize performance to handle concurrent user interactions, especially during peak times.
+
+4.  Error Handling and Logging : Implement thorough error handling and logging mechanisms to facilitate troubleshooting and maintenance.
+
+5.  Compliance : Ensure compliance with relevant regulations and standards, such as data protection laws (e.g., GDPR, CCPA).
+
+6.  Testing : Conduct comprehensive testing, including unit testing, integration testing, and user acceptance testing, to ensure reliability and functionality.
+
+  Additional Classes or Modules
+
+Depending on the specific requirements and complexity of the logistics project, you may need to consider additional classes or modules, such as:
+
+-  Customer Service : Handling customer inquiries, support tickets, and feedback.
+  
+-  Analytics and Reporting : Generating reports on sales, inventory levels, shipment statuses, etc., to support decision-making.
+
+-  Integration with External Systems : Integration with ERP systems, shipping carriers, payment gateways, etc., to streamline operations.
+
+-  Notifications and Alerts : Implementing notifications for order updates, shipment tracking, payment reminders, etc.
+
+-  Localization : Support for multiple languages, currencies, and regional settings if operating internationally.
+
+</rich_text>
+  </node>
+</cherrytree>

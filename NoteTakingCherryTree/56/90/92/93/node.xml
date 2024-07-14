@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="93" master_id="0" name="anotations" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720603362" ts_lastsave="1720608751">
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">What is </rich_text>
+    <rich_text>@</rich_text>
+    <rich_text weight="heavy">Controller</rich_text>
+    <rich_text scale="h3">?</rich_text>
+    <rich_text>
+The @Controller annotation in Spring Framework marks a class as a controller where methods are used to handle web requests.
+
+</rich_text>
+    <rich_text scale="h3">Why is it important?</rich_text>
+    <rich_text>
+@Controller is important because it helps in creating web applications by handling HTTP requests and returning appropriate responses. It simplifies the development of web applications by managing request and response handling.
+
+</rich_text>
+    <rich_text scale="h3">How does it work?</rich_text>
+    <rich_text>
+• When a request is sent to a web application, the Spring DispatcherServlet intercepts it.
+• The DispatcherServlet then looks for a controller class annotated with @Controller.
+• It finds the appropriate method in the controller to handle the request based on the URL mapping.
+• The method processes the request, interacts with the service layer if needed, and returns a view or response.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</rich_text>
+    <rich_text scale="h3">What is </rich_text>
+    <rich_text>@</rich_text>
+    <rich_text weight="heavy">RequestMapping</rich_text>
+    <rich_text scale="h3">?</rich_text>
+    <rich_text>
+@RequestMapping is an annotation used in the Spring Framework to </rich_text>
+    <rich_text foreground="#ff0000">map web requests</rich_text>
+    <rich_text> to specific handler classes or handler methods. It is used to specify </rich_text>
+    <rich_text foreground="#ff0000">the URL patterns</rich_text>
+    <rich_text> that a controller class or a specific method will handle.
+
+</rich_text>
+    <rich_text scale="h3">Why is it important?</rich_text>
+    <rich_text>
+@RequestMapping is important because it allows you to define the routes that different parts of your application will handle. It provides a clear and concise way to map URLs to the appropriate controller methods, making the application more organized and easier to maintain.
+
+</rich_text>
+    <rich_text weight="heavy">Mapping URLs</rich_text>
+    <rich_text>: @RequestMapping maps HTTP requests to handler methods </rich_text>
+    <rich_text foreground="#ff0000">based on the URL patterns</rich_text>
+    <rich_text>.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</rich_text>
+    <rich_text scale="h3">What is </rich_text>
+    <rich_text>@</rich_text>
+    <rich_text weight="heavy">GetMapping</rich_text>
+    <rich_text>?
+@GetMapping is an annotation in the Spring Framework that maps HTTP GET </rich_text>
+    <rich_text foreground="#ff0000">requests</rich_text>
+    <rich_text> to specific handler methods. It is a </rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">shortcut</rich_text>
+    <rich_text> for @RequestMapping(method = RequestMethod.GET)
+
+</rich_text>
+    <rich_text scale="h3">W</rich_text>
+    <rich_text>hy is it important?
+@GetMapping is important because it </rich_text>
+    <rich_text weight="heavy">simplifies</rich_text>
+    <rich_text> the process of </rich_text>
+    <rich_text foreground="#ff0000">mapping GET requests to methods in your controller</rich_text>
+    <rich_text>. It makes your code more readable and easier to understand by explicitly indicating that a method is intended to </rich_text>
+    <rich_text foreground="#ff0000">handle GET requests</rich_text>
+    <rich_text>.
+
+
+</rich_text>
+    <rich_text scale="h3">How d</rich_text>
+    <rich_text>oes it work?
+• Annotation: You annotate a method with @GetMapping to specify that it should </rich_text>
+    <rich_text foreground="#ff0000">handle GET requests for a particular URL</rich_text>
+    <rich_text>.
+• URL Mapping: The URL pattern is defined within the @GetMapping annotation. When a </rich_text>
+    <rich_text foreground="#ff0000">GET request matches this pattern</rich_text>
+    <rich_text>, the annotated method is invoked.
+
+Disadvantages
+• Specific to GET: </rich_text>
+    <rich_text foreground="#ff0000">Only handles GET requests</rich_text>
+    <rich_text>, so you'll need other annotations for different HTTP methods (like @PostMapping for POST requests).
+• Less Flexibility: Provides </rich_text>
+    <rich_text foreground="#ff0000">less flexibility compared to</rich_text>
+    <rich_text> @</rich_text>
+    <rich_text foreground="#ff0000">RequestMapping</rich_text>
+    <rich_text> when handling complex request mappings.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• </rich_text>
+    <rich_text weight="heavy">What is </rich_text>
+    <rich_text>@</rich_text>
+    <rich_text weight="heavy">PostMapping</rich_text>
+    <rich_text>?
+• @PostMapping is an annotation in Spring that tells your application to handle HTTP POST requests for a specific URL.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Why is it important?</rich_text>
+    <rich_text>
+  It is important because it allows your application to accept data from forms, apps, or other clients and process it, such as saving user information or handling uploads.
+
+</rich_text>
+    <rich_text weight="heavy">How does it work?</rich_text>
+    <rich_text>
+• When a POST request is sent to your server, @PostMapping matches the URL of the request to a specific method in your controller. This method then processes the request data.
+• 
+</rich_text>
+    <rich_text weight="heavy">How to implement?</rich_text>
+    <rich_text>
+• To use @PostMapping, you add it above a method in your Spring controller
+
+
+</rich_text>
+    <rich_text weight="heavy">What problems does this resolve?</rich_text>
+    <rich_text>
+• It helps in handling data sent via POST requests in a structured way. This is useful for processing form submissions, saving data to a database, and handling uploads or API requests.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+• </rich_text>
+    <rich_text weight="heavy">What is </rich_text>
+    <rich_text>@PutMapping?
+• @PutMapping is an annotation in Spring that tells your application to handle HTTP PUT requests for a specific URL.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Why is it important?</rich_text>
+    <rich_text>
+  It is important because it allows your application to update existing resources. This is useful for modifying data that already exists, like updating user details or changing product information.
+
+
+• </rich_text>
+    <rich_text weight="heavy">How does it work?</rich_text>
+    <rich_text>
+  When a PUT request is sent to your server, @PutMapping matches the URL of the request to a specific method in your controller. This method then processes the request data and updates the corresponding resource.
+
+</rich_text>
+    <rich_text weight="heavy">How to implement?</rich_text>
+    <rich_text>
+• To use @PutMapping, you add it above a method in your Spring controller
+
+
+
+</rich_text>
+    <rich_text weight="heavy">What problems does this resolve?</rich_text>
+    <rich_text>
+• It helps in handling updates to existing resources in a structured way. This is useful for modifying existing data, such as updating user information or changing details of a product.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• </rich_text>
+    <rich_text weight="heavy">What is</rich_text>
+    <rich_text> @</rich_text>
+    <rich_text weight="heavy">DeleteMapping</rich_text>
+    <rich_text>?
+• @DeleteMapping is an annotation in Spring that tells your application to handle HTTP DELETE requests for a specific URL.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Why is it important?</rich_text>
+    <rich_text>
+  It is important because it allows your application to delete existing resources. This is useful for removing data, such as deleting a user account or removing a product from inventory.
+
+
+• </rich_text>
+    <rich_text weight="heavy">How does it work?</rich_text>
+    <rich_text>
+  When a DELETE request is sent to your server, @DeleteMapping matches the URL of the request to a specific method in your controller. This method then processes the request and deletes the corresponding resource.
+
+
+• </rich_text>
+    <rich_text weight="heavy">How to implement?</rich_text>
+    <rich_text>
+  To use @DeleteMapping, you add it above a method in your Spring controller
+
+</rich_text>
+    <rich_text weight="heavy">What problems does this resolve?</rich_text>
+    <rich_text>
+• It helps in handling the deletion of resources in a structured way. This is useful for removing unwanted or obsolete data, such as deleting user accounts or removing products from a catalog.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</rich_text>
+    <rich_text scale="h3">What is @</rich_text>
+    <rich_text scale="h3" weight="heavy">PatchMapping</rich_text>
+    <rich_text scale="h3">?</rich_text>
+    <rich_text>
+@PatchMapping is an annotation in the Spring Framework used to map HTTP PATCH requests to specific handler methods in a Spring controller. It allows for partial updates to resources.
+
+Why is it important?
+@PatchMapping is important because it allows for more efficient and targeted updates to resources. Instead of sending a complete representation of a resource, you can send only the fields that need to be updated, reducing the amount of data transmitted and processed.
+
+How does it work?
+When an HTTP PATCH request is made to a specific URL, the @PatchMapping annotation maps that request to a handler method in a Spring controller. The method processes the request and applies the specified updates to the resource
+
+
+</rich_text>
+    <rich_text scale="h3">How to implement?</rich_text>
+    <rich_text>
+To implement @PatchMapping, you need to:
+1. Annotate a method in your Spring controller with @PatchMapping.
+2. Define the endpoint and the method parameters (such as @PathVariable for the resource ID and @RequestBody for the updates).
+3. Implement the logic to apply the partial updates to the resource.
+
+
+</rich_text>
+    <rich_text scale="h3">What are the problems resolved by using this?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Reducing Bandwidth Usage</rich_text>
+    <rich_text>: By sending only the changes instead of the entire resource, bandwidth usage is minimized.
+• </rich_text>
+    <rich_text weight="heavy">Improving Performance</rich_text>
+    <rich_text>: Less data processing leads to better performance, especially for large resources.
+• </rich_text>
+    <rich_text weight="heavy">Enhancing User Experience</rich_text>
+    <rich_text>: Faster updates improve the user experience, particularly in applications with frequent or real-time updates.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+</rich_text>
+    <rich_text scale="h3">What i</rich_text>
+    <rich_text>s @</rich_text>
+    <rich_text weight="heavy">RequestParam</rich_text>
+    <rich_text>?
+@RequestParam is an annotation in the Spring Framework used to extract query parameters from HTTP requests and bind them to method parameters in a Spring controller.
+
+Why is it important?
+@RequestParam is important because it allows easy access to query parameters in HTTP requests, making it simpler to handle and process data sent by clients through the URL.
+
+How does it work?
+When an HTTP request with query parameters is made, @RequestParam maps those parameters to method arguments in the controller
+
+
+How to implement?
+To implement @RequestParam, you need to:
+1. Annotate a method parameter in your Spring controller with @RequestParam.
+2. Specify the name of the query parameter you want to bind.
+3. Optionally, set default values or make the parameter optional.
+
+
+What are the problems resolved by using this?
+• Accessing Query Parameters: Simplifies the extraction and usage of query parameters in HTTP requests.
+• Parameter Validation: Ensures required parameters are provided and allows setting default values for optional parameters.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</rich_text>
+    <rich_text weight="heavy">What is @PathVariable?</rich_text>
+    <rich_text>
+• @PathVariable is an annotation in Spring MVC used to extract values from the URI path and bind them to method parameters in a controller.
+
+</rich_text>
+    <rich_text weight="heavy">Why is it important?</rich_text>
+    <rich_text>
+  It allows for dynamic handling of web requests where parts of the URL can be variable. This makes the web application more flexible and capable of handling different types of requests with a single method.
+
+</rich_text>
+    <rich_text weight="heavy">How does it work?</rich_text>
+    <rich_text>
+  When a URL request is received, the value in the URL path that matches the variable part of the path pattern is captured and passed to the method parameter annotated with @PathVariable.
+
+</rich_text>
+    <rich_text weight="heavy">How to implement?</rich_text>
+    <rich_text>
+  Define a controller method and use @PathVariable to bind parts of the URL to method parameters.
+  
+</rich_text>
+    <rich_text weight="heavy">What problems does it resolve?</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Dynamic URL Handling</rich_text>
+    <rich_text>: Enables dynamic and RESTful URL structures.
+• </rich_text>
+    <rich_text weight="heavy">Simplified Code</rich_text>
+    <rich_text>: Reduces the need for multiple handler methods for different URL patterns.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</rich_text>
+  </node>
+</cherrytree>

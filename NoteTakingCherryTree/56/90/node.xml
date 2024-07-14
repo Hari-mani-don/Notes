@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="90" master_id="0" name="Spring MVC" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="220" is_bold="0" foreground="" ts_creation="1720556470" ts_lastsave="1720785602">
+    <rich_text weight="heavy">Spring MVC Overview</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">what</rich_text>
+    <rich_text> is MVC?
+
+Spring MVC is a framework for building </rich_text>
+    <rich_text foreground="#c64600">web applications</rich_text>
+    <rich_text> in Java, using the Model-View-Controller (MVC) pattern.
+
+  Concepts Explained
+
+1. Web Framework
+   - A platform to develop and run web applications.
+
+2. Model-View-Controller (MVC)
+   - Model: Holds application data and business logic.
+   - View: Displays data to the user (e.g., HTML, JSP, Thymeleaf).
+   - Controller: Handles user input, updates Model and View.
+
+3. Controllers
+   - Classes annotated with @Controller.
+   - Manage incoming web requests and return views.
+
+4. Views (JSP, Thymeleaf)
+   - Templates to render data into HTML.
+
+5. Model and ModelMap
+   - Model: Holds data for the view.
+   - ModelMap: A map structure to pass data from controller to view.
+
+6. Request Mappings
+   - @RequestMapping: Maps HTTP requests to controller methods.
+
+7. Form Handling
+   - Manages form submissions and validates user input.
+
+8. RESTful Web Services
+   - Services that follow REST principles, using @RestController and @RequestMapping.
+
+  </rich_text>
+    <rich_text weight="heavy">Why These Concepts are Important</rich_text>
+    <rich_text>
+
+- Separation of Concerns: Divides the application into distinct sections (Model, View, Controller), making it easier to </rich_text>
+    <rich_text foreground="#c64600">manage and maintain</rich_text>
+    <rich_text>.
+- Reusability: Components can be reused across the application.
+- Scalability: Simplifies scaling the application by separating different concerns.
+
+  </rich_text>
+    <rich_text weight="heavy">Implementation</rich_text>
+    <rich_text> Steps
+
+1. Set up Spring MVC Project: Create a new Spring project using tools like Spring Boot.
+2. Define Models: Create classes to represent the data.
+3. Create Controllers: Write classes with @Controller to handle web requests.
+4. Design Views: Use JSP, Thymeleaf, or other templating engines to create the user interface.
+5. Map Requests: Use @RequestMapping to link web requests to controller methods.
+6. Handle Forms: Manage user input through forms and validate data.
+
+  </rich_text>
+    <rich_text weight="heavy">Advantages</rich_text>
+    <rich_text> of Spring MVC
+
+- Modularity: Breaks application into modules.
+- Testability: Easier to test components individually.
+- Flexibility:Supports different types of user interfaces, such as mobile apps, desktop applications, and web pages.
+
+  </rich_text>
+    <rich_text weight="heavy">Disadvantages</rich_text>
+    <rich_text> of Spring MVC
+
+- Complexity: Can be complex for beginners.
+- Configuration: Requires configuration, though Spring Boot simplifies it.
+
+  </rich_text>
+    <rich_text weight="heavy">Common Problems Resolved by Spring MVC</rich_text>
+    <rich_text>
+
+- Maintainability: Easier to maintain code with clear separation.
+- Scalability: Supports scaling with modular design.
+- Flexibility: Adapts to various view technologies and development needs.
+   
+   
+	1.Spring MVC is a framework used to build web applications in Java using the Model-View-Controller (MVC) pattern.
+	2.Spring MVC is important because dividing the application into different parts (Model, View, Controller) makes it easier to manage and maintain.and also
+	3.Components can be reused within the application.
+	4.It simplifies scaling the application by using different parts (Model, View, Controller).
+	5.We can implement the MVC pattern by creating a Spring Boot project and adding the necessary dependencies, including the MVC starter. Then, we write entity, controller, and view classes. When a request comes into the controller, it handles the request and displays the data on the view page.
+	6.	The main advantage of Spring MVC is that it breaks the application into modules,
+	 7. Easier to test components individually.
+	8.it supports various types of user interfaces, including desktop, mobile applications, and web applications
+	</rich_text>
+  </node>
+</cherrytree>

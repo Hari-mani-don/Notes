@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="50" master_id="0" name="Module" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718751411" ts_lastsave="1718751443">
+    <rich_text>Module
+=====
+		• </rich_text>
+    <rich_text weight="heavy">User Management</rich_text>
+    <rich_text>
+		• </rich_text>
+    <rich_text weight="heavy">Inventory Management</rich_text>
+    <rich_text>
+		• </rich_text>
+    <rich_text weight="heavy">Order Management</rich_text>
+    <rich_text>
+		• </rich_text>
+    <rich_text weight="heavy">Shipment Management</rich_text>
+    <rich_text>
+		• </rich_text>
+    <rich_text weight="heavy">Tracking and Monitoring</rich_text>
+    <rich_text>
+		• </rich_text>
+    <rich_text weight="heavy">Billing and Invoicing</rich_text>
+    <rich_text>
+		
+		
+
+</rich_text>
+  </node>
+</cherrytree>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="46" master_id="0" name="Literals" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718707379" ts_lastsave="1718751381">
+    <rich_text>
+1.Object:{} -&gt; object literal
+2.Boolean: true or false -&gt; boolean literal
+3.String :' '   , “ ” -&gt; string literal  \n \t \" \"
+
+Template literal -&gt; ` `-&gt; back tick.   prettier extension used to auto formate in vs code editor
+=========
+	\n \t \" \" -&gt; we can use before template literal used to formate
+	but after ecmo script just back tick used to format
+	
+	`hari mani “done” ‘hey’
+	now i am here,`   -&gt; same formate output show with space next line also
+	
+	
+Date()
+====
+const date = Date() -&gt; it is convert by default string so that specifically we can't get date,month year . Date().toString() it is auto convert
+	To Overcome this proble create Object insted of String
+	
+	const now = new Date();
+	 - now we can acces all methods
+	
+	1.getFullYear
+	2.now
+	3.Day
+	4.Date
+	
+	
+Array
+====
+  const array = ["banana", “apple”, “grapes”];
+
+1.  array[3] = “orager”;
+2.push("hell","hari") these two added in end of the array
+3.unshift("hari",mani") these two added in front of the array
+4.splice(3,0,"hi") index,delet, value this is added in specify index
+  	
+search
+=======
+1.indexOf("lemon") -&gt; it return the index value otherwise return  -1 
+2.lastIndexOf() 
+3.includes() -&gt; checks if it exist or not
+4.toString()
+5.length
+6.at(2) -&gt; indexed element return it is like as indexOf()
+
+more method availe we check and learn new methods
+
+Array inside object check  items 
+====================
+			- it is like as predicate in java 8;
+			-&gt; find( predicate&lt;?&gt;) this method have predicate functione
+
+	let order =[ 
+		{id :1, nam:"hari", item:"phone"},
+		{id :2, nam:"hari", item:"cell"},
+		
+	]			
+			
+	let orders =order.find(function(order){
+				return order.item === “phone”;
+			});
+			console.log(orders);t</rich_text>
+  </node>
+</cherrytree>

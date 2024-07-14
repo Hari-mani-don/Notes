@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="59" master_id="0" name="web server &amp; application server" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720203039" ts_lastsave="1720378431">
+    <rich_text>web server is nothing but it can process front technolgy only.
+Application server is used to both front end and backend logic process and also enterprice application runs on that server.</rich_text>
+  </node>
+</cherrytree>

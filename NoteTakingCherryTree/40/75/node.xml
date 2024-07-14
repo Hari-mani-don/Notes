@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="75" master_id="0" name="DOM" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720309516" ts_lastsave="1720311239">
+    <rich_text>Document object model
+
+Document -&gt; file(xml)
+Object -&gt; element, tags(&lt;h1&gt;)
+Model -&gt; Layout structure
+
+what is dom?
+	The w3c Document Object Mo</rich_text>
+  </node>
+</cherrytree>

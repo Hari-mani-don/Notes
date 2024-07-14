@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="79" master_id="0" name="spring AOP" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="220" is_bold="0" foreground="" ts_creation="1720378407" ts_lastsave="1720793128">
+    <rich_text weight="heavy">What</rich_text>
+    <rich_text>  is Aop:
+	Aspect-Oriented Programming (AOP) is a programming  that helps you </rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">organize your code better by separating common functionalitites</rich_text>
+    <rich_text>.This common functionality is known as "cross-cutting concerns."
+	
+</rich_text>
+    <rich_text weight="heavy">Why</rich_text>
+    <rich_text> is important?
+	Aspect-Oriented Programming (AOP) helps developers </rich_text>
+    <rich_text foreground="#ff0000">handle common tasks</rich_text>
+    <rich_text> like logging, security, and managing data transactions separately from the main code. This makes the </rich_text>
+    <rich_text foreground="#ff0000">code easier to organize</rich_text>
+    <rich_text>, update, and keep free from unnecessary repetition. Overall, AOP improves how software is structured and makes it easier to manage as it grows.
+
+</rich_text>
+    <rich_text weight="heavy">How</rich_text>
+    <rich_text> to implement?
+	1. </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Dependencies</rich_text>
+    <rich_text> Adds the Spring AOP starter to the project.
+	2. </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">LoggingAspect</rich_text>
+    <rich_text>: Defines an aspect that logs a message before any method in the specified package executes.
+	3. </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">ExampleService</rich_text>
+    <rich_text>: A service class with a method to demonstrate the logging aspect.
+	4. </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">DemoApplication</rich_text>
+    <rich_text>: The main class that runs the application and invokes the service method.
+	
+		import org.springframework.boot.SpringApplication;
+	import org.springframework.boot.autoconfigure.SpringBootApplication;
+	import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
+	@SpringBootApplication
+	</rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">@EnableAspectJAutoProxy</rich_text>
+    <rich_text>
+	public class YourSpringBootApplication {
+
+		public static void main(String[] args) {
+		    SpringApplication.run(YourSpringBootApplication.class, args);
+		}
+	}
+	</rich_text>
+    <rich_text weight="heavy">Alternative way to config:</rich_text>
+    <rich_text>
+	
+	@Configuration
+	@ComponentScan(basePackages = "com.example.aspect") -&gt; which package to
+	public class AppConfig {    // Other configuration beans if needed}
+
+	
+</rich_text>
+    <rich_text weight="heavy">Advantages</rich_text>
+    <rich_text> of Aop
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Modularity</rich_text>
+    <rich_text> : </rich_text>
+    <rich_text weight="heavy">Improves code modularity by separating</rich_text>
+    <rich_text> cross-cutting concerns from the </rich_text>
+    <rich_text weight="heavy">business</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">logic</rich_text>
+    <rich_text>.Each concern is managed in its aspect, making the</rich_text>
+    <rich_text weight="heavy"> code cleaner and easier to understand.</rich_text>
+    <rich_text>
+
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Maintainability</rich_text>
+    <rich_text>: Changes to a cross-cutting concern need to be made in </rich_text>
+    <rich_text weight="heavy">only one place</rich_text>
+    <rich_text> (the aspect), reducing the risk of errors and improving maintainability.
+ 
+ 	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Reusability</rich_text>
+    <rich_text>: Aspects can be reused across different parts of an application or even in different applications.
+	
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Separation of Concerns</rich_text>
+    <rich_text>:AOP promotes a clear separation of concerns, where different aspects of the program (e.g., logging, security) are handled independently.
+</rich_text>
+    <rich_text weight="heavy">Disadvantages</rich_text>
+    <rich_text>
+
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Complexity</rich_text>
+    <rich_text>: AOP adds additional layers of understanding and management to your code due to its modular and cross-cutting nature.
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Debugging Difficulty</rich_text>
+    <rich_text>: Identifying and fixing issues becomes harder as AOP aspects can modify program flow in unexpected ways.
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Performance Overhead</rich_text>
+    <rich_text>: Implementing AOP can cause programs to run slower due to the extra processing needed for aspect weaving and execution.
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Tool Support</rich_text>
+    <rich_text>: Some development tools may not fully support AOP, making it challenging to debug, analyze, or refactor aspects.
+	</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Code Readability</rich_text>
+    <rich_text>: Aspects can make code harder to understand and maintain, especially when aspects are scattered across different parts of the codebase.
+
+</rich_text>
+    <rich_text weight="heavy">Problem Resolution</rich_text>
+    <rich_text> 
+	 1.</rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Repetitive Code</rich_text>
+    <rich_text>: Avoids writing the same code in multiple places (e.g., logging, security checks).
+   2) </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Scattered Code</rich_text>
+    <rich_text>: Keeps cross-cutting concerns separate from core business logic.
+   3) </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Maintainability</rich_text>
+    <rich_text>: Makes it easier to update common functionality in one place.
+   4) </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Clean</rich_text>
+    <rich_text foreground="#00ff28"> </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Code</rich_text>
+    <rich_text>: Keeps your main code focused on its primary tasks, improving readability.
+   5) </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Centralized</rich_text>
+    <rich_text foreground="#00ff28"> </rich_text>
+    <rich_text foreground="#00ff28" weight="heavy">Control</rich_text>
+    <rich_text>: Allows you to manage and apply changes to cross-cutting concerns centrally.
+
+</rich_text>
+    <rich_text weight="heavy">How</rich_text>
+    <rich_text> work in AOP?
+		 Imagine you're a teacher grading papers in a classroom. Without AOP, you'd have to stop after each paper to record grades and comments manually. This breaks your flow and slows down the grading process.
+
+ With AOP, it's like having a grading assistant who automatically records grades and comments based on predefined rules. You set criteria for grading, such as checking for spelling errors and providing feedback on structure. The assistant handles these tasks seamlessly as you review each paper, allowing you to focus on assessing the content without interruption. This way, grading is more efficient, and you maintain consistency in feedback across all papers.
+
+1.</rich_text>
+    <rich_text weight="heavy">Cross-Cutting Concerns</rich_text>
+    <rich_text>:
+2.</rich_text>
+    <rich_text weight="heavy">Aspects</rich_text>
+    <rich_text>
+3.</rich_text>
+    <rich_text weight="heavy">Join Points</rich_text>
+    <rich_text>:
+4.</rich_text>
+    <rich_text weight="heavy">Advice</rich_text>
+    <rich_text>
+5.</rich_text>
+    <rich_text weight="heavy">Pointcuts</rich_text>
+    <rich_text>:</rich_text>
+  </node>
+</cherrytree>

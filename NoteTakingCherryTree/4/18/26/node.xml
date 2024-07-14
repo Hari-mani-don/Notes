@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="26" master_id="0" name="Stream API" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717594328" ts_lastsave="1717599412">
+    <rich_text weight="heavy">Stream API</rich_text>
+    <rich_text>
+=========
+1• f</rich_text>
+    <rich_text weight="heavy">ilter</rich_text>
+    <rich_text>(): Used in web applications to filter search results based on user criteria. collection of object la irrunth base on some condition used to 
+	fileter and stroe then use this.
+2• m</rich_text>
+    <rich_text weight="heavy">app</rich_text>
+    <rich_text>(): Employed in transforming data between different layers of an application (e.g., from database entities to DTOs). object ha normal to any change like lower to upper then use this.
+3• reduce() -&gt; collection of element into a single result use and also. identity use first and a, result and second 
+                 int product = numbers.stream().reduce(1, (a, b) -&gt; a * b);
+
+4• Collectors.groupingBy() -&gt; department vachi group pandrathu , 
+			 Map&lt;String, List&lt;Employee&gt;&gt; employeesByDepartment = employees.stream() .collect(Collectors.groupingBy(Employee::getDepartment));
+			
+5•Sorted() -&gt; natural and customize sort pannikalam.
+
+example
+=====
+ // Custom sorting: by department, then by salary (descending) 
+        List&lt;Employee&gt;sortedEmployees=employees.stream() .sorted(Comparator.comparing(Employee::getDepartment)    
+                                  .thenComparing(Comparator.comparing(Employee::getSalary).reversed()))    
+                                          .collect(Collectors.toList());
+                                          
+                                          
+                                          
+                                          
+6•anyMatch() -&gt; ethavathu match agutha check panna use.
+
+	
+	// Check if any number is greater than 4      
+	  boolean anyMatch = numbers.stream()   
+	         .anyMatch(n -&gt; n &gt; 4);      
+	
+	  // Find the first number greater than 3     
+	   int firstMatch = numbers.stream()        
+	    .filter(n -&gt; n &gt; 3)      
+	     .findFirst()    
+	     .orElse(-1);
+			
+7.parallelStream() -&gt; multi-core process used to compare and more efficiently mangae .
+
+example of all
+=========
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        List&lt;Integer&gt; numbers = Arrays.asList(1, 2, 3, 4, 5, 2, 3, 4);
+
+        // 1. filter(Predicate)
+        List&lt;Integer&gt; filteredList = numbers.stream()
+                                            .filter(n -&gt; n % 2 == 0) // Keep only even numbers
+                                            .collect(Collectors.toList());
+        System.out.println("Filtered list: " + filteredList);
+
+        // 2. map(Function)
+        List&lt;Integer&gt; mappedList = numbers.stream()
+                                         .map(n -&gt; n * n) // Square each number
+                                         .collect(Collectors.toList());
+        System.out.println("Mapped list: " + mappedList);
+
+        // 3. flatMap(Function)
+        List&lt;String&gt; words = Arrays.asList("Hello", "World");
+        List&lt;Character&gt; characters = words.stream()
+                                          .flatMap(word -&gt; word.chars().mapToObj(c -&gt; (char) c))
+                                          .collect(Collectors.toList());
+        System.out.println("Characters: " + characters);
+
+        // 4. distinct()
+        List&lt;Integer&gt; distinctNumbers = numbers.stream()
+                                               .distinct() // Remove duplicates
+                                               .collect(Collectors.toList());
+        System.out.println("Distinct numbers: " + distinctNumbers);
+
+        // 5. sorted()
+        List&lt;Integer&gt; sortedList = numbers.stream()
+                                          .sorted() // Natural order
+                                          .collect(Collectors.toList());
+        System.out.println("Sorted list: " + sortedList);
+
+        // 6. limit(long)
+        List&lt;Integer&gt; limitedList = numbers.stream()
+                                           .limit(3) // Limit to first 3 elements
+                                           .collect(Collectors.toList());
+        System.out.println("Limited list: " + limitedList);
+
+        // 7. skip(long)
+        List&lt;Integer&gt; skippedList = numbers.stream()
+                                           .skip(3) // Skip first 3 elements
+                                           .collect(Collectors.toList());
+        System.out.println("Skipped list: " + skippedList);
+
+        // 8. forEach(Consumer)
+        System.out.print("For each element: ");
+        numbers.stream().forEach(System.out::print);
+
+        // 9. collect(Collector)
+        String result = numbers.stream()
+                               .map(Object::toString)
+                               .collect(Collectors.joining(", ", "[", "]"));
+        System.out.println("\nCollected result: " + result);
+
+        // 10. reduce(identity, BinaryOperator)
+        Optional&lt;Integer&gt; sum = numbers.stream()
+                                       .reduce(Integer::sum); // Sum of all elements
+        System.out.println("Sum: " + sum.orElse(0));
+
+        // 11. anyMatch(Predicate)
+        boolean anyMatch = numbers.stream()
+                                  .anyMatch(n -&gt; n &gt; 3); // Check if any element is greater than 3
+        System.out.println("Any match: " + anyMatch);
+
+        // 12. allMatch(Predicate)
+        boolean allMatch = numbers.stream()
+                                  .allMatch(n -&gt; n &gt; 0); // Check if all elements are positive
+        System.out.println("All match: " + allMatch);
+
+        // 13. noneMatch(Predicate)
+        boolean noneMatch = numbers.stream()
+                                   .noneMatch(n -&gt; n &lt; 0); // Check if no element is negative
+        System.out.println("None match: " + noneMatch);
+
+        // 14. findFirst()
+        Optional&lt;Integer&gt; firstElement = numbers.stream().findFirst(); // First element of the stream
+        System.out.println("First element: " + firstElement.orElse(null));
+
+        // 15. findAny()
+        Optional&lt;Integer&gt; anyElement = numbers.stream().findAny(); // Any element of the stream
+        System.out.println("Any element: " + anyElement.orElse(null));
+
+        // 16. count()
+        long count = numbers.stream().count(); // Count of elements in the stream
+        System.out.println("Count: " + count);
+
+        // 17. toArray()
+        Integer[] array = numbers.stream().toArray(Integer[]::new); // Convert stream to array
+        System.out.println("Array: " + Arrays.toString(array));
+
+        // 18. min(Comparator)
+        Optional&lt;Integer&gt; minElement = numbers.stream().min(Integer::compareTo); // Minimum element
+        System.out.println("Min element: " + minElement.orElse(null));
+
+        // 19. max(Comparator)
+        Optional&lt;Integer&gt; maxElement = numbers.stream().max(Integer::compareTo); // Maximum element
+        System.out.println("Max element: " + maxElement.orElse(null));
+
+        // 20. forEachOrdered(Consumer)
+        System.out.print("For each ordered element: ");
+        numbers.stream().forEachOrdered(System.out::print);
+    }
+}
+
+
+
+output
+=======
+Filtered list: [2, 4, 2, 4]
+Mapped list: [1, 4, 9, 16, 25, 4, 9, 16]
+Characters: [H, e, l, l, o, W, o, r, l, d]
+Distinct numbers: [1, 2, 3, 4, 5]
+Sorted list: [1, 2, 2, 3, 3, 4, 4, 5]
+Limited list: [1, 2, 3]
+Skipped list: [4, 5, 2, 3, 4]
+For each element: 12345234
+Collected result: [1, 2, 3, 4, 5, 2, 3, 4]
+Sum: 24
+Any match: true
+All match: true
+None match: true
+First element: 1
+Any element: 1
+Count: 8
+Array: [1, 2, 3, 4, 5, 2, 3, 4]
+Min element: 1
+Max element: 5
+For each ordered element: 12345234
+
+flatMap
+=====
+List&lt;Integer&gt; flattenedList = listOfLists.stream()
+                                         .flatMap(List::stream) // Flatten the list of lists
+                                         .collect(Collectors.toList());
+
+System.out.println(flattenedList);
+
+
+
+
+OPTIONAL
+=======
+
+import java.util.Optional;
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an Optional
+        Optional&lt;String&gt; optionalString = Optional.of("Hello"); if the value is emty it will  throw NullpointerException
+        Optional&lt;String&gt; optionalString = Optional.ofNullable("Hello"); //if the value is emty it will not throw NullpointerException
+
+        // isPresent(): Checks if the Optional contains a value
+        boolean isPresent = optionalString.isPresent(); // true
+
+        // ifPresent(Consumer): Executes the specified action if a value is present
+        optionalString.ifPresent(System.out::println); // Prints: Hello
+
+        // get(): Gets the value from the Optional (use with caution to avoid NoSuchElementException)
+        String value = optionalString.get(); // "Hello"
+
+        // orElse(T): Returns the value if present, otherwise returns the specified default value
+        String orElseValue = optionalString.orElse("Default"); // "Hello"
+
+        // orElseGet(Supplier): Returns the value if present, otherwise invokes the supplier to generate a default value
+        String orElseGetValue = optionalString.orElseGet(() -&gt; "Default"); // "Hello"
+
+        // orElseThrow(Supplier): Returns the value if present, otherwise throws an exception generated by the supplier
+        try {
+            String orElseThrowValue = optionalString.orElseThrow(() -&gt; new IllegalStateException("Value not present"));
+        } catch (IllegalStateException e) {
+            System.out.println(e.getMessage()); // Prints: Value not present
+        }
+
+        // map(Function): Applies a mapping function if a value is present, otherwise returns an empty Optional
+        Optional&lt;Integer&gt; mappedOptional = optionalString.map(String::length); // Optional[5]
+
+        // flatMap(Function): Applies a mapping function that returns an Optional if a value is present, otherwise returns an empty Optional
+        Optional&lt;Integer&gt; flatMappedOptional = optionalString.flatMap(s -&gt; Optional.of(s.length())); // Optional[5]
+
+        // filter(Predicate): Filters the Optional if a value is present according to the predicate
+        Optional&lt;String&gt; filteredOptional = optionalString.filter(s -&gt; s.startsWith("H")); // Optional[Hello]
+    }
+}
+</rich_text>
+  </node>
+</cherrytree>

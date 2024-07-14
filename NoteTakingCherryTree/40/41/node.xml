@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="41" master_id="0" name="jsCodeStart" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718486942" ts_lastsave="1718653669">
+    <rich_text>show output console &amp; alert message
+=======================
+1.alert("hariamni") -&gt; alert message came.
+2.console.log("harimani"); -&gt; show output in console tab in browser 
+
+variables
+======
+1.let -&gt; default value = “undefiend”   -&gt; prefer this using
+2.const -&gt; 
+3.var
+
+
+operator precedence
+==============
+</rich_text>
+    <rich_text weight="heavy">P</rich_text>
+    <rich_text>lease </rich_text>
+    <rich_text weight="heavy">E</rich_text>
+    <rich_text>xcuse </rich_text>
+    <rich_text weight="heavy">M</rich_text>
+    <rich_text>y </rich_text>
+    <rich_text weight="heavy">A</rich_text>
+    <rich_text>unt </rich_text>
+    <rich_text weight="heavy">S</rich_text>
+    <rich_text>ally, </rich_text>
+    <rich_text weight="heavy">R</rich_text>
+    <rich_text>emember </rich_text>
+    <rich_text weight="heavy">E</rich_text>
+    <rich_text>xpressions </rich_text>
+    <rich_text weight="heavy">B</rich_text>
+    <rich_text>efore </rich_text>
+    <rich_text weight="heavy">X</rich_text>
+    <rich_text>mas, </rich_text>
+    <rich_text weight="heavy">O</rich_text>
+    <rich_text>r </rich_text>
+    <rich_text weight="heavy">L</rich_text>
+    <rich_text>ater </rich_text>
+    <rich_text weight="heavy">L</rich_text>
+    <rich_text>earn </rich_text>
+    <rich_text weight="heavy">T</rich_text>
+    <rich_text>heory.
+
+conditional statement
+-------------------------------
+		1.if/else
+		2.if/else if/else
+		3.new Date()
+		
+switch case
+==========
+switch(conditon){
+	case a&gt;20: -&gt; this is support js but java does not support
+	default
+}
+
+Loops
+======
+	1.for loop
+	2.while loop
+	3.do while loop
+	4.for-in loop 
+							let persons ={
+							name:"hari",
+							age:20
+							};
+							
+							for(let key in persons){
+								console.log(key)-&gt; name, age pring not value
+								console.log(persons[key]) -&gt; value print
+							}
+							
+							
+							let colors =['red','blue'];
+							
+							for(let color in colors){
+								console.log(color) -&gt; key only print like index 0,1,2
+								console.log(colors[color]) value print
+							}
+							
+							object and array iteration purpose use
+							key value pair also use this 
+	5.for-of loop
+	
+									for(let person of persons{
+											console.log(person) -&gt; directly value provide so the object 								
+											doesn't allow only array
+									}
+									
+									
+	without concatenate call name using ` ` 
+	=======================
+	1.let msg = “my name is ”+name+", i love “+interest”;
+	2.let msg = `my name is ${name}, i love ${interest}`;
+	
+	</rich_text>
+  </node>
+</cherrytree>

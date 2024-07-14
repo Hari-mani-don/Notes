@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="66" master_id="0" name="Mouse Event" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720271337" ts_lastsave="1720282526">
+    <rich_text weight="heavy">what</rich_text>
+    <rich_text> is mouse event?
+	Mouse event in web development make websites interactive  by responding to actions like click, hover and mouse movements on page elements. 
+	
+</rich_text>
+    <rich_text weight="heavy">why</rich_text>
+    <rich_text> it is important?
+	To Interactive user by mouse click, hover
+	user feedback
+	Navigation
+	Integration with Other Events
+	
+</rich_text>
+    <rich_text weight="heavy">How</rich_text>
+    <rich_text> to implemt?
+	
+	&lt;button id="myButton"&gt;Click Me!&lt;/button&gt;
+	
+	document.getElementById("myButton").addEventListener("click", function() {
+		alert("Button was clicked!");
+	});
+	
+</rich_text>
+    <rich_text weight="heavy">problem</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Resolution</rich_text>
+    <rich_text>?
+	To Interactive user by mouse click, hover
+	user feedback
+	Navigation
+	Integration with Other Events
+	
+1.click 
+	-&gt; press and release a mouse button.
+	
+	&lt;button  id="myButton"&gt;Click Me!&lt;/button&gt;
+	
+	document.getElementById("myButton").addEventListener("click", function() {
+		alert("Button was clicked!");
+	});
+	
+2.dbclick
+	-&gt; Quickly click a mouse button twice.
+	
+3.mouseover
+	-&gt; Move the mouse over an element.
+	&lt;button  id="myButton"&gt;Click Me!&lt;/button&gt;
+	
+	 </rich_text>
+    <rich_text foreground="#0000ff">function</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#795e26">buton</rich_text>
+    <rich_text>(){     </rich_text>
+    <rich_text foreground="#795e26">alert</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#a31515">"button was clicked"</rich_text>
+    <rich_text>); }
+document.</rich_text>
+    <rich_text foreground="#795e26">getElementById</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#a31515">"buton"</rich_text>
+    <rich_text>).</rich_text>
+    <rich_text foreground="#795e26">addEventListener</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#a31515">"mouseover"</rich_text>
+    <rich_text>,</rich_text>
+    <rich_text foreground="#795e26">buton</rich_text>
+    <rich_text>); 	});
+
+4.mouseout
+	-&gt;Move the mouse away from an element.
+	&lt;button  id="myButton"&gt;Click Me!&lt;/button&gt;
+	
+	 </rich_text>
+    <rich_text foreground="#0000ff">function</rich_text>
+    <rich_text> </rich_text>
+    <rich_text foreground="#795e26">buton</rich_text>
+    <rich_text>(){     </rich_text>
+    <rich_text foreground="#795e26">alert</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#a31515">"button was clicked"</rich_text>
+    <rich_text>); }
+document.</rich_text>
+    <rich_text foreground="#795e26">getElementById</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#a31515">"buton"</rich_text>
+    <rich_text>).</rich_text>
+    <rich_text foreground="#795e26">addEventListener</rich_text>
+    <rich_text>(</rich_text>
+    <rich_text foreground="#a31515">"mouseout"</rich_text>
+    <rich_text>,</rich_text>
+    <rich_text foreground="#795e26">buton</rich_text>
+    <rich_text>); 	});
+
+5.mousedown
+6.mouseup
+7.mousemove
+
+</rich_text>
+    <rich_text weight="heavy">what</rich_text>
+    <rich_text> is mouse event?
+</rich_text>
+    <rich_text weight="heavy">why</rich_text>
+    <rich_text> it is important?
+</rich_text>
+    <rich_text weight="heavy">How</rich_text>
+    <rich_text> implemt?
+</rich_text>
+    <rich_text weight="heavy">problem</rich_text>
+    <rich_text> to sove?</rich_text>
+  </node>
+</cherrytree>

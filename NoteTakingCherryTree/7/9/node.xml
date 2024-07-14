@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="9" master_id="0" name="ControllerClass" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="#613583" ts_creation="1717207163" ts_lastsave="1717247316">
+    <rich_text scale="h2">	Controller class
+	================
+
+		1. interface venam , interface complicate use our controller class
+		2. class name must functionality name and end suffix controller add.
+		3. class only have that class related methods only.
+		4. single responsibility pattern compare to groupin which groupin is best practice and maintain code.
+		6. method name prifix with "handle" and action name .
+		7. controller class method return type RespnseEntity is best aproch ,
+		8. each method have single action only.
+		9. class name prefix with name customer, client or corporate afte functionality Name for example
+		   "CustomerHomeController","UserPaymentController"
+		10. method name prefix with action and add name of the class prefix like " addCustomer" , "processUserPayment"
+		11.Exception Handling class also write in controller class.
+
+example:
+=======
+</rich_text>
+    <rich_text justification="center" scale="h1">	   </rich_text>
+    <rich_text>
+	
+	
+	</rich_text>
+    <encoded_png char_offset="852" justification="center" link="" sha256sum="517cef0c0539730aed543538185f9ae5408bec6ac4b733063d5fbb0386877e32"/>
+  </node>
+</cherrytree>

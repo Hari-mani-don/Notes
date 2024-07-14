@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="91" master_id="0" name="how works" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720556589" ts_lastsave="1720564582">
+    <rich_text weight="heavy">How Spring MVC Works</rich_text>
+    <rich_text>
+
+Spring MVC operates on a series of steps that align with the MVC pattern, involving Controllers, Views, and Models.
+
+  </rich_text>
+    <rich_text weight="heavy">Step-by-Step Workflow</rich_text>
+    <rich_text>
+
+1. </rich_text>
+    <rich_text weight="heavy">Client</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Request</rich_text>
+    <rich_text>
+   - A user sends a request from their browser to the web server.
+
+2. </rich_text>
+    <rich_text weight="heavy">DispatcherServlet</rich_text>
+    <rich_text>
+   - The request first hits the DispatcherServlet, which is the central controller in Spring MVC. It's configured in the web application's configuration file (web.xml or via Java configuration).
+
+3. </rich_text>
+    <rich_text weight="heavy">Handler</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Mapping</rich_text>
+    <rich_text>
+   - DispatcherServlet consults HandlerMapping to find the appropriate controller method to handle the request.
+
+4. </rich_text>
+    <rich_text weight="heavy">Controller</rich_text>
+    <rich_text>
+   - The mapped controller method processes the request. It may involve business logic, interacting with services, and updating the Model with data.
+
+5. </rich_text>
+    <rich_text weight="heavy">Model</rich_text>
+    <rich_text> and </rich_text>
+    <rich_text weight="heavy">View</rich_text>
+    <rich_text>
+   - The controller returns a ModelAndView object. The Model contains data for the view, and the View is the template name (e.g., JSP, Thymeleaf).
+
+6. </rich_text>
+    <rich_text weight="heavy">View</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Resolver</rich_text>
+    <rich_text>
+   - DispatcherServlet uses a ViewResolver to resolve the view name to the actual view template.
+
+7. </rich_text>
+    <rich_text weight="heavy">Render</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">View</rich_text>
+    <rich_text>
+   - The resolved view template (like a JSP page) is rendered with the data from the Model.
+
+8. </rich_text>
+    <rich_text weight="heavy">Response</rich_text>
+    <rich_text> to </rich_text>
+    <rich_text weight="heavy">Client</rich_text>
+    <rich_text>
+   - The rendered view (HTML) is sent back to the user's browser as a response.
+
+  </rich_text>
+    <rich_text weight="heavy">Example</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Flow</rich_text>
+    <rich_text>
+
+1. Client Request: User requests</rich_text>
+    <rich_text foreground="#c64600"> </rich_text>
+    <rich_text link="webs http://example.com/home." foreground="#ff0000">http://example.com/home.</rich_text>
+    <rich_text>
+2. DispatcherServlet: Receives the request and delegates to HandlerMapping.
+3. Handler Mapping: Finds the controller method mapped to /home.
+4. Controller: Method processes the request, updates the Model with data (e.g., user information).
+5. Model and View: Controller returns ModelAndView("home", model).
+6. View Resolver: Resolves home to home.jsp.
+7. Render View: home.jsp is rendered with data from the Model.
+8. Response to Client: Rendered HTML is sent back to the browser.
+
+  </rich_text>
+    <rich_text weight="heavy">Diagram</rich_text>
+    <rich_text>
+	Client -&gt; DispatcherServlet -&gt; HandlerMapping -&gt; Controller -&gt; ModelAndView -&gt; ViewResolver -&gt; View -&gt; Response to Client
+</rich_text>
+  </node>
+</cherrytree>

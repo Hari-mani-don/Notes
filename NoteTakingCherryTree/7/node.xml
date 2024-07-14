@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="7" master_id="0" name="JavaProjectsDocument" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="24" is_bold="1" foreground="#e01b24" ts_creation="1717207057" ts_lastsave="1717368018">
+    <rich_text>
+
+
+[action/description][DataType] - variable name followed
+• </rich_text>
+    <rich_text weight="heavy">retrievedData</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">retrievedValue</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">fetchedResult</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">obtainedInformation</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">receivedData</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">acquiredResource</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">accessedRecord</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">pulledData</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">gatheredInfo</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">loadedContent</rich_text>
+    <rich_text>
+
+
+• </rich_text>
+    <rich_text weight="heavy">setData</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">assignedValue</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">insertedElement</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">placedItem</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">storedValue</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">updatedInformation</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">assignedData</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">addedEntry</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">putValue</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">assignedContent</rich_text>
+    <rich_text>
+
+• </rich_text>
+    <rich_text weight="heavy">verificationResult</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">validationOutcome</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">inspectionStatus</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">examinationResult</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">assessmentOutcome</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">evaluationStatus</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">scrutinyResult</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">analysisOutcome</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">confirmationStatus</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">authenticationResult</rich_text>
+    <rich_text>
+</rich_text>
+  </node>
+</cherrytree>

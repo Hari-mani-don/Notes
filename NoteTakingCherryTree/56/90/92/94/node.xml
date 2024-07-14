@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="94" master_id="0" name="diffrence" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720609410" ts_lastsave="1720619450">
+    <rich_text>• </rich_text>
+    <rich_text weight="heavy">@ModelAttribute</rich_text>
+    <rich_text>:
+• Used for binding form data (HTML form submissions) to a Java object.
+• Automatically binds form fields to object properties based on their names.
+• Suitable for handling traditional HTML form submissions.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@RequestBody</rich_text>
+    <rich_text>:
+  Used for extracting and deserializing JSON or XML data from the request body.
+  Converts JSON or XML data directly into a Java object.
+  Suitable for handling data sent via AJAX requests or in RESTful API scenarios where data is typically in JSON or XML format.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</rich_text>
+  </node>
+</cherrytree>

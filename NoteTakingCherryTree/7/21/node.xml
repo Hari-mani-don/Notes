@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="21" master_id="0" name="ProjectSetup" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="#613583" ts_creation="1717271814" ts_lastsave="1717271900">
+    <rich_text justification="center">Project SetUp
+========
+
+
+
+
+
+
+
+
+
+
+
+
+
+</rich_text>
+    <encoded_png char_offset="24" justification="center" link="" sha256sum="744a5a7f90d36dd7f8a2c882f6aeffdf9eeb81a629cd999d6396ff62bbae7272"/>
+  </node>
+</cherrytree>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="44" master_id="0" name="advance" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718653803" ts_lastsave="1718658522">
+    <rich_text>for of loop
+======
+	-	it is support for to iterate directly array value only but not for objec.
+	-	we need object iteration for value use this method "Object.keys(user) 
+		
+	-	the above method provide keys only.
+		
+	-	we need key and value Object.entries(user) this method like java provide key and value in array.
+	
+	let user = {
+		name:"Anbu",
+		getFullName(){
+			console.log(`my name is ${this.name}`);
+		}
+	
+	}
+	
+	for( let key of Object.keys(user))
+				console.log(key)-&gt; error throw
+
+	for(let entry of Object.entries(user))
+				console.log(entry); -&gt; ["name","Anbu"]
+				
+			
+if()
+====	
+			if("name" in user)
+					console.log("yes!");
+					
+object Cloning
+==========
+		3 ways object cloning
+		
+		
+		let user={
+			name:"hari",
+			age:24
+		}
+		
+		let another ={};
+		
+		1.  for(let key in user){
+				another[key] = user[key];
+		}		
+		
+		2.	let another = Object.assign({number:20}, user);-&gt; name, age,number
+		
+		3.spread operator
+		===========
+		let another = {...user};
+		console.log(another);</rich_text>
+  </node>
+</cherrytree>

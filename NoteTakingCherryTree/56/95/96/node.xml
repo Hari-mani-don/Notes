@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="96" master_id="0" name="Notes in CoderUllagam" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720799902" ts_lastsave="1720865951">
+    <rich_text>servlet mapping config
+spring configuration
+server config
+dependency management   the above all spring boot application used to overcome the boiler plate code
+
+spring boot feautures?
+	-&gt; automatic configuration
+	-&gt; starter depedency
+	-&gt; actuator -&gt; beans configured in runtime check, spring boot auto configuration
+	
+
+1.Thymelef for frontend dependency
+2.each steps run pani pathukanum
+3.template folder kulla create view page name
+4.H2 database dependency add panita need not to configure application properties file. automatically store that database
+5.spring.h2.console.enabled=true just this add is enough
+after endpoint and  jdbc name show in log file get and 
+	</rich_text>
+    <rich_text link="webs http://localhost8080/h2-console" background="#ff0000" foreground="#ffffff" weight="heavy">http://localhost8080/h2-console</rich_text>
+    <rich_text foreground="#ffffff"> </rich_text>
+    <rich_text>then his show that after jdbc link past after no change anything default ha vitudu
+
+profile
+=====
+1.spring.profiles.active=qa     which means application-qa.properties - hypen apram enna kudukuriyo athutha profile ha consider pannikum. this is first way to profile set 
+2. second way set profile right-click-&gt; runConfiguration-&gt; corresponding app la profiles show athula set pannikalam
+3.3rd way command line build and jar or war after right-click-&gt; properties path copy
+then commandline java -jar -Dspring.profiles.active=qa home-SNAPSHOT-2.34.jar
+4.Restlet extension or postman tool, json formate extensiion
+
+spring security
+===========
+default username =user and password  is generated in console
+1.spring.security.username=hari
+2.spring.security.password=mani
+basically request reach before controller check spring security in 15 filter chain after comes in controller.
+3.logout panna security </rich_text>
+    <rich_text link="webs http://localhost:8080/logout" background="#ff0000" foreground="#ffffff">http://localhost:8080/logout</rich_text>
+    <rich_text background="#ff0000" foreground="#ffffff"> </rich_text>
+    <rich_text>-&gt; spring provide default also
+</rich_text>
+  </node>
+</cherrytree>

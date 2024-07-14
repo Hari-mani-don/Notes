@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="42" master_id="0" name="OOp" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718499371" ts_lastsave="1718653554">
+    <rich_text>OOP
+=====
+
+let person = {
+	name: “hari”,
+	age:21,
+	isAlive:true,
+	color:['red','blue'],
+	address:{
+		city:"chennai",
+		state:"tamil Nadu"
+	},
+	
+	//method also called in oops
+	greeting:function(){
+		let msg = `my name is ${this.name}, i love ${interest}`;
+		console.log(msg);
+	}
+}
+
+//call object inside function
+
+person.addition(); -&gt; output show
+person.addition;-&gt; function code show
+person.name -&gt; name value print
+
+short code write Factory function
+====================
+step 1:
+====
+
+ function createPerson(){
+				let person = {
+					name: “hari”,
+					greeting:function(){
+							let msg = `my name is ${this.name}, i love ${interest}`;
+							console.log(msg);
+						}
+				};
+				return person;	
+	}
+	
+step 2:
+====
+
+ function createPerson(){
+				return {
+					name: “hari”,
+					greeting:function(){
+							let msg = `my name is ${this.name}, i love ${interest}`;
+							console.log(msg);
+						}
+				};
+				//return person	
+	}
+	
+	step 3:
+	=====
+	
+	function createPerson(name){
+				return {
+					name: name, // dynamic value pass
+					greeting:function(){
+							let msg = `my name is ${this.name}, i love ${interest}`;
+							console.log(msg);
+						}
+				};
+				
+	}
+	
+	step 4:
+	
+	function createPerson(name){
+				return {
+					name, // same parameter so not mention  -&gt; name = name; 
+					greeting:function(){
+							let msg = `my name is ${this.name}, i love ${interest}`;
+							console.log(msg);
+						}
+				};
+	}
+	step 5:
+	====
+	
+	function createPerson(name){
+				return {
+					name, // same parameter so not mention  -&gt; name = name; 
+					
+					greeting(){
+							let msg = `my name is ${this.name}`;
+							console.log(msg);
+						}
+				};
+	}
+	
+	let anbu = createPerson("anbu");
+	anbu.greeting();
+	
+	step 6:
+	======
+	function createPerson(name,age){
+				return {
+					name, // same parameter so not mention  -&gt; name = name; 
+					age,
+					
+					greeting(){
+							let msg = `my name is ${this.name} , ${this.age}`;
+							console.log(msg);
+						}
+				};
+	}
+	createPerson('Anbu',24).greeting();
+	
+	
+	
+	constructor funtion()
+	=========
+	
+			function Person(name,age){
+			
+						this.name=name;
+						this.age =age;
+						
+						this.greeting= function(){
+							console.log(`my name is ${this.name}`);
+						}
+						
+						//return object -&gt; it is automatically nadakum
+							
+		}
+			new Person('Anbu',24).greeting();
+
+
+   js Dynamic Object
+   =============
+	   const person ={  -&gt; const using object insted of any other change error through 
+		name:"hari"
+	}
+
+		person.name="mani";
+		person.age=21;
+		person.sex="male"
+
+		delete person.name;
+		delete person.age;
+		console.log(person);
+		
+		
+constructor   -&gt; each object have default constructor
+========
+
+
+let  object ={} ;-&gt; new Object();
+let number = 5; -&gt; new Number(5);
+let alph = “hari”;-&gt; new String("hari");
+let bool = true; -&gt;  new Boolean (true);
+
+primitive &amp; reference type
+===============\
+
+→ a = 10;
+→ b=a;
+→ a=20; so the output a =20 &amp; b= 10 so the reason is primitve store value.
+
+  a ={value:10};
+  b=a;
+  a.value=20;  so the output is a=20 &amp; b=20 also b'z it is referce store.
+  
+  
+  </rich_text>
+  </node>
+</cherrytree>

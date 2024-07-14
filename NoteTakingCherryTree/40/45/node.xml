@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="45" master_id="0" name="Garbage" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718658872" ts_lastsave="1718660395">
+    <rich_text>Garbage collection
+==========
+		-&gt; garbage collection concept also in js .
+		-&gt;  js engine automatically clear the unwanted object memory.
+		
+Math Operation
+=========
+	1.min
+	2.max
+	3.ceil
+	4.round
+	5.random()
+	6.clear()
+	7.pI -&gt; is a property
+	
+String Objects create
+=============
+		1. let name ="hari" -&gt; string literals it is not object it is primitive
+		2. let name = new String("hari") -&gt; it is a String object;
+		
+		String inbuild methods()
+		===============
+		1.length -&gt; property
+		2.concat()
+		3.includes() -&gt; if it is available or not like contains
+		4.startsWith()
+		5.endsWith()
+		6. indexOf()
+		7.match(regex)
+		8.repeat() -&gt; how many times that will be repeat
+		9.replace()
+		10.split()
+		11.slice(2) -&gt; print data index from 2 with start
+		12. substr()
+		13.toLowerCase()
+		14.toUpperCase()
+		15.trim()
+		16.trimStart()
+		17.trimEnd()
+		</rich_text>
+  </node>
+</cherrytree>

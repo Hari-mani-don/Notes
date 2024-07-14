@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="12" master_id="0" name="ProjectStructure" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="#613583" ts_creation="1717247486" ts_lastsave="1717271633">
+    <rich_text justification="center" scale="h1">Project Structure
+==========</rich_text>
+    <rich_text>
+
+
+
+
+
+
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
+
+
+
+
+</rich_text>
+    <encoded_png char_offset="33" justification="left" link="" sha256sum="b2ceacb14b549c251dd7a64ee1d549666de8fda149ccbb484f17bde9d54c2631"/>
+    <encoded_png char_offset="36" justification="left" link="" sha256sum="09510fa0f9f41039aa689cd4b5c276dec1ba19f6703426f217a2968bf7260c4f"/>
+  </node>
+</cherrytree>

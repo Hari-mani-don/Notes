@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="11" master_id="0" name="RepositoryClass" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="#613583" ts_creation="1717247409" ts_lastsave="1717247425">
+    <rich_text justification="center" scale="h1">repository
+===========</rich_text>
+    <rich_text scale="h1">
+	just interface only create in entity class related. </rich_text>
+  </node>
+</cherrytree>

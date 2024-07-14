@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="37" master_id="0" name="JUnit and Mockito" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717769139" ts_lastsave="1717771653">
+    <rich_text justification="center" scale="h2">Junit Annotations
+===</rich_text>
+    <rich_text scale="h2">==========</rich_text>
+    <rich_text>
+
+
+1. </rich_text>
+    <rich_text family="monospace" scale="h4">@Test</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Marks a method as a test method.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> JUnit runs this method as a test case
+
+
+2.</rich_text>
+    <rich_text family="monospace" scale="h4">@BeforeEach</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Runs before each test method in the class.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> Used to set up test data or initialize resources
+
+
+3.</rich_text>
+    <rich_text family="monospace" scale="h4">@AfterEach</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Runs after each test method in the class.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> Used to clean up resources or reset states.
+
+
+4.</rich_text>
+    <rich_text family="monospace" scale="h4">@BeforeAll</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Runs once before all test methods in the class.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> Used to set up static resources shared across tests
+
+5.</rich_text>
+    <rich_text family="monospace" scale="h4">@AfterAll</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Runs once after all test methods in the class.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> Used to clean up static resources.
+
+
+• </rich_text>
+    <rich_text family="monospace">assertEquals(expected, actual)</rich_text>
+    <rich_text>: Checks if two values are equal.
+• </rich_text>
+    <rich_text family="monospace">assertTrue(condition)</rich_text>
+    <rich_text>: Checks if a condition is true.
+• </rich_text>
+    <rich_text family="monospace">assertFalse(condition)</rich_text>
+    <rich_text>: Checks if a condition is false.
+• </rich_text>
+    <rich_text family="monospace">assertNull(object)</rich_text>
+    <rich_text>: Checks if an object is null.
+• </rich_text>
+    <rich_text family="monospace">assertNotNull(object)</rich_text>
+    <rich_text>: Checks if an object is not null.
+• </rich_text>
+    <rich_text family="monospace">assertThrows(exceptionClass, executable)</rich_text>
+    <rich_text>: Checks if a specific exception is thrown.
+
+@Before
+public void setUp() { ... }
+
+@After
+public void tearDown() { ... }
+
+
+</rich_text>
+    <rich_text justification="center" scale="h2">Mockito Annotations
+==============</rich_text>
+    <rich_text>
+1.</rich_text>
+    <rich_text family="monospace" scale="h4">@Mock</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Creates a mock object.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> Mockito replaces the real object with a mock version.
+
+
+2.</rich_text>
+    <rich_text family="monospace" scale="h4">@InjectMocks</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose:</rich_text>
+    <rich_text> Injects mock objects into the tested object.
+• </rich_text>
+    <rich_text weight="heavy">How it works:</rich_text>
+    <rich_text> Mockito automatically injects mocks annotated with </rich_text>
+    <rich_text family="monospace">@Mock</rich_text>
+    <rich_text> into the object annotated with </rich_text>
+    <rich_text family="monospace">@InjectMocks</rich_text>
+    <rich_text>.
+
+</rich_text>
+  </node>
+</cherrytree>

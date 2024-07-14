@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="92" master_id="0" name="anotation" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720564819" ts_lastsave="1720609410">
+    <rich_text>• </rich_text>
+    <rich_text weight="heavy">@Controller</rich_text>
+    <rich_text>: Indicates that a class is a Spring MVC controller.
+
+• </rich_text>
+    <rich_text weight="heavy">@RequestMapping</rich_text>
+    <rich_text>: Maps HTTP requests to handler methods of MVC and REST controllers. Can be used at class level and method level.
+
+• </rich_text>
+    <rich_text weight="heavy">@GetMapping</rich_text>
+    <rich_text>: Specializes the @RequestMapping annotation to handle HTTP GET requests.
+
+• </rich_text>
+    <rich_text weight="heavy">@PostMapping</rich_text>
+    <rich_text>: Specializes the @RequestMapping annotation to handle HTTP POST requests.
+
+• </rich_text>
+    <rich_text weight="heavy">@PutMapping</rich_text>
+    <rich_text>: Specializes the @RequestMapping annotation to handle HTTP PUT requests.
+
+• </rich_text>
+    <rich_text weight="heavy">@DeleteMapping</rich_text>
+    <rich_text>: Specializes the @RequestMapping annotation to handle HTTP DELETE requests.
+
+• </rich_text>
+    <rich_text weight="heavy">@PatchMapping</rich_text>
+    <rich_text>: Specializes the @RequestMapping annotation to handle HTTP PATCH requests.
+
+• </rich_text>
+    <rich_text weight="heavy">@RequestParam</rich_text>
+    <rich_text>: Binds a web request parameter to a method parameter in the controller.
+
+• </rich_text>
+    <rich_text weight="heavy">@PathVariable</rich_text>
+    <rich_text>: Binds a URI template variable to a method parameter.
+
+• </rich_text>
+    <rich_text weight="heavy">@ModelAttribute</rich_text>
+    <rich_text>: Binds a method parameter or method return value to a named model attribute and then exposes it to a web view.
+
+• </rich_text>
+    <rich_text weight="heavy">@RequestBody</rich_text>
+    <rich_text>: Binds the body of the web request to a method parameter.
+
+• </rich_text>
+    <rich_text weight="heavy">@ResponseBody</rich_text>
+    <rich_text>: Binds the return value of a method to the web response body.
+
+• </rich_text>
+    <rich_text weight="heavy">@ResponseStatus</rich_text>
+    <rich_text>: Marks a method or exception class with the status code and reason that should be returned.
+
+• </rich_text>
+    <rich_text weight="heavy">@ExceptionHandler</rich_text>
+    <rich_text>: Defines a method that handles exceptions thrown by handler methods.
+
+• </rich_text>
+    <rich_text weight="heavy">@RestController</rich_text>
+    <rich_text>: A convenience annotation that combines @Controller and @ResponseBody, indicating that the class handles RESTful web services.
+
+• </rich_text>
+    <rich_text weight="heavy">@InitBinder</rich_text>
+    <rich_text>: Identifies methods to initialize the WebDataBinder, which is used for data binding from web request parameters to JavaBean objects.
+
+• </rich_text>
+    <rich_text weight="heavy">@SessionAttributes</rich_text>
+    <rich_text>: Specifies the names of model attributes that should be stored in the session.
+
+• </rich_text>
+    <rich_text weight="heavy">@CookieValue</rich_text>
+    <rich_text>: Binds the value of an HTTP cookie to a method parameter.
+
+• </rich_text>
+    <rich_text weight="heavy">@RequestHeader</rich_text>
+    <rich_text>: Binds the value of an HTTP header to a method parameter.
+
+• </rich_text>
+    <rich_text weight="heavy">@CrossOrigin</rich_text>
+    <rich_text>: Enables cross-origin resource sharing (CORS) on the annotated handler methods or class.
+
+</rich_text>
+  </node>
+</cherrytree>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="5" master_id="0" name="Dependency Injection" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="1" custom_icon_id="1" is_bold="1" foreground="#2ec27e" ts_creation="1716675459" ts_lastsave="1716675795">
+    <rich_text scale="h1"> what is Dependency injection?</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text scale="h5">			</rich_text>
+    <rich_text scale="h5" weight="heavy">Dependency</rich_text>
+    <rich_text justification="left" scale="h5">: An object that another object depends on. For example, if a class </rich_text>
+    <rich_text family="monospace" scale="h5">Car</rich_text>
+    <rich_text justification="left" scale="h5"> needs an instance of </rich_text>
+    <rich_text family="monospace" scale="h5">Engine</rich_text>
+    <rich_text justification="left" scale="h5">, then </rich_text>
+    <rich_text family="monospace" scale="h5">Engine</rich_text>
+    <rich_text justification="left" scale="h5"> is a dependency of </rich_text>
+    <rich_text family="monospace" scale="h5">Car</rich_text>
+    <rich_text scale="h5">.
+			
+			 </rich_text>
+    <rich_text scale="h5" weight="heavy">Injection</rich_text>
+    <rich_text scale="h5">: The process of passing (injecting) the dependency to a dependent object. This can be done through various methods, such as constructor injection, setter injection, or interface injection.</rich_text>
+    <rich_text>
+
+ 
+</rich_text>
+    <rich_text scale="h3"> 		i)	what is dependency injection?</rich_text>
+    <rich_text>
+ 
+                  •  </rich_text>
+    <rich_text scale="h3">Dependency Injection (DI) is a design pattern used in software development to achieve Inversion of Control       (IoC) between classes and their dependencies</rich_text>
+    <rich_text>.
+                  • </rich_text>
+    <rich_text scale="h3">In simpler terms, it means that instead of a class creating its dependencies internally</rich_text>
+    <rich_text>,
+                  • </rich_text>
+    <rich_text scale="h3"> those dependencies are provided (injected) from the outside</rich_text>
+    <rich_text>.
+ 				
+</rich_text>
+    <rich_text scale="h3"> 		ii)	How does it work?
+                  • </rich_text>
+    <rich_text scale="h3" weight="heavy">Normal Java</rich_text>
+    <rich_text scale="h3">: You have to manually instantiate and inject dependencies, which can be cumbersome as the application grows.
+                  • </rich_text>
+    <rich_text scale="h3" weight="heavy">Spring</rich_text>
+    <rich_text scale="h3">: Uses a container to manage the lifecycle and configuration of beans. Dependencies are automatically injected based on configuration metadata (XML, annotations, or Java configuration).
+                  
+       iii)Advantage of dependency injection?</rich_text>
+    <rich_text>
+                     ☑  </rich_text>
+    <rich_text scale="h3">This helps to create more modular, testable, and maintainable code</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">                 ☑  Spring promoting loose coupling, improved testability, and enhanced flexibility</rich_text>
+    <rich_text>
+                 
+                 
+</rich_text>
+    <rich_text scale="h3">        iV) why use dependency injection?</rich_text>
+    <rich_text>
+        
+        		</rich_text>
+    <rich_text scale="h3">Dependency Injection (DI) is a design pattern used to achieve Inversion of Control (IoC) between classes and their dependencies</rich_text>
+    <rich_text>.
+                                          1. </rich_text>
+    <rich_text weight="heavy">Loose Coupling</rich_text>
+    <rich_text>
+                                          2. </rich_text>
+    <rich_text scale="h3" weight="heavy">Improved Testability</rich_text>
+    <rich_text>
+                                          3. </rich_text>
+    <rich_text scale="h3" weight="heavy">Enhanced Flexibility and Maintainability</rich_text>
+    <rich_text>
+                                          4. </rich_text>
+    <rich_text scale="h3"> </rich_text>
+    <rich_text scale="h3" weight="heavy">Separation of Concerns</rich_text>
+    <rich_text>
+                                          5. </rich_text>
+    <rich_text scale="h3" weight="heavy">Reusable Components</rich_text>
+    <rich_text>
+
+
+</rich_text>
+    <rich_text scale="h3">1. </rich_text>
+    <rich_text scale="h3" weight="heavy">Loose Coupling</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">DI promotes loose coupling between classes and their dependencies. Instead of a class creating its own dependencies, dependencies are injected from the outside. This makes it easier to change and manage dependencies without modifying the class itself.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">2. </rich_text>
+    <rich_text scale="h3" weight="heavy">Improved Testability</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">DI makes it easier to test classes in isolation. By injecting dependencies, you can easily replace real implementations with mock or stub objects during testing, which allows for more effective unit testing.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">3. </rich_text>
+    <rich_text scale="h3" weight="heavy">Enhanced Flexibility and Maintainability</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">DI allows for greater flexibility in how dependencies are provided and configured. It makes it easier to switch between different implementations of a dependency or change the configuration without modifying the dependent class. This leads to better maintainability of the codebase.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">4. </rich_text>
+    <rich_text scale="h3" weight="heavy">Separation of Concerns</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">DI helps in separating the creation and configuration of dependencies from the business logic of the application. This leads to a cleaner and more modular codebase where each class has a single responsibility.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text scale="h3">5. </rich_text>
+    <rich_text scale="h3" weight="heavy">Reusable Components</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h3">By decoupling classes from their dependencies, DI allows for the creation of more reusable and interchangeable components. This modularity facilitates code reuse and easier integration of new features</rich_text>
+    <rich_text>
+
+
+
+  					
+
+</rich_text>
+    <rich_text scale="h2">					Issues with Normal Java Class Dependencies</rich_text>
+    <rich_text>
+					
+</rich_text>
+    <rich_text scale="h4">					1. </rich_text>
+    <rich_text scale="h4" weight="heavy">Tight Coupling</rich_text>
+    <rich_text scale="h4">: The </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class is tightly coupled to the </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> class. Any changes to the </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> implementation will require changes to the </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class.
+					2. </rich_text>
+    <rich_text scale="h4" weight="heavy">Difficult to Test</rich_text>
+    <rich_text scale="h4">: Testing the </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class in isolation is challenging because you cannot easily replace the </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> with a mock implementation.
+					3. </rich_text>
+    <rich_text scale="h4" weight="heavy">Reduced Flexibility</rich_text>
+    <rich_text scale="h4">: Switching to a different implementation of </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> requires changes in the </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class.</rich_text>
+    <rich_text>
+                 
+                 
+                 
+</rich_text>
+    <rich_text scale="h2">						Benefits of Spring-Managed Dependencies</rich_text>
+    <rich_text>
+						
+</rich_text>
+    <rich_text scale="h4">						1. </rich_text>
+    <rich_text scale="h4" weight="heavy">Loose Coupling</rich_text>
+    <rich_text scale="h4">: The </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class is loosely coupled to the </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> interface. It doesnâ€™t care about the specific implementation of </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4">.
+						2. </rich_text>
+    <rich_text scale="h4" weight="heavy">Improved Testability</rich_text>
+    <rich_text scale="h4">: You can easily test the </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class by injecting mock implementations of the </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> interface using Spring's testing support.
+						3. </rich_text>
+    <rich_text scale="h4" weight="heavy">Enhanced Flexibility</rich_text>
+    <rich_text scale="h4">: You can switch between different </rich_text>
+    <rich_text family="monospace" scale="h4">Engine</rich_text>
+    <rich_text scale="h4"> implementations by changing the Spring configuration without modifying the </rich_text>
+    <rich_text family="monospace" scale="h4">Car</rich_text>
+    <rich_text scale="h4"> class.
+						4. </rich_text>
+    <rich_text scale="h4" weight="heavy">Centralized Configuration</rich_text>
+    <rich_text scale="h4">: Spring allows you to manage and configure dependencies in a centralized manner using configuration files or annotations
+</rich_text>
+    <rich_text>
+                 
+                 
+        
+</rich_text>
+    <rich_text scale="h3">        • </rich_text>
+    <rich_text scale="h3" weight="heavy">Normal Java Class Dependencies</rich_text>
+    <rich_text scale="h3">: Dependencies are instantiated and managed within the classes themselves, leading to tight coupling, harder testing, and reduced flexibility.
+        
+        • </rich_text>
+    <rich_text scale="h3" weight="heavy">Spring-Managed Dependencies</rich_text>
+    <rich_text scale="h3">: Dependencies are managed by the Spring container, Spring uses Dependency Injection to inject dependencies, which can be configured via annotations or configuration files.</rich_text>
+    <rich_text>
+        
+        
+        
+        
+        
+        
+</rich_text>
+    <rich_text scale="h2">Differences Between Spring and Normal Java for Dependency Management</rich_text>
+    <rich_text>
+1. </rich_text>
+    <rich_text weight="heavy">Configuration and Wiring</rich_text>
+    <rich_text>:
+• </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: You have to manually instantiate and inject dependencies, which can be cumbersome as the application grows.
+• </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Uses a container to manage the lifecycle and configuration of beans. Dependencies are automatically injected based on configuration metadata (XML, annotations, or Java configuration).
+
+
+• </rich_text>
+    <rich_text weight="heavy">Dependency Injection Techniques</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: You manually write code for dependency injection, which can be done via constructors, setters, or factories.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Provides a powerful and flexible DI mechanism that supports constructor injection, setter injection, and field injection out of the box, often reducing boilerplate code.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Bean Lifecycle Management</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: You have to manage the lifecycle of objects (initialization, destruction, etc.) manually.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Automatically manages the lifecycle of beans, including creation, initialization, destruction, and scope management (singleton, prototype, etc.).
+
+
+• </rich_text>
+    <rich_text weight="heavy">Aspect-Oriented Programming (AOP)</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: Implementing cross-cutting concerns (like logging, transaction management, security) requires manual code changes across various classes.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Provides AOP support to cleanly separate cross-cutting concerns from business logic, improving modularity and reducing boilerplate code.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Testing Support</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: Setting up dependencies and managing them for unit tests can be cumbersome.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Provides extensive support for integration and unit testing, including context configuration, mock object injection, and test-specific bean definitions.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Configuration Flexibility</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: Configuration is typically done programmatically or via property files, which can be scattered and hard to manage.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Supports various configuration styles (XML, Java annotations, Java configuration classes), allowing for centralized and flexible configuration management.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Framework Integrations</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: Integrating various frameworks (like Hibernate, JPA, JMS) requires manual setup and configuration.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Offers seamless integration with a wide range of frameworks and libraries, providing pre-configured templates and utilities to simplify configuration and usage.
+
+
+• </rich_text>
+    <rich_text weight="heavy">Infrastructure Management</rich_text>
+    <rich_text>:
+◇ </rich_text>
+    <rich_text weight="heavy">Normal Java</rich_text>
+    <rich_text>: Requires manual setup for transactions, security, and other infrastructural concerns.
+◇ </rich_text>
+    <rich_text weight="heavy">Spring</rich_text>
+    <rich_text>: Provides comprehensive support for managing transactions, security, and other infrastructure needs through declarative configuration
+
+
+</rich_text>
+  </node>
+</cherrytree>

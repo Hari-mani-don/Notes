@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="81" master_id="0" name="Anotation spring core" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1720400720" ts_lastsave="1720404160">
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">• @Component
+• @Repository
+• @Service
+• @Controller
+• @Autowired
+• @Qualifier
+• @Configuration
+• @Bean
+• @Value
+• @Scope
+• @PostConstruct
+• @PreDestroy
+• @Lazy
+• @Primary
+• @DependsOn
+• @Profile</rich_text>
+    <rich_text>
+
+• </rich_text>
+    <rich_text weight="heavy">@Component</rich_text>
+    <rich_text>:
+• Used to denote a class as a Spring bean. Spring container will automatically detect and instantiate such classes.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Repository</rich_text>
+    <rich_text>:
+  Specialized form of @Component used for DAO classes. It indicates that the annotated class is a repository, typically used for database operations.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Service</rich_text>
+    <rich_text>:
+  Specialized form of @Component used for service classes. It indicates that the annotated class is a service component in the business layer.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Controller</rich_text>
+    <rich_text>:
+  Specialized form of @Component used for controller classes in MVC applications. It indicates that the annotated class serves as a Spring MVC controller.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Autowired</rich_text>
+    <rich_text>:
+  Used for automatic dependency injection. Spring will automatically resolve and inject dependencies into the annotated fields, constructors, or methods.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Qualifier</rich_text>
+    <rich_text>:
+  Used in conjunction with @Autowired to specify which bean should be injected when multiple beans of the same type are available.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Configuration</rich_text>
+    <rich_text>:
+  Indicates that a class contains Spring configuration. This is typically used on classes annotated with @ComponentScan and/or @Bean.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Bean</rich_text>
+    <rich_text>:
+  Used inside @Configuration classes to declare a bean. Spring container will manage the lifecycle of the bean created by a method annotated with @Bean.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Value</rich_text>
+    <rich_text>:
+  Used to inject values from properties files, environment variables, or system properties into Spring beans.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Scope</rich_text>
+    <rich_text>:
+  Specifies the scope of Spring beans (e.g., singleton, prototype, request, session).
+• </rich_text>
+    <rich_text weight="heavy">Singleton</rich_text>
+    <rich_text>: One instance for the entire application.
+• </rich_text>
+    <rich_text weight="heavy">Prototype</rich_text>
+    <rich_text>: New instance each time it's requested.
+• </rich_text>
+    <rich_text weight="heavy">Request</rich_text>
+    <rich_text>: New instance for each HTTP request.
+• </rich_text>
+    <rich_text weight="heavy">Session</rich_text>
+    <rich_text>: New instance for each user session (from login to logout).
+• </rich_text>
+    <rich_text weight="heavy">Global Session</rich_text>
+    <rich_text>: Single instance across all Portlets in the same user session.
+• </rich_text>
+    <rich_text weight="heavy">Application</rich_text>
+    <rich_text>: Single instance across the entire web application (ServletContext).
+
+
+• </rich_text>
+    <rich_text weight="heavy">@PostConstruct</rich_text>
+    <rich_text>:
+  Used on methods that need to be executed after dependency injection(Ioc container inject the object) is done to perform any initialization.
+  </rich_text>
+    <rich_text foreground="#ff0000">opening a database connection</rich_text>
+    <rich_text>, initializing configuration settings, or setting up other 
+
+	@Service
+	public class MyService {
+		
+		@PostConstruct
+		public void initialize() {
+		    // Initialization logic
+		    // For example, establish a database connection or initialize other resources
+		    System.out.println("MyService initialized");
+		}
+		
+		// Other methods and properties of MyService
+	}
+
+
+• </rich_text>
+    <rich_text scale="h3" weight="heavy">@PreDestroy</rich_text>
+    <rich_text>
+ </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Indicates a method to be invoked just before the bean is removed from the Spring context, allowing for cleanup or releasing resources.
+
+	@Component
+public class MyService {
+    
+    @PreDestroy
+    public void cleanup() {
+        // Cleanup logic
+        System.out.println("Bean destroyed");
+    }
+}
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Lazy</rich_text>
+    <rich_text>:
+  Delays the initialization of a bean</rich_text>
+    <rich_text foreground="#ff0000" weight="heavy"> until it is first requested</rich_text>
+    <rich_text>.
+	
+	import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Component
+@Lazy 
+public class HeavyResource { -&gt; </rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">this class take some time so that after application load it will object instatiate in spring container</rich_text>
+    <rich_text>
+    
+    public HeavyResource() {
+        System.out.println("</rich_text>
+    <rich_text weight="heavy">HeavyResource bean initialized</rich_text>
+    <rich_text>");
+        // Simulating heavy initialization process
+        try {
+            Thread.sleep(2000); // </rich_text>
+    <rich_text weight="heavy">Simulate heavy initialization time</rich_text>
+    <rich_text>
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void useResource() {
+        System.out.println("Using HeavyResource...");
+    }
+}
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Primary</rich_text>
+    <rich_text>:
+  Used in conjunction with @Autowired to specify a primary bean when multiple beans of the same type are present.
+
+
+• </rich_text>
+    <rich_text weight="heavy">@DependsOn</rich_text>
+    <rich_text>:
+  Specifies the bean dependencies. It ensures that the beans specified are initialized before the dependent bean is initialized.
+		
+		@Component("dataSourceInitializer")
+	public class DataSourceInitializer {
+		public DataSourceInitializer() {
+		    System.out.println("DataSourceInitializer bean initialized");
+		}
+	}
+
+	@Component("databaseService")
+	</rich_text>
+    <rich_text foreground="#ff0000" weight="heavy">@DependsOn("dataSourceInitializer")</rich_text>
+    <rich_text> -&gt; this line first check and object instantiate then crete this object instatiate 
+	public class DatabaseService {
+		
+		public DatabaseService() {
+		    System.out.println("DatabaseService bean initialized");
+		}
+		
+		// Other methods and properties of DatabaseService
+	}
+
+
+• </rich_text>
+    <rich_text weight="heavy">@Profile</rich_text>
+    <rich_text>:
+  Specifies the environment-specific configurations for a bean. Beans annotated with @Profile will be loaded only when the specified profiles are active.
+
+
+</rich_text>
+  </node>
+</cherrytree>

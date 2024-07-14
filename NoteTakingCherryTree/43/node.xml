@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="43" master_id="0" name="Java" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1718555390" ts_lastsave="1718602152">
+    <rich_text>List
+===
+1.ArrayList 
+=======
+      ⇒  indexed based retrive and replace best choice
+      ⇒  show datas in that context only use
+      ⇒ data read purpose only
+
+2.HashMap
+======= 
+    ⇒ show data and search then use HashMap is best choice
+    
+3.LinkedList
+=======
+		⇒ insert and delet for midle LinkedList is the best choice
+		⇒ stack and Queue
+		⇒ FILO &amp; FIFO 
+
+4.Stack
+======
+		⇒ only show the data FILO order use 
+		
+5.Queue
+=======
+		⇒ only show the data FIFO order use
+		
+6. PriorityQueue
+===========
+		⇒ task priory based also order priority based
+		
+7.ArrayDeque
+=========
+		⇒ navigate or undo/redo
+		
+
+    </rich_text>
+  </node>
+</cherrytree>

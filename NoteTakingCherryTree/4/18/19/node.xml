@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="19" master_id="0" name="Topics" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1717282309" ts_lastsave="1717282580">
+    <rich_text justification="center" scale="h2">OverView</rich_text>
+    <rich_text justification="center">
+========</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">1.Lambda expressions.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">2.Funtional Interface</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">3.Stream Api</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">4.Default methods</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">5.Optional Class</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">6.Date and Time.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text scale="h2">7.Nashorn javaScript Engine
+8.Parallel Array Sorting metho
+9.Collectors
+10.Annotation on java types
+11.Repeating annotation.
+12.Completabe future and the java.util.concurrent package enhancements.</rich_text>
+    <rich_text>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</rich_text>
+  </node>
+</cherrytree>

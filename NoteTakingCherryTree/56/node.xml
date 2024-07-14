@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="56" master_id="0" name="spring interview" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="1" is_bold="0" foreground="" ts_creation="1720191547" ts_lastsave="1720726262">
+    <rich_text>
+
+
+  </rich_text>
+    <rich_text weight="heavy">Core Concepts:</rich_text>
+    <rich_text>
+1. Spring Core:
+   - Inversion of Control (IoC)
+   - Dependency Injection (DI)
+   - Beans and Bean Lifecycle
+   - ApplicationContext
+
+2. Spring AOP (Aspect-Oriented Programming):
+   - Aspects
+   - Advice
+   - Pointcuts
+   - Joinpoints
+   - Weaving
+
+3. Spring ORM (Object-Relational Mapping):
+   - Integration with Hibernate
+   - JPA (Java Persistence API) support
+   - Transaction Management
+
+4. Spring Data:
+   - Spring Data JPA
+   - Spring Data MongoDB
+   - Spring Data Redis
+   - Spring Data Cassandra
+   - Spring Data Elasticsearch
+
+5. Spring JDBC:
+   - JdbcTemplate
+   - NamedParameterJdbcTemplate
+   - SimpleJdbcInsert and SimpleJdbcCall
+
+  </rich_text>
+    <rich_text weight="heavy">Web</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Framework</rich_text>
+    <rich_text>:
+6. Spring MVC (Model-View-Controller):
+   - Controllers
+   - Views (JSP, Thymeleaf)
+   - Model and ModelMap
+   - Request Mappings
+   - Form Handling
+   - RESTful Web Services
+
+7. Spring WebFlux:
+   - Reactive Programming
+   - Reactive Streams
+   - Mono and Flux
+   - Functional Endpoints
+
+  </rich_text>
+    <rich_text weight="heavy">Data Access and Integration:</rich_text>
+    <rich_text>
+8. Transaction Management:
+   - Declarative Transactions
+   - Programmatic Transactions
+
+9. Messaging:
+   - Spring JMS (Java Message Service)
+   - Spring AMQP (Advanced Message Queuing Protocol)
+   - </rich_text>
+    <rich_text weight="heavy">Spring Kafka</rich_text>
+    <rich_text>
+
+10. Spring Batch:
+    - </rich_text>
+    <rich_text weight="heavy">Batch Processing
+    - Job, Step, Tasklet</rich_text>
+    <rich_text>
+    - Readers, Processors, Writers
+    - Job Repository
+
+11. Spring Integration:
+    - Enterprise Integration Patterns (EIP)
+    - Channels
+    - Message Endpoints
+
+  </rich_text>
+    <rich_text weight="heavy">Security</rich_text>
+    <rich_text>:
+12. Spring Security:
+    - Authentication and Authorization
+    - Method Security
+    - Web Security
+    - OAuth2 and JWT
+
+  </rich_text>
+    <rich_text weight="heavy">Cloud</rich_text>
+    <rich_text> and </rich_text>
+    <rich_text weight="heavy">Microservices</rich_text>
+    <rich_text>:
+13. Spring Cloud:
+    - Service Discovery (Eureka)
+    - Circuit Breaker (Hystrix, Resilience4j)
+    - Configuration Management (Spring Cloud Config)
+    - API Gateway (Spring Cloud Gateway)
+    - Cloud Messaging (Spring Cloud Stream)
+    - Kubernetes Integration
+
+14. Spring Boot:
+    - Auto-configuration
+    - Embedded Servers
+    - Spring Boot Starters
+    - Spring Boot Actuator
+    - Spring Boot CLI
+
+  </rich_text>
+    <rich_text weight="heavy">Additional</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Modules</rich_text>
+    <rich_text>:
+15. Spring REST Docs:
+    - REST API Documentation
+
+16. Spring HATEOAS:
+    - Hypermedia as the Engine of Application State
+
+17. Spring LDAP:
+    - LDAP Support
+
+18. Spring Web Services:
+    - SOAP Web Services
+
+  </rich_text>
+    <rich_text weight="heavy">Testing</rich_text>
+    <rich_text>:
+19. Spring Testing:
+    - Unit Testing with JUnit
+    - Integration Testing
+    - Mocking with Mockito
+    - Spring TestContext Framework
+
+  </rich_text>
+    <rich_text weight="heavy">Utility</rich_text>
+    <rich_text> </rich_text>
+    <rich_text weight="heavy">Modules</rich_text>
+    <rich_text>:
+20. Spring Expression Language (SpEL):
+    - Expression Parsing and Evaluation
+
+21. Spring Cache:
+    - Caching Abstraction
+    - Cache Providers (EhCache, Redis, etc.)
+
+22. Spring Internationalization (i18n):
+    - Locale Support
+    - MessageSource
+
+23. Spring Scripting:
+    - Scripting Languages Integration (Groovy, JRuby, etc.)
+
+24. Spring Mobile:
+    - Mobile Web Application Development
+
+25. Spring Social:
+    - Integration with Social Networks (Facebook, Twitter, etc.)
+
+
+
+
+
+
+</rich_text>
+    <rich_text weight="heavy">1.  Core Container :</rich_text>
+    <rich_text> 
+   -  IoC Container : Inversion of Control container manages Java objects.
+   -  Dependency Injection : Allows objects to be injected at runtime.
+   
+</rich_text>
+    <rich_text weight="heavy">2.  Aspect-Oriented Programming (AOP) :</rich_text>
+    <rich_text>
+   -  Aspect : Modularization of concerns like transaction management.
+   -  Advice : Action taken by an aspect at a particular join point.
+   -  Join Point : Point during program execution, like a method execution or exception handling.
+   
+</rich_text>
+    <rich_text weight="heavy">3.  Data Access/Integration :</rich_text>
+    <rich_text>
+   -  JDBC : Java Database Connectivity for database operations.
+   -  ORM : Object-Relational Mapping integration with Hibernate, JPA, etc.
+   -  Transaction Management : Declarative and programmatic transaction control.
+
+</rich_text>
+    <rich_text weight="heavy">4.  Web : </rich_text>
+    <rich_text>
+   -  Spring MVC : Model-View-Controller framework for web applications.
+   -  REST : Spring MVC RESTful web services with @RestController.
+   -  WebSocket : Full-duplex communication channels over a single TCP connection.
+   -  Security : Authentication and authorization using filters and annotations.
+
+</rich_text>
+    <rich_text weight="heavy">5.  Testing :</rich_text>
+    <rich_text>
+   -  Unit Testing : JUnit and TestNG for unit tests.
+   -  Integration Testing : Spring TestContext Framework for integration tests.
+   -  Mocking : Mockito and Spring’s MockMvc for mocking dependencies.
+
+</rich_text>
+    <rich_text weight="heavy">6.  Miscellaneous :</rich_text>
+    <rich_text>
+   -  Spring Boot : Simplifies Spring application development.
+   -  Spring Data : Simplifies database access.
+   -  Spring Batch : Batch processing framework.
+   -  Spring Cloud : Tools for building and deploying cloud-native applications.
+   -  Spring Security : Authentication, authorization, and other security features.
+</rich_text>
+  </node>
+</cherrytree>

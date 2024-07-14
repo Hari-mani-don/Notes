@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="22" master_id="0" name="Exceptions" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1717366681" ts_lastsave="1717367264">
+    <rich_text>
+																Exception
+																======
+
+1.</rich_text>
+    <rich_text scale="h3">ResourceNotFoundException</rich_text>
+    <rich_text>:
+=====================
+  </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When a requested resource (like a database entity) is not found. 
+  </rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A user tries to retrieve a record from the database by ID, but the record does not exist.
+  
+  
+  
+2.</rich_text>
+    <rich_text scale="h3">InvalidInputException</rich_text>
+    <rich_text>
+================
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When the input provided by the user is invalid or does not meet certain criteria. 
+</rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A user submits a form with invalid data (e.g., a required field is missing).
+
+
+</rich_text>
+    <rich_text scale="h3">3. UnauthorizedAccessException</rich_text>
+    <rich_text>
+ ======================
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When a user tries to access a resource without proper authorization.
+ </rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A user tries to access an admin-only endpoint without admin privileges.
+
+
+
+</rich_text>
+    <rich_text scale="h3">4. DataIntegrityViolationException</rich_text>
+    <rich_text>
+===========================
+
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When there is a data integrity violation, such as a constraint violation in the database. </rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A user tries to insert a duplicate entry that violates a </rich_text>
+    <rich_text foreground="#ed333b">unique constraint</rich_text>
+    <rich_text>.
+
+
+</rich_text>
+    <rich_text scale="h3">5. ServiceUnavailableException</rich_text>
+    <rich_text>
+ ======================
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When a service is temporarily unavailable.
+ </rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A dependent external service is down, and your application cannot proceed with the operation.
+
+</rich_text>
+    <rich_text scale="h3">6. OperationNotAllowedException</rich_text>
+    <rich_text>
+ =======================
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When an operation is not allowed due to business logic constraints. 
+</rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A user tries to delete an account that has active subscriptions.
+
+
+</rich_text>
+    <rich_text scale="h3">7. ConflictException</rich_text>
+    <rich_text>
+================
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: When there is a conflict, such as a duplicate entry or version conflict.
+ </rich_text>
+    <rich_text weight="heavy">Example Use Case</rich_text>
+    <rich_text>: A user tries to create a record with a </rich_text>
+    <rich_text foreground="#ed333b">unique field</rich_text>
+    <rich_text> that already exists in the database.
+
+8</rich_text>
+    <rich_text scale="h3">. BadRequestException</rich_text>
+    <rich_text>
+=================
+</rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used when the request made by the client is invalid. This can be due to malformed syntax, invalid request parameters, or missing required fields. It is typically mapped to an HTTP 400 Bad Request status code.
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A user submits a form without providing a required field, such as a username.
+
+
+9</rich_text>
+    <rich_text scale="h3">. ForbiddenException</rich_text>
+    <rich_text>
+================
+</rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used when the user does not have permission to perform the requested operation. It is typically mapped to an HTTP 403 Forbidden status code.
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A regular user tries to access an admin-only page.
+
+
+10</rich_text>
+    <rich_text scale="h3">. NotFoundException</rich_text>
+    <rich_text>
+=================
+</rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used when a requested resource cannot be found. This is often used when a specified resource ID does not exist. It is typically mapped to an HTTP 404 Not Found status code.
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A user tries to access a blog post that does not exist.
+
+
+11</rich_text>
+    <rich_text scale="h3">. InternalServerErrorException</rich_text>
+    <rich_text>
+=======================
+</rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used when an unexpected condition was encountered and no more specific message is suitable. It is typically mapped to an HTTP 500 Internal Server Error status code.
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A server error occurs during data processing due to an unexpected condition.
+
+
+12</rich_text>
+    <rich_text scale="h3">. ServiceUnavailableException</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: </rich_text>
+    <rich_text family="monospace">ServiceUnavailableException</rich_text>
+    <rich_text> is used when a service is temporarily unavailable. It is typically mapped to an HTTP 503 Service Unavailable status code.
+</rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: An external API your application depends on is down.
+
+13.</rich_text>
+    <rich_text weight="heavy">IllegalArgumentException</rich_text>
+    <rich_text>
+====================
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Thrown to indicate that a method has been passed an illegal or inappropriate argument.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A method receives a null value where a non-null value is required.
+
+14.</rich_text>
+    <rich_text weight="heavy">IllegalStateException</rich_text>
+    <rich_text>
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Signals that a method has been invoked at an illegal or inappropriate time.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A method is called on an object that is not in an appropriate state for that method to be called.
+
+15.</rich_text>
+    <rich_text weight="heavy">NullPointerException</rich_text>
+    <rich_text>
+================
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Thrown when an application attempts to use </rich_text>
+    <rich_text family="monospace">null</rich_text>
+    <rich_text> in a case where an object is required.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: Attempting to call a method on a </rich_text>
+    <rich_text family="monospace">null</rich_text>
+    <rich_text> object reference.
+
+public void process(User user) {
+    if (user == null) {
+        throw new NullPointerException("User cannot be null.");
+    }
+    // Process user
+}
+
+16.</rich_text>
+    <rich_text weight="heavy">IndexOutOfBoundsException</rich_text>
+    <rich_text>
+======================
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Thrown to indicate that an index of some sort (e.g., an array, a list, etc.) is out of range.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: Trying to access an array element with an invalid index.
+
+17.</rich_text>
+    <rich_text weight="heavy">RateLimitExceededException</rich_text>
+    <rich_text>
+======================
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used when a user exceeds the allowed number of requests in a given timeframe.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A user makes too many API requests in a short period.
+
+@Service
+public class ApiService {
+
+    private static final int MAX_REQUESTS = 100;
+    private Map&lt;String, Integer&gt; userRequestCounts = new HashMap&lt;&gt;();
+
+    public void handleRequest(String userId) {
+        int requests = userRequestCounts.getOrDefault(userId, 0);
+        if (requests &gt;= MAX_REQUESTS) {
+            throw new RateLimitExceededException("Rate limit exceeded.");
+        }
+        userRequestCounts.put(userId, requests + 1);
+        // Handle request
+    }
+}
+
+
+18.</rich_text>
+    <rich_text weight="heavy">TimeoutException</rich_text>
+    <rich_text>
+================	
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used to indicate that an operation has timed out.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A long-running process exceeds the allowed time limit.
+
+@Service
+public class LongRunningService {
+
+    public void performLongRunningTask() {
+        boolean isTimeout = checkForTimeout();
+        if (isTimeout) {
+            throw new TimeoutException("Operation timed out.");
+        }
+        // Perform long-running task
+    }
+
+    private boolean checkForTimeout() {
+        // Simulated timeout check
+        return true;
+    }
+}
+
+19.</rich_text>
+    <rich_text weight="heavy">AuthenticationException</rich_text>
+    <rich_text>
+=====================
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used to indicate authentication failure.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A user provides invalid credentials.
+
+@Service
+public class AuthService {
+
+    public void authenticate(String username, String password) {
+        boolean isAuthenticated = checkCredentials(username, password);
+        if (!isAuthenticated) {
+            throw new AuthenticationException("Invalid username or password.");
+        }
+        // Proceed with authentication
+    }
+
+    private boolean checkCredentials(String username, String password) {
+        // Simulated credential check
+        return false;
+    }
+}
+
+19. </rich_text>
+    <rich_text weight="heavy">AuthorizationException</rich_text>
+    <rich_text>
+ ================
+• </rich_text>
+    <rich_text weight="heavy">Purpose</rich_text>
+    <rich_text>: Used to indicate authorization failure.
+• </rich_text>
+    <rich_text weight="heavy">Scenario</rich_text>
+    <rich_text>: A user tries to access a resource they are not authorized to access.
+
+@Service
+public class AuthService {
+
+    public void authorize(String userId, String resource) {
+        boolean isAuthorized = checkAuthorization(userId, resource);
+        if (!isAuthorized) {
+            throw new AuthorizationException("You are not authorized to access this resource.");
+        }
+        // Proceed with authorization
+    }
+
+    private boolean checkAuthorization(String userId, String resource) {
+        // Simulated authorization check
+        return false;
+    }
+}
+</rich_text>
+  </node>
+</cherrytree>
