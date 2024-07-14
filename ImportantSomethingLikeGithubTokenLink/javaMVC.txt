@@ -1,0 +1,17 @@
+1.Connect Front-end to Back-end: Use AJAX, Fetch API, or Axios to make HTTP requests to your Spring Boot application.
+2.<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+<dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>jsp-api</artifactId>
+    <version>2.2</version>
+    <scope>provided</scope>
+</dependency>
+
+3.RESTful APIs,
+

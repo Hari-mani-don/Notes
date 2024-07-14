@@ -1,0 +1,1 @@
+Connect Front-end to Back-end: Use AJAX, Fetch API, or Axios to make HTTP requests to your Spring Boot application.

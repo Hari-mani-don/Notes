@@ -1,0 +1,890 @@
+Controller class
+================
+
+	1. interface venam , interface complicate use our controller class
+	2. class name must functionality name and end suffix controller add.
+	3. class only have that class related methods only.
+	4. single responsibility pattern compare to groupin which groupin is best practice and maintain code.
+	6. method name prifix with "handle" and action name .
+	7. controller class method return type RespnseEntity is best aproch ,
+	8. each method have single action only.
+	9. class name prefix with name customer, client or corporate afte functionality Name for example
+	   "CustomerHomeController","UserPaymentController"
+	10. method name prefix with action and add name of the class prefix like " addCustomer" , "processUserPayment"
+	11.Exception Handling class also write in controller class.
+example:
+=======
+	 @DeleteMapping("/{id}")
+	    public ResponseEntity<user> handleDeleteUser(@PathVariable Long id) {
+		userService.deleteUser(id);
+		return new ResponseEntity<>(user,HttpStatus.NO_CONTENT);
+	    }
+	   
+Service
+=============
+	SOLID principle
+	========================
+	S - single responsiblitiy that is class have only one functionality.
+	O - Open / Closed principle that is existing modules add new functioality that is add new class and existing module without affect 
+		any functionality. 
+	L - liskov priciple that is superclass method implement class compolsory override and also override method use otherwise method not 
+		using it define another interface.
+	I - Interface segregation that is every interface have single method or multiple that functionality related group of method.  
+	D - dependency injection which means loose coupling
+
+
+repository
+===========
+	just interface only create in entity class related. 
+
+project structure
+==================
+
+	src/
+	├── main/
+	│   ├── java/
+	│   │   └── com/
+	│   │       └── example/
+	│   │           ├── controller/
+	│   │           │   ├── UserController.java
+	│   │           │   └── ProductController.java
+	│   │		├── view/
+	│   │           │   ├── UserView.java
+	│   │           │   └── ProductView.java
+	│   │           ├── service/
+	│   │           │   ├── UserService.java
+	│   │           │   └── ProductService.java
+	│   │           ├── model/
+	│   │           │   ├── User.java
+	│   │           │   └── Product.java
+	│   │           └── repository/
+	│   │               ├── UserRepository.java
+	│   │               └── ProductRepository.java
+	│   └── resources/
+	│       ├── static/
+	│       │   └── css/
+	│       │       └── styles.css
+	│       ├── templates/
+	│       │   ├── user/
+	│       │   │   ├── user-form.html
+	│       │   │   └── user-details.html
+	│       │   └── product/
+	│       │       ├── product-form.html
+	│       │       └── product-details.html
+	│       └── application.properties
+	└── test/
+	    └── java/
+		└── com/
+		    └── example/
+		        ├── controller/
+		        │   ├── UserControllerTest.java
+		        │   └── ProductControllerTest.java
+		        └── service/
+		            ├── UserServiceTest.java
+		            └── ProductServiceTest.java
+
+
+
+EndPoint Name
+=============
+	1.End point name compalsory noun that is name of things and also provide plurals forms like "users"
+	2.user is singular which means we don't write b'z in every case json provide collection of users so that complexity it will create.
+	
+Products:
+===========
+
+	1.GET /products - Retrieve a list of products
+	2.GET /products/{id} - Retrieve a specific product
+	3.POST /products - Create a new product
+	4.PUT /products/{id} - Update an existing product
+	5.DELETE /products/{id} - Delete a specific product
+	6.GET /products/search?query={keyword} - Search for products based on a keyword
+
+
+Segregation principle  ??????
+=========================
+       1.Directly Implement Interface: 
+       -------------------------------
+       that class is only have that functionality gor for direct implement.example notification is a method 
+		implement email , email related functionality write. this is not have shared logic.
+
+       2.Use Common Class for Shared Logic:
+       ---------------------------------------
+        that is common shared logic write and aggregation used to get common logic also override common logic.
+
+
+
+	public interface ProductService {
+	    List<Product> getAllProducts();
+	    Product getProductById(String id);
+	    Product createProduct(Product product);
+	    Product updateProduct(String id, Product product);
+	    void deleteProduct(String id);
+	    List<Review> getProductReviews(String id);
+	    Review addReviewToProduct(String id, Review review);
+	    List<Rating> getProductRatings(String id);
+	    Rating addRatingToProduct(String id, Rating rating);
+	    List<Product> searchProducts(String query);
+	}
+	
+	public interface RatingService {
+	    List<Rating> getProductRatings(String id);
+	    Rating addRatingToProduct(String id, Rating rating);
+	}
+
+	public interface ProductSearchService {
+	    List<Product> searchProducts(String query);
+	}
+
+	public interface ReviewService {
+	    List<Review> getProductReviews(String id);
+	    Review addReviewToProduct(String id, Review review);
+	}
+	
+	
+
+Abstract class when use
+=========================
+	abstract class use pannanumna common method functionality is not change extend any class like static variable provide common thing
+	same in abstract method after some dynamic method also add . by extend any class compalsory implement and alredy implemt abstract 
+	method just using. 
+
+	
+
+java doc
+=========
+	class:
+	========
+	write class name same as functionality name may need not write doc. 
+	
+	methods
+	==========
+	write method name same as action name however write complex logic place may write doc.
+	
+example:
+--------
+	1) 
+	/**
+	 * Calculat	es the total price of an order, including taxes and discounts.
+	 * 
+	 * @param orderItems   The list of items in the order.
+	 * @param taxRate      The tax rate to apply to the order (in percentage).
+	 * @param discount     The discount to apply to the order (in percentage).
+	 * @return             The total price of the order after applying taxes and discounts.
+	 */
+	public double calculateTotalPrice(List<OrderItem> orderItems, double taxRate, double discount) {
+	    // Calculate subtotal before tax
+	    double subtotal = 0;
+	    for (OrderItem item : orderItems) {
+		subtotal += item.getPrice() * item.getQuantity();
+	    }
+	    
+	    // Apply discount
+	    double discountAmount = subtotal * (discount / 100);
+	    double discountedSubtotal = subtotal - discountAmount;
+	    
+	    // Apply taxes
+	    double taxAmount = discountedSubtotal * (taxRate / 100);
+	    
+	    // Calculate total price
+	    double totalPrice = discountedSubtotal + taxAmount;
+	    
+	    return totalPrice;
+	}
+        ----------------------------------------------------------
+	2)
+
+	/**
+	 * Checks if a given string is a palindrome.
+	 * 
+	 * @param str The string to check for palindrome.
+	 * @return    True if the string is a palindrome, false otherwise.
+	 */
+	public boolean isPalindrome(String str) {
+	    // Convert the string to lowercase and remove non-alphanumeric characters
+	    String cleanStr = str.toLowerCase().replaceAll("[^a-z0-9]", "");
+	    
+	    // Check if the cleaned string is equal to its reverse
+	    String reversedStr = new StringBuilder(cleanStr).reverse().toString();
+	    return cleanStr.equals(reversedStr);
+	}
+	
+	
+method level common comments
+==============================
+	public class ShoppingCart {
+	    private List<Product> items = new ArrayList<>();
+	    private double totalPrice = 0;
+
+	    /**
+	     * Adds a product to the shopping cart.
+	     * 
+	     * @param product The product to add to the cart.
+	     */
+	    public void addProduct(Product product) {
+		// Add the product to the cart
+		items.add(product);
+		// Update the total price
+		totalPrice += product.getPrice();
+	    }
+
+	    /**
+	     * Removes a product from the shopping cart.
+	     * 
+	     * @param product The product to remove from the cart.
+	     */
+	    public void removeProduct(Product product) {
+		// Remove the product from the cart
+		items.remove(product);
+		// Update the total price
+		totalPrice -= product.getPrice();
+	    }
+
+	    /**
+	     * Applies a discount to the total price.
+	     * 
+	     * @param discount The discount percentage to apply.
+	     */
+	    public void applyDiscount(double discount) {
+		// Apply the discount to the total price
+		totalPrice *= (1 - (discount / 100));
+	    }
+
+	    /**
+	     * Calculates the tax amount to be added to the total price.
+	     * 
+	     * @param taxRate The tax rate to apply.
+	     * @return        The calculated tax amount.
+	     */
+	    public double calculateTax(double taxRate) {
+		// Calculate the tax amount
+		return totalPrice * (taxRate / 100);
+	    }
+
+	    /**
+	     * Empties the shopping cart by removing all items.
+	     */
+	    public void clearCart() {
+		// Empty the cart by removing all items
+		items.clear();
+		// Reset the total price
+		totalPrice = 0;
+	    }
+	    
+	    // Common comments 20 to 30
+	    // 20. Check if the cart is empty before applying discount
+	    // 21. Validate the tax rate to ensure it is within a valid range
+	    // 22. Handle the case when the product is not found in the cart
+	    // 23. Log a warning message if the cart is empty before clearing it
+	    // 24. Perform additional checks or operations before adding the product
+	    // 25. Initialize the total price with the price of the first product added
+	    // 26. Update the display or UI to reflect the changes after adding/removing a product
+	    // 27. Check if the discount value is within a valid range before applying it
+	    // 28. Ensure that the tax rate is not negative before calculating tax
+	    // 29. Perform cleanup tasks or resource release before clearing the cart
+	    // 30. Notify observers or listeners about the changes made to the cart
+	}
+	
+		2)   over-commenting cod readabilty down
+		--------------------------------------------
+		import java.util.*;
+	import java.text.SimpleDateFormat;
+
+	public class Example {
+
+	    // Initialize logger
+	    private static final Logger logger = Logger.getLogger(Example.class.getName());
+
+	    public static void main(String[] args) {
+		// Initialize variables
+		List<String> items = new ArrayList<>();
+		double totalPrice = 0;
+		double discount = 10;
+		double taxRate = 5;
+
+		// Add some items
+		items.add("Item1");
+		items.add("Item2");
+
+		// Calculate the total amount
+		totalPrice = calculateTotal(items);
+
+		// Apply discount to the total price
+		totalPrice *= (1 - (discount / 100));
+
+		// Check if the object is null before proceeding
+		if (items != null) {
+		    // Check if the list is empty before processing
+		    if (!items.isEmpty()) {
+		        // Perform operation
+		        System.out.println("Processing items...");
+		    }
+		}
+
+		// Handle exception
+		try {
+		    // Validate the input parameters before processing
+		    validateInput(items, taxRate, discount);
+
+		    // Calculate the tax amount
+		    double taxAmount = calculateTax(totalPrice, taxRate);
+
+		    // Update the total price
+		    totalPrice += taxAmount;
+
+		    // Check if the index is within bounds
+		    if (items.size() > 0) {
+		        // Log an informational message
+		        logger.info("Items processed successfully.");
+		    }
+		} catch (Exception e) {
+		    // Display an error message to the user
+		    System.err.println("An error occurred: " + e.getMessage());
+		}
+
+		// Check the string is null or empty
+		String str = "";
+		if (str != null && !str.isEmpty()) {
+		    // Parse the input string to extract data
+		    parseInput(str);
+		}
+
+		// Format the date to the required pattern
+		String formattedDate = formatDate(new Date());
+
+		// Update the status of the order
+		String status = "Processed";
+		updateStatus(status);
+
+		// Fetch data from the server
+		fetchDataFromServer();
+
+		// Check if the user has the necessary permissions
+		boolean hasPermission = checkPermissions("admin");
+
+		// Retry the operation if it fails
+		for (int i = 0; i < 3; i++) {
+		    if (performOperation()) {
+		        break;
+		    }
+		}
+
+		// Initialize UI components for the screen
+		initializeUI();
+
+		// Send a notification to the user
+		sendNotification("Processing completed.");
+
+		// Save the output to a file
+		saveToFile("output.txt");
+
+		// Initialize resources for database connection
+		initializeResources();
+
+		// Close resources to prevent memory leaks
+		closeResources();
+
+		// Return the result to the caller
+		return totalPrice;
+	    }
+
+	    private static void validateInput(List<String> items, double taxRate, double discount) {
+		// Check for null or empty list
+		if (items == null || items.isEmpty()) {
+		    throw new IllegalArgumentException("Items list cannot be null or empty.");
+		}
+		// Check the discount value is within a valid range before applying it
+		if (discount < 0 || discount > 100) {
+		    throw new IllegalArgumentException("Discount must be between 0 and 100.");
+		}
+		// Ensure the tax rate is not negative before calculating tax
+		if (taxRate < 0) {
+		    throw new IllegalArgumentException("Tax rate cannot be negative.");
+		}
+	    }
+
+	    private static double calculateTotal(List<String> items) {
+		// Initialize the total price with the price of the first product added
+		double total = 0;
+		for (String item : items) {
+		    // Assuming each item has a fixed price of 10 for example purposes
+		    total += 10;
+		}
+		return total;
+	    }
+
+	    private static double calculateTax(double totalPrice, double taxRate) {
+		// Calculate the tax amount
+		return totalPrice * (taxRate / 100);
+	    }
+
+	    private static void fetchDataFromServer() {
+		// Fetch data from the server
+	    }
+
+	    private static boolean checkPermissions(String role) {
+		// Check if the user has the necessary permissions
+		return "admin".equals(role);
+	    }
+
+	    private static boolean performOperation() {
+		// Perform the specified operation
+		return true;
+	    }
+
+	    private static void initializeUI() {
+		// Initialize UI components for the screen
+	    }
+
+	    private static void sendNotification(String message) {
+		// Send a notification to the user
+	    }
+
+	    private static void saveToFile(String filename) {
+		// Save the output to a file
+	    }
+
+	    private static void initializeResources() {
+		// Initialize resources for database connection
+	    }
+
+	    private static void closeResources() {
+		// Close resources to prevent memory leaks
+	    }
+
+	    private static void parseInput(String str) {
+		// Parse the input string to extract data
+	    }
+
+	    private static String formatDate(Date date) {
+		// Format the date to the required pattern
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		return formatter.format(date);
+	    }
+
+	    private static void updateStatus(String status) {
+		// Update the status of the order
+	    }
+	}
+
+	this aproach is best to promote industry people
+	====================================================
+	30
+		/**
+	 * Creates a new user in the system.
+	 *
+	 * <p>This method validates the user data, encrypts the user's password,
+	 * and saves the user to the repository.</p>
+	 *
+	 * @param user the user to be created, which must contain a non-empty name, email, and password
+	 * @return the created user
+	 * @throws ValidationException if the user data is invalid
+	 */
+	@Override
+	public User createUser(User user) {
+	    validateUser(user);
+	    user.setPassword(passwordEncoder.encode(user.getPassword()));
+	    return userRepository.save(user);
+	}
+
+	/**
+	 * Retrieves a user by their ID.
+	 *
+	 * <p>This method fetches the user from the repository. If the user is not found,
+	 * a {@link UserNotFoundException} is thrown.</p>
+	 *
+	 * @param userId the ID of the user to retrieve
+	 * @return the retrieved user
+	 * @throws UserNotFoundException if the user is not found
+	 */
+	@Override
+	public User getUserById(Long userId) {
+	    return userRepository.findById(userId)
+		    .orElseThrow(() -> new UserNotFoundException("User not found with id: " + userId));
+	}
+
+	/**
+	 * Updates an existing user.
+	 *
+	 * <p>This method updates the user's details. If the password is provided, it is re-encrypted.
+	 * The updated user is then saved to the repository.</p>
+	 *
+	 * @param userId the ID of the user to update
+	 * @param userDetails the new user details
+	 * @return the updated user
+	 * @throws UserNotFoundException if the user is not found
+	 */
+	@Override
+	public User updateUser(Long userId, User userDetails) {
+	    User existingUser = getUserById(userId);
+	    existingUser.setName(userDetails.getName());
+	    existingUser.setEmail(userDetails.getEmail());
+	    if (userDetails.getPassword() != null && !userDetails.getPassword().isEmpty()) {
+		existingUser.setPassword(passwordEncoder.encode(userDetails.getPassword()));
+	    }
+	    return userRepository.save(existingUser);
+	}
+
+	/**
+	 * Deletes a user by their ID.
+	 *
+	 * <p>This method removes the user from the repository. If the user is not found,
+	 * a {@link UserNotFoundException} is thrown.</p>
+	 *
+	 * @param userId the ID of the user to delete
+	 * @throws UserNotFoundException if the user is not found
+	 */
+	@Override
+	public void deleteUser(Long userId) {
+	    User existingUser = getUserById(userId);
+	    userRepository.delete(existingUser);
+	}
+
+	/**
+	 * Validates the user data before processing.
+	 *
+	 * <p>This method checks if the user's name, email, and password are non-empty.</p>
+	 *
+	 * @param user the user to validate
+	 * @throws ValidationException if the user data is invalid
+	 */
+	private void validateUser(User user) {
+	    if (user.getName() == null || user.getName().isEmpty()) {
+		throw new ValidationException("User name cannot be empty");
+	    }
+	    if (user.getEmail() == null || user.getEmail().isEmpty()) {
+		throw new ValidationException("User email cannot be empty");
+	    }
+	    if (user.getPassword() == null || user.getPassword().isEmpty()) {
+		throw new ValidationException("User password cannot be empty");
+	    }
+	}
+
+ class level
+ ====================
+	 /**
+	 * Service class for managing user operations.
+	 *
+	 * <p>This service provides methods to perform CRUD operations on user data,
+	 * such as creating, retrieving, updating, and deleting users.</p>
+	 *
+	 * <p>It uses {@link UserRepository} to interact with the database and 
+	 * {@link PasswordEncoder} to handle password encryption.</p>
+	 *
+	 * @see User
+	 * @see UserRepository
+	 * @see PasswordEncoder
+	 */
+	public class UserServiceImpl implements UserService {
+	    // Class content
+	}
+
+ 
+
+doc
+=====
+	@param 
+	@throws
+	@return
+	@see
+	
+	
+	
+java 8	
+========
+return la list return panna new list ha return pannanum yenna direct reference send panna missuse panna chance irruku
+
+Example
+----------
+ @Override
+    public List<User> getAllUsers() {
+        return new ArrayList<>(users);
+    }
+
+
+
+springData jpa
+================
+	1.Start With :
+	---------------
+		 findBy
+	
+	2.Specify Entity properties
+	----------------------------
+		findBy<propertyName> which means field name
+	
+	3.Use Optional Criteria
+	----------------------
+		And, Or, Containing, StartingWith, EndingWith, Greaterthan,Lessthan, Between etc..........
+		
+	4.Return Type:
+	--------------
+		List, set, Entity class name, Optional ,collection	
+		
+		
+	default methods:
+	----------------
+	save(S entity):
+	findOne(ID id):
+	findAll():
+	existsById(ID id):
+	findAllById(Iterable<ID> ids):
+	count():
+	deleteById(ID id):	
+	delete(T entity):
+	
+	
+	common criteria
+	---------------
+	Here are 50 keywords:
+
+1. `And`                                                                     
+2. `Or`
+3. `Containing`
+4. `StartingWith`
+5. `EndingWith`
+6. `GreaterThan`
+7. `LessThan`
+8. `Between`
+9. `IsNotNull`
+10. `IsNull`
+11. `Not`
+12. `OrderBy`
+13. `IgnoreCase`
+14. `True`
+15. `False`
+16. `In`
+17. `NotIn`
+18. `Before`
+19. `After`
+20. `Like`
+21. `NotNull`
+22. `Null`
+23. `AndOrderBy`
+24. `OrOrderBy`
+25. `IgnoreCaseOrderBy`
+26. `TrueOrderBy`
+27. `FalseOrderBy`
+28. `InOrderBy`
+29. `NotInOrderBy`
+30. `BeforeOrderBy`
+31. `AfterOrderBy`
+32. `LessThanOrderBy`
+33. `GreaterThanOrderBy`
+34. `BetweenOrderBy`
+35. `StartingWithOrderBy`
+36. `EndingWithOrderBy`
+37. `ContainingOrderBy`
+38. `AndNotNull`
+39. `OrNotNull`
+40. `IgnoreCaseAnd`
+41. `IgnoreCaseOr`
+42. `TrueAnd`
+43. `TrueOr`
+44. `FalseAnd`
+45. `FalseOr`
+46. `InAnd`
+47. `InOr`
+48. `NotInAnd`
+49. `NotInOr`
+50. `BeforeAnd`
+Sure, here are additional keywords:
+
+51. `AfterAnd`
+52. `BetweenAnd`
+53. `LessThanAnd`
+54. `GreaterThanAnd`
+55. `StartingWithAnd`
+56. `EndingWithAnd`
+57. `ContainingAnd`
+58. `BeforeOr`
+59. `AfterOr`
+60. `BetweenOr`
+61. `LessThanOr`
+62. `GreaterThanOr`
+63. `StartingWithOr`
+64. `EndingWithOr`
+65. `ContainingOr`
+66. `BeforeAndOrderBy`
+67. `AfterAndOrderBy`
+68. `BetweenAndOrderBy`
+69. `LessThanAndOrderBy`
+70. `GreaterThanAndOrderBy`
+71. `StartingWithAndOrderBy`
+72. `EndingWithAndOrderBy`
+73. `ContainingAndOrderBy`
+74. `BeforeOrOrderBy`
+75. `AfterOrOrderBy`
+76. `BetweenOrOrderBy`
+77. `LessThanOrOrderBy`
+78. `GreaterThanOrOrderBy`
+79. `StartingWithOrOrderBy`
+80. `EndingWithOrOrderBy`
+81. `ContainingOrOrderBy`
+82. `IsNotNullOrderBy`
+83. `IsNullOrderBy`
+84. `NotOrderBy`
+85. `TrueOrderBy`
+86. `FalseOrderBy`
+87. `InOrderBy`
+88. `NotInOrderBy`
+89. `BeforeOrderBy`
+90. `AfterOrderBy`
+91. `LessThanOrderBy`
+92. `GreaterThanOrderBy`
+93. `StartingWithOrderBy`
+94. `EndingWithOrderBy`
+95. `ContainingOrderBy`
+96. `AndNotNullOrderBy`
+97. `OrNotNullOrderBy`
+98. `IgnoreCaseAndOrderBy`
+99. `IgnoreCaseOrOrderBy`
+100. `BeforeAndOrderBy`
+	
+	findByFirstNameAndLastName(String firstName, String lastName): Finds users by both first name and last name.
+	findByAgeGreaterThan(int age): 
+	findBySalaryLessThan(double salary): 
+	findByCity(String city): 
+	findByState(String state): 
+	findByCountry(String country): 
+	findByFirstNameOrLastName(String firstName, String lastName): 
+	findByAgeLessThanEqual(int age): 
+	findByActiveTrue(): 
+	findByActiveFalse(): 
+	findByFirstNameIgnoreCase(String firstName): 
+	findByLastNameIgnoreCase(String lastName): 
+	findByFirstNameLike(String pattern): 
+	findByLastNameLike(String pattern): 
+	findByFirstNameStartingWith(String prefix): 
+	findByLastNameEndingWith(String suffix): 
+	findByDateOfBirthBetween(Date startDate, Date endDate): 
+	findByFirstNameOrderByLastNameAsc(String firstName): 
+	findByLastNameOrderByFirstNameDesc(String lastName): 
+	findByAgeGreaterThanEqualAndCity(int age, String city): 
+	findByStateAndCountry(String state, String country): 
+	findByFirstNameNotNull(): 
+	findByLastNameNull(): 
+	findByDateOfBirthNotNull(): 
+	findByAgeIn(Collection<Integer> ages): 
+	findBySalaryNot(double salary): 
+	findByFirstNameAndActiveTrue(String firstName): 
+	findByLastNameAndActiveFalse(String lastName): 
+	findByCityOrState(String city, String state):
+	findByCountryNot(String country):
+	findByFirstNameContainingIgnoreCase(String keyword): 
+	findByLastNameContainingIgnoreCase(String keyword): 
+	findByAgeGreaterThanEqualAndAgeLessThan(int minAge, int maxAge): 
+	findByDateOfBirthBefore(Date date): 
+	findByDateOfBirthAfter(Date date): 
+	findByDateOfBirthNotNullAndActiveTrue(): 
+	findByFirstNameAndLastNameAndAge(String firstName, String lastName, int age): 
+	findByLastNameNotIn(Collection<String> lastNames): 
+	findByAgeGreaterThanAndCityOrState(int age, String city, String state): 
+	findBySalaryGreaterThanEqualAndSalaryLessThan(double minSalary, double maxSalary): 
+	findByActiveTrueAndCityNotNull(): 
+	findByActiveFalseAndStateNull(): 
+	findByDateOfBirthBetweenAndCountry(Date startDate, Date endDate, String country): 
+	findByFirstNameIgnoreCaseOrLastNameIgnoreCase(String firstName, String lastName): 
+	findByCityStartingWithIgnoreCase(String prefix):
+	findByStateEndingWithIgnoreCase(String suffix): 
+	findByCountryIn(Collection<String> countries):
+	findByFirstNameNotNullAndLastNameNotNull():
+	findByAgeLessThanEqualAndCityOrState(int age, String city, String state): 
+	findBySalaryGreaterThanEqualOrSalaryLessThanEqual(double minSalary, double maxSalary):
+	
+	
+	
+
+
+Return Type
+========
+						1. Entity:
+						• Example: User findById(Long id);
+						• Purpose: Returns a single entity object. Use this when you expect the query to return exactly one result.
+
+
+						• Optional<Entity>:
+						◇ Example: Optional<User> findById(Long id);
+						◇ Purpose: Wraps the result in an Optional to handle the case when the result might be null (i.e., no entity found). This is useful for avoiding NullPointerException and for explicitly handling the absence of a result.
+
+
+						• List<Entity>:
+						◇ Example: List<User> findByLastName(String lastName);
+						◇ Purpose: Returns a list of entities. Use this when you expect multiple results.
+
+
+						• Page<Entity>:
+						◇ Example: Page<User> findByLastName(String lastName, Pageable pageable);
+						◇ Purpose: Returns a paginated list of entities. Useful for implementing pagination in your application.
+
+
+						• Slice<Entity>:
+						◇ Example: Slice<User> findByLastName(String lastName, Pageable pageable);
+						◇ Purpose: Similar to Page, but only fetches a slice of data (partial page) without needing the total count. Useful for infinite scrolling scenarios.
+
+
+						• Stream<Entity>:
+						◇ Example: Stream<User> findAllByAgeGreaterThan(int age);
+						◇ Purpose: Returns a Java 8 stream of entities, allowing for lazy processing of large datasets.
+
+
+						• Collection<Entity>:
+						◇ Example: Collection<User> findByCity(String city);
+						◇ Purpose: Returns a collection of entities. Similar to List but more general.
+
+
+						• Set<Entity>:
+						◇ Example: Set<User> findDistinctByLastName(String lastName);
+						◇ Purpose: Returns a set of entities. Ensures that the results are unique.
+
+
+						• Entity Projection (Interface):
+						◇ Example: List<UserNameOnly> findBy();
+						◇ Purpose: Returns a projection interface, allowing for partial retrieval of entity data.
+
+
+						• DTO (Data Transfer Object):
+						◇ Example: List<UserDTO> findBy();
+						◇ Purpose: Returns a DTO object, often used to shape the data returned from the query to meet the specific needs of the client.
+
+
+
+						Why Use These Return Types?
+						◇ Entity: Directly interact with the entity in the database. Suitable for straightforward CRUD operations.
+						◇ Optional<Entity>: Handle potential absence of data gracefully.
+						◇ List<Entity>: Retrieve multiple entities when you expect more than one result.
+						◇ Page<Entity>: Efficiently manage large datasets by breaking them into pages. Ideal for pagination.
+						◇ Slice<Entity>: Fetch portions of data without needing the total count. Good for scenarios like infinite scrolling.
+						◇ Stream<Entity>: Process large datasets in a memory-efficient way.
+						◇ Collection<Entity>: More generic than List, but serves a similar purpose.
+						◇ Set<Entity>: Ensure uniqueness of results.
+						◇ Entity Projection: Optimize performance by retrieving only the necessary fields.
+						◇ DTO: Tailor the query results to fit the specific requirements of the client, enhancing performance and reducing data transfer overhead.
+	
+
+
+
+	
+test case
+english words meaning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
